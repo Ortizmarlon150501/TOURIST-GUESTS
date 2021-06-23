@@ -59,5 +59,9 @@ public class ListCity {
     public void setList(List list) {
         this.list = list;
     }
+
+    City SearchCity(String WantedCity) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     }
 

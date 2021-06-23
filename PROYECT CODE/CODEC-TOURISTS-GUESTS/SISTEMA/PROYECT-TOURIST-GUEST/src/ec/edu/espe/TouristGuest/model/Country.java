@@ -83,6 +83,10 @@ public class Country {
     public void setContinent(String continent) {
         this.continent = continent;
     }
+
+    String getListCity() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
