@@ -15,15 +15,19 @@ public class Country {
     private int numberOfInhabitants;
     private String idiom;
     private String continent;
-    
+    private ListCity listCity;
 
     public Country(String name, int numberOfInhabitants, String idiom, String continent) {
         this.name = name;
         this.numberOfInhabitants = numberOfInhabitants;
         this.idiom = idiom;
         this.continent = continent;
+        this.listCity = new ListCity();
     }
     
+    public void addCity(City c){
+        this.listCity.addCity(c);
+    }
     /**
      * @return the name
      */
