@@ -11,4 +11,77 @@ package ec.edu.espe.TouristGuest.model;
  */
 public class Country {
     
+    private String name;
+    private int numberOfInhabitants;
+    private String idiom;
+    private String continent;
+    
+
+    public Country(String name, int numberOfInhabitants, String idiom, String continent) {
+        this.name = name;
+        this.numberOfInhabitants = numberOfInhabitants;
+        this.idiom = idiom;
+        this.continent = continent;
+    }
+    
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * @param name the name to set
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * @return the numberOfInhabitants
+     */
+    public int getNumberOfInhabitants() {
+        return numberOfInhabitants;
+    }
+
+    /**
+     * @param numberOfInhabitants the numberOfInhabitants to set
+     */
+    public void setNumberOfInhabitants(int numberOfInhabitants) {
+        this.numberOfInhabitants = numberOfInhabitants;
+    }
+
+    /**
+     * @return the idiom
+     */
+    public String getIdiom() {
+        return idiom;
+    }
+
+    /**
+     * @param idiom the idiom to set
+     */
+    public void setIdiom(String idiom) {
+        this.idiom = idiom;
+    }
+
+    /**
+     * @return the continent
+     */
+    public String getContinent() {
+        return continent;
+    }
+
+    /**
+     * @param continent the continent to set
+     */
+    public void setContinent(String continent) {
+        this.continent = continent;
+    }
+    
+    
+    
+    
+    
 }
