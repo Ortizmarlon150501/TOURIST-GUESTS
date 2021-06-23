@@ -12,5 +12,6 @@ package ec.edu.espe.TouristGuest.view;
 public class SystemTouristGuest {
     public static void main(String[] args) {
         
+        
     }
 }
