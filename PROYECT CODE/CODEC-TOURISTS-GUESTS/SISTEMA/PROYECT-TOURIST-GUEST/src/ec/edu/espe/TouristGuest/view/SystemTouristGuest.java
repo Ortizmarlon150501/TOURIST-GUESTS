@@ -3,20 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyect.toutist.guest;
+package ec.edu.espe.TouristGuest.view;
 
 /**
  *
- * @author Marlon Ortiz Codec ESPE-DCCO
+ * @author LILIAN IZA TOUR GUEST OPP-ESPE
  */
-public class PROYECTTOUTISTGUEST {
-
-    /**
-     * @param args the command line arguments
-     */
+public class SystemTouristGuest {
     public static void main(String[] args) {
         
-        System.out.println("Ya muchachos");
+        
     }
-    
 }
