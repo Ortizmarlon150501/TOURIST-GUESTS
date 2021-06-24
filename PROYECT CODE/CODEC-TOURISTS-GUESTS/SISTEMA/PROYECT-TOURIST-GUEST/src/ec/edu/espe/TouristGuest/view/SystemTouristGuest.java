@@ -8,14 +8,21 @@ package ec.edu.espe.TouristGuest.view;
 import ec.edu.espe.TouristGuest.model.City;
 import ec.edu.espe.TouristGuest.model.Country;
 import ec.edu.espe.TouristGuest.model.SouhtAmerican;
+import java.util.Scanner;
+
 
 /**
  *
  * @author JARAMILLO JEAN TOUR GUEST OPP-ESPE
  */
 public class SystemTouristGuest {
+    
     public static void main(String[] args) {
-        
+        Scanner c = new Scanner(System.in);
+    String Country;
+    String Ecuador;
+    String Argentina;
+
                              //cantidad de habitantes,idioma, continente
         Country p1 = new Country("Brazil", 100, "Spanish", "SouthAmerica");
         Country p2 = new Country("Colombia", 200, "Spanish", "SouthAmerica");
@@ -93,28 +100,27 @@ public class SystemTouristGuest {
         
         SouhtAmerican souhtamerican = new SouhtAmerican();
          souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p1);
+         souhtamerican.addCountry(p2);
+         souhtamerican.addCountry(p3);
+         souhtamerican.addCountry(p4);
+         souhtamerican.addCountry(p5);
+         souhtamerican.addCountry(p6);
+         souhtamerican.addCountry(p7);
+         souhtamerican.addCountry(p8);
+         souhtamerican.addCountry(p9);
+         souhtamerican.addCountry(p10);
+     
          
-        
-       
-   
+         System.out.println("Ingrese un pais");
+         
+         Country = c.nextLine();
+         
+         System.out.println("El pais es: "+p1);
+         
+         
     }
-    public static void menu(){
-    System.out.println("\n");
-    System.out.println("\n [1] Search country cities");
-    System.out.println("\n [2] country with more inhabitants");
-    System.out.println("\n [3] Search city country");
-    System.out.println("\n [0] Exit");
-        
+    
+    
+   
    }
-}
+
