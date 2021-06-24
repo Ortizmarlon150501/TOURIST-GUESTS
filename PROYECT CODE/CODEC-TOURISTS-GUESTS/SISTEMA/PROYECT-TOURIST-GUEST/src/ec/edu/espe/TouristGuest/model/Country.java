@@ -9,34 +9,47 @@ import java.util.ArrayList;
 
 /**
  *
- * @author LILIAN IZA TOUR GUEST OPP-ESPE
+ * @author Marlon Ortiz Codec ESPE-DCCO
  */
 public class Country {
-    
     private String name;
-    private int numberOfInhabitants;
-    private String idiom;
-    private String continent;
-    private ArrayList<City> listCity;
-
-    public Country(String name, int numberOfInhabitants, String idiom, String continent) {
+    private double numberofinhabitants;
+     private String idiom;
+     private String continent;
+     
+     private ArrayList<Citys> listCitys;
+    
+    public Country(String name, double numberofinhabitants, String idiom, String continent) {
         this.name = name;
-        this.numberOfInhabitants = numberOfInhabitants;
+        this.numberofinhabitants = numberofinhabitants;
         this.idiom = idiom;
         this.continent = continent;
-        this.listCity = new ArrayList<>();
+        this.listCitys= new ArrayList<>();
+    }
+    public String getinfo(){
+        String m= "";
+        m += "\n Info of "+ this.getName() + ":";
+        m +="\n Number of inhabitants: " +this.getNumberofinhabitants();
+        m +="\n idiom: "+ this.getIdiom();
+        m +="\n contnet: "+ this.getContinent();
+      
+        
+ 
+       for(Citys citys : this.getListCitys()) {
+            
+            m +="\n\t"+citys.getName();
+        }
+        return m;
+    
     }
     
-    public String getListCity(){
-      return this.getListCity();
+    public void addCitys(Citys citys){
+        this.getListCitys().add(citys);
     }
     
-   
-    public void addCity(City city){
-      this.listCity.add(city);
-    }
-  
-     
+    /**
+     * @return the name
+     */
     public String getName() {
         return name;
     }
@@ -49,17 +62,17 @@ public class Country {
     }
 
     /**
-     * @return the numberOfInhabitants
+     * @return the numberofinhabitants
      */
-    public int getNumberOfInhabitants() {
-        return numberOfInhabitants;
+    public double getNumberofinhabitants() {
+        return numberofinhabitants;
     }
 
     /**
-     * @param numberOfInhabitants the numberOfInhabitants to set
+     * @param numberofinhabitants the numberofinhabitants to set
      */
-    public void setNumberOfInhabitants(int numberOfInhabitants) {
-        this.numberOfInhabitants = numberOfInhabitants;
+    public void setNumberofinhabitants(double numberofinhabitants) {
+        this.numberofinhabitants = numberofinhabitants;
     }
 
     /**
@@ -89,4 +102,18 @@ public class Country {
     public void setContinent(String continent) {
         this.continent = continent;
     }
+
+    /**
+     * @return the listCitys
+     */
+    public ArrayList<Citys> getListCitys() {
+        return listCitys;
     }
+
+    /**
+     * @param listCitys the listCitys to set
+     */
+    public void setListCitys(ArrayList<Citys> listCitys) {
+        this.listCitys = listCitys;
+    }
+            }
