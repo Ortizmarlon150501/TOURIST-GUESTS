@@ -15,15 +15,14 @@ public class Country {
     private String name;
     private double numberofinhabitants;
      private String idiom;
-     private String continent;
-     
+     private String country;
      private ArrayList<Citys> listCitys;
     
-    public Country(String name, double numberofinhabitants, String idiom, String continent) {
+    public Country(String name, double numberofinhabitants, String idiom, String Country) {
         this.name = name;
         this.numberofinhabitants = numberofinhabitants;
         this.idiom = idiom;
-        this.continent = continent;
+        this.country = Country;
         this.listCitys= new ArrayList<>();
     }
     public String getinfo(){
@@ -31,7 +30,7 @@ public class Country {
         m += "\n Info of "+ this.getName() + ":";
         m +="\n Number of inhabitants: " +this.getNumberofinhabitants();
         m +="\n idiom: "+ this.getIdiom();
-        m +="\n contnet: "+ this.getContinent();
+        m +="\n contnet: "+ this.getCountry();
       
         
  
@@ -90,17 +89,17 @@ public class Country {
     }
 
     /**
-     * @return the continent
+     * @return the country
      */
-    public String getContinent() {
-        return continent;
+    public String getCountry() {
+        return country;
     }
 
     /**
-     * @param continent the continent to set
+     * @param country the country to set
      */
-    public void setContinent(String continent) {
-        this.continent = continent;
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     /**

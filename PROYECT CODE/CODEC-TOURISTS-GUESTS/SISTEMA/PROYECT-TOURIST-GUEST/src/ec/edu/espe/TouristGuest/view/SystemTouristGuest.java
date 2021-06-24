@@ -18,32 +18,32 @@ public class SystemTouristGuest {
     
     public static void main(String[] args){
         System.out.println("Welocme dear guest");
-        Citys c1= new Citys("City1", 1, 1);
-        Citys c2= new Citys("City2", 1, 1);
-        Citys c3= new Citys("City3", 1, 1);
+        Citys c1= new Citys("Quito", 85, 225);
+        Citys c2= new Citys("Ambato", 62, 105);
+        Citys c3= new Citys("Cuenca", 69, 82);
         
-        Citys c4= new Citys("City4", 1, 1);
-        Citys c5= new Citys("City5", 1, 1);
-        Citys c6= new Citys("City6", 1, 1);
+        Citys c4= new Citys("Trastevere", 62, 22);
+        Citys c5= new Citys(" Domus Aurea ", 22, 19);
+        Citys c6= new Citys("Roma", 34, 21);
         
-        Citys c7= new Citys("City7", 1, 1);
-        Citys c8= new Citys("City8", 1, 1);
-        Citys c9= new Citys("City9", 1, 1);
-        
-         
-        Citys c10= new Citys("City7", 1, 1);
-        Citys c11= new Citys("City8", 1, 1);
-        Citys c12= new Citys("City9", 1, 1);
+        Citys c7= new Citys("Cartagena", 68, 20);
+        Citys c8= new Citys("Medellín", 23, 26);
+        Citys c9= new Citys("Cali", 105, 32);
         
          
-        Citys c13= new Citys("City7", 1, 1);
-        Citys c14= new Citys("City8", 1, 1);
-        Citys c15= new Citys("City9", 1, 1);
+        Citys c10= new Citys("Jalisco ", 39, 32);
+        Citys c11= new Citys("Cancún", 48, 41);
+        Citys c12= new Citys("Campeche", 58, 43);
         
          
-        Citys c16= new Citys("City7", 1, 1);
-        Citys c17= new Citys("City8", 1, 1);
-        Citys c18= new Citys("City9", 1, 1);
+        Citys c13= new Citys("París", 183, 13);
+        Citys c14= new Citys("Toulouse", 37, 18);
+        Citys c15= new Citys("Marsella", 54, 22);
+        
+         
+        Citys c16= new Citys("Las Terrenas", 24, 23);
+        Citys c17= new Citys("Isla Saona", 23, 43);
+        Citys c18= new Citys("Boca Chica", 24, 30);
         
          
         Citys c19= new Citys("City7", 1, 1);
@@ -68,16 +68,16 @@ public class SystemTouristGuest {
        
         
                 
-       Country p1= new Country("Country 1", 1000, "Spanish", "American");
-       Country p2= new Country("Country 2", 1000, "Spanish", "Europe");
-       Country p3= new Country("Country 3", 1000, "Spanish", "American");
-       Country p4= new Country("Country 1", 1000, "Spanish", "American");
-       Country p5= new Country("Country 2", 1000, "Spanish", "Europe");
-       Country p6= new Country("Country 3", 1000, "Spanish", "American");
-       Country p7= new Country("Country 1", 1000, "Spanish", "American");
-       Country p8= new Country("Country 2", 1000, "Spanish", "Europe");
-       Country p9= new Country("Country 3", 1000, "Spanish", "American");
-       Country p10= new Country("Country 1", 1000, "Spanish", "American");
+       Country p1= new Country("Country 1", 17268.000, "Spanish", "Ecuador");
+       Country p2= new Country("Country 2", 59641.488, "Italian", "Italia");
+       Country p3= new Country("Country 3",  50374.000, "Spanish", "Colombia");
+       Country p4= new Country("Country 4",  1278.000 , "Spanish", "Mexico");
+       Country p5= new Country("Country 5", 68011.000, "French", "Francia");
+       Country p6= new Country("Country 6",10358.000 , "Spanish", "Republica Dominicana");
+       Country p7= new Country("Country 7", 1000, "Spanish", "American");
+       Country p8= new Country("Country 8", 1000, "Spanish", "Europe");
+       Country p9= new Country("Country 9", 1000, "Spanish", "American");
+       Country p10= new Country("Country 10", 1000, "Spanish", "American");
       
     
        p1.addCitys(c1);
