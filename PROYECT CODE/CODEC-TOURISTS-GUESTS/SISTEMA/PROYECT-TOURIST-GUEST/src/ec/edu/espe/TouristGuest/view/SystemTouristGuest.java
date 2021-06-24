@@ -18,23 +18,7 @@ import java.util.Scanner;
 public class SystemTouristGuest {
     
     public static void main(String[] args) {
-        Scanner c = new Scanner(System.in);
-    String Country;
-    String Ecuador;
-    String Argentina;
-
-                             //cantidad de habitantes,idioma, continente
-        Country p1 = new Country("Brazil", 100, "Spanish", "SouthAmerica");
-        Country p2 = new Country("Colombia", 200, "Spanish", "SouthAmerica");
-        Country p3 = new Country("Argentina", 300, "Spanish", "SouthAmerica");
-        Country p4 = new Country("Perú", 200, "Spanish", "SouthAmerica");
-        Country p5 = new Country("Venezuela", 100, "Spanish", "SouthAmerica");
-        Country p6 = new Country("Chile", 300, "Spanish", "SouthAmerica");
-        Country p7 = new Country("Ecuador", 100, "Spanish", "SouthAmerica");
-        Country p8 = new Country("Bolivia", 200, "Spanish", "SouthAmerica");
-        Country p9 = new Country("Paraguay", 100, "Spanish", "SouthAmerica");
-        Country p10 = new Country("Uruguay", 300, "Spanish", "SouthAmerica");
-        
+       
         City c1 = new City("city1", 0, 0);
         City c2 = new City("city2", 0, 0);
         City c3 = new City("city3", 0, 0);
@@ -65,6 +49,20 @@ public class SystemTouristGuest {
         City c28= new City("city28", 0, 0);
         City c29= new City("city29", 0, 0);
         City c30= new City("city30", 0, 0);
+       
+                             //cantidad de habitantes,idioma, continente
+        Country p1 = new Country("Brazil", 100, "Spanish", "SouthAmerica");
+        Country p2 = new Country("Colombia", 200, "Spanish", "SouthAmerica");
+        Country p3 = new Country("Argentina", 300, "Spanish", "SouthAmerica");
+        Country p4 = new Country("Perú", 200, "Spanish", "SouthAmerica");
+        Country p5 = new Country("Venezuela", 100, "Spanish", "SouthAmerica");
+        Country p6 = new Country("Chile", 300, "Spanish", "SouthAmerica");
+        Country p7 = new Country("Ecuador", 100, "Spanish", "SouthAmerica");
+        Country p8 = new Country("Bolivia", 200, "Spanish", "SouthAmerica");
+        Country p9 = new Country("Paraguay", 100, "Spanish", "SouthAmerica");
+        Country p10 = new Country("Uruguay", 300, "Spanish", "SouthAmerica");
+        
+        
         
   
         p1.addCity(c1);
@@ -96,27 +94,7 @@ public class SystemTouristGuest {
         p9.addCity(c27);
         p10.addCity(c28);
         p10.addCity(c29);
-        p10.addCity(c30);
-        
-        SouhtAmerican souhtamerican = new SouhtAmerican();
-         souhtamerican.addCountry(p1);
-         souhtamerican.addCountry(p2);
-         souhtamerican.addCountry(p3);
-         souhtamerican.addCountry(p4);
-         souhtamerican.addCountry(p5);
-         souhtamerican.addCountry(p6);
-         souhtamerican.addCountry(p7);
-         souhtamerican.addCountry(p8);
-         souhtamerican.addCountry(p9);
-         souhtamerican.addCountry(p10);
-     
-         
-         System.out.println("Ingrese un pais");
-         
-         Country = c.nextLine();
-         
-         System.out.println("El pais es: "+p1);
-         
+        p10.addCity(c30); 
          
     }
     
