@@ -46,38 +46,38 @@ public class SystemTouristGuest {
         Citys c18= new Citys("Boca Chica", 24, 30);
         
          
-        Citys c19= new Citys("City7", 1, 1);
-        Citys c20= new Citys("City8", 1, 1);
-        Citys c21= new Citys("City9", 1, 1);
+        Citys c19= new Citys("São Paulo", 22, 10);
+        Citys c20= new Citys("Rio de Janeiro ", 17, 12);
+        Citys c21= new Citys("Gramado", 19, 12);
         
         
-        Citys c22= new Citys("City7", 1, 1);
-        Citys c23= new Citys("City8", 1, 1);
-        Citys c24= new Citys("City8", 1, 1);
+        Citys c22= new Citys("Iguazú Falls", 10, 12);
+        Citys c23= new Citys("Ushuaia", 10, 13);
+        Citys c24= new Citys("City Mendoza", 10, 11);
         
-        Citys c25= new Citys("City7", 1, 1);
-        Citys c26= new Citys("City8", 1, 1);
-        Citys c27= new Citys("City8", 1, 1);
+        Citys c25= new Citys("Melbourne", 6, 11);
+        Citys c26= new Citys("Brisbane", 7, 9);
+        Citys c27= new Citys("North Coast NSW", 7, 9);
         
         
-        Citys c28= new Citys("City7", 1, 1);
-        Citys c29= new Citys("City8", 1, 1);
-        Citys c30= new Citys("City8", 1, 1);
+        Citys c28= new Citys("Santigo de Chile", 26, 15);
+        Citys c29= new Citys("Arica", 12, 15);
+        Citys c30= new Citys("Montt port", 15, 12);
         
         
        
         
                 
        Country p1= new Country("Country 1", 17268.000, "Spanish", "Ecuador");
-       Country p2= new Country("Country 2", 59641.488, "Italian", "Italia");
+       Country p2= new Country("Country 2", 59641.488, "Italian", "Italy");
        Country p3= new Country("Country 3",  50374.000, "Spanish", "Colombia");
        Country p4= new Country("Country 4",  1278.000 , "Spanish", "Mexico");
-       Country p5= new Country("Country 5", 68011.000, "French", "Francia");
-       Country p6= new Country("Country 6",10358.000 , "Spanish", "Republica Dominicana");
-       Country p7= new Country("Country 7", 1000, "Spanish", "American");
-       Country p8= new Country("Country 8", 1000, "Spanish", "Europe");
-       Country p9= new Country("Country 9", 1000, "Spanish", "American");
-       Country p10= new Country("Country 10", 1000, "Spanish", "American");
+       Country p5= new Country("Country 5", 68011.000, "French", "France");
+       Country p6= new Country("Country 6",10358.000 , "Spanish", "Dominican Republic");
+       Country p7= new Country("Country 7", 210147.000, "Portuguse", "Brazil");
+       Country p8= new Country("Country 8", 44939.000, "Spanish", "Argetina");
+       Country p9= new Country("Country 9", 25550.000, "English", "Australia");
+       Country p10= new Country("Country 10", 18095.000, "Spanish", "Chile");
       
     
        p1.addCitys(c1);
