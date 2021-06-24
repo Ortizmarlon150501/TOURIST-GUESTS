@@ -16,6 +16,7 @@ import ec.edu.espe.TouristGuest.model.Country;
  */
 public class SystemTouristGuest {
     
+    
     public static void main(String[] args){
         System.out.println("Welocme dear guest");
         Citys c1= new Citys("Quito", 85, 225);
@@ -121,18 +122,48 @@ public class SystemTouristGuest {
        p10.addCitys(c29);
        p10.addCitys(c30);
        
-  
        
         System.out.println(p1.getinfo());
+        System.out.println(c1.getinfocity());
+        System.out.println(c2.getinfocity());
+        System.out.println(c3.getinfocity());
         System.out.println(p2.getinfo());
+        System.out.println(c4.getinfocity());
+        System.out.println(c5.getinfocity());
+        System.out.println(c6.getinfocity());
         System.out.println(p3.getinfo());
+        System.out.println(c7.getinfocity());
+        System.out.println(c8.getinfocity());
+        System.out.println(c9.getinfocity());
         System.out.println(p4.getinfo());
+        System.out.println(c10.getinfocity());
+        System.out.println(c11.getinfocity());
+        System.out.println(c12.getinfocity());
         System.out.println(p5.getinfo());
+        System.out.println(c13.getinfocity());
+        System.out.println(c14.getinfocity());
+        System.out.println(c15.getinfocity());
         System.out.println(p6.getinfo());
+        System.out.println(c16.getinfocity());
+        System.out.println(c17.getinfocity());
+        System.out.println(c18.getinfocity());
         System.out.println(p7.getinfo());
+        System.out.println(c19.getinfocity());
+        System.out.println(c20.getinfocity());
+        System.out.println(c21.getinfocity());
         System.out.println(p8.getinfo());
+        System.out.println(c22.getinfocity());
+        System.out.println(c23.getinfocity());
+        System.out.println(c24.getinfocity());
         System.out.println(p9.getinfo());
+        System.out.println(c25.getinfocity());
+        System.out.println(c26.getinfocity());
+        System.out.println(c27.getinfocity());
         System.out.println(p10.getinfo());
+        System.out.println(c28.getinfocity());
+        System.out.println(c29.getinfocity());
+        System.out.println(c30.getinfocity());
+        
         
     }
     

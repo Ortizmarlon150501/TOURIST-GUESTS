@@ -31,6 +31,7 @@ public class Country {
         m +="\n Number of inhabitants: " +this.getNumberofinhabitants();
         m +="\n idiom: "+ this.getIdiom();
         m +="\n contnet: "+ this.getCountry();
+       
       
         
  
