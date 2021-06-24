@@ -20,10 +20,4 @@ public class SouhtAmerican {
       this.listCountry.addCountry(p);
     }
     
-    
-    
-    
-    
-    
-    
 }

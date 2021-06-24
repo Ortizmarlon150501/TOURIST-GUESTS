@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.TouristGuest.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author LILIAN IZA TOUR GUEST OPP-ESPE
@@ -15,22 +17,26 @@ public class Country {
     private int numberOfInhabitants;
     private String idiom;
     private String continent;
-    private ListCity listCity;
+    private ArrayList<City> listCity;
 
     public Country(String name, int numberOfInhabitants, String idiom, String continent) {
         this.name = name;
         this.numberOfInhabitants = numberOfInhabitants;
         this.idiom = idiom;
         this.continent = continent;
-        this.listCity = new ListCity();
+        this.listCity = new ArrayList<>();
     }
     
-    public void addCity(City c){
-        this.listCity.addCity(c);
+    public String getListCity(){
+      return this.getListCity();
     }
-    /**
-     * @return the name
-     */
+    
+   
+    public void addCity(City city){
+      this.listCity.add(city);
+    }
+  
+     
     public String getName() {
         return name;
     }
@@ -83,13 +89,4 @@ public class Country {
     public void setContinent(String continent) {
         this.continent = continent;
     }
-
-    String getListCity() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
-    
-    
-    
-}
