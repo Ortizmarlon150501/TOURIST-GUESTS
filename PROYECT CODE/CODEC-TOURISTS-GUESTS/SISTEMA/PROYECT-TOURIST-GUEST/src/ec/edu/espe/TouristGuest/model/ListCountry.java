@@ -13,19 +13,8 @@ import java.util.List;
  *
  * @author Bryan Maisincho TOUR GUEST OPP-ESPE
  */
-public class ListOfCountry {
-
-    Country SearchCountry(String CountrySearched) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void addCountry(Country p) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    
-    public class ListCountry {
-    private List list;
+public class ListCountry {
+     List list;
     
     public ListCountry(){
         this.list = new LinkedList();  
@@ -35,7 +24,7 @@ public class ListOfCountry {
         this.getList().add(p);
     }
     
-    public Country searchCity(String name){
+    public Country searchCountry(String name){
         Iterator items = this.getList().iterator();
         while (items.hasNext()){
             Country p =(Country)items.next();
@@ -56,19 +45,11 @@ public class ListOfCountry {
          return s;
         }
 
-        /**
-         * @return the list
-         */
-        public List getList() {
-            return list;
-        }
+    /**
+     * @return the list
+     */
+    public List getList() {
+        return list;
+    }
 
-        /**
-         * @param list the list to set
-         */
-        public void setList(List list) {
-            this.list = list;
-        }
-    
-      }
 }
