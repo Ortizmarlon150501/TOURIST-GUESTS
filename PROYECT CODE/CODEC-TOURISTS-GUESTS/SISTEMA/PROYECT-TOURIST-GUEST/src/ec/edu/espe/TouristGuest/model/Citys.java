@@ -22,13 +22,12 @@ public class Citys {
  
 
      public String getinfocity(){
-        String n= "";
-        n += "\n Info of "+ this.getName() + ":";
-        n +="\n number of universitys: "+ this.getNumberofuniversity() ;
-        n +="\n number of museum : "+ this.getNumberofmuseum();
-        return n; 
+        String inf= "";
+        inf += "\n Info of "+ this.getName() + ":";
+        inf +="\n number of universitys: "+ this.getNumberofuniversity() ;
+        inf +="\n number of museum : "+ this.getNumberofmuseum();
+        return inf; 
  
-    
      }
     /**
      * @return the name
