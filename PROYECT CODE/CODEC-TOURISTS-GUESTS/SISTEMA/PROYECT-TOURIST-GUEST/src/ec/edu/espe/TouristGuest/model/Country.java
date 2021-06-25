@@ -26,20 +26,20 @@ public class Country {
         this.listCitys= new ArrayList<>();
     }
     public String getinfo(){
-        String m= "";
-        m += "\n Info of "+ this.getName() + ":";
-        m +="\n Number of inhabitants: " +this.getNumberofinhabitants();
-        m +="\n idiom: "+ this.getIdiom();
-        m +="\n contnet: "+ this.getCountry();
+        String date = "";
+        date += "\n Info of "+ this.getName() + ":";
+        date +="\n Number of inhabitants: " +this.getNumberofinhabitants();
+        date +="\n idiom: "+ this.getIdiom();
+        date +="\n contnet: "+ this.getCountry();
        
       
         
  
        for(Citys citys : this.getListCitys()) {
             
-            m +="\n\t"+citys.getName();
+            date +="\n\t"+citys.getName();
         }
-        return m;
+        return date;
     
     }
     

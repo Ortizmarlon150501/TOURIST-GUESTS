@@ -17,7 +17,7 @@ import ec.edu.espe.TouristGuest.model.Country;
 public class SystemTouristGuest {
 
     public static void main(String[] args) {
-        System.out.println("Welocme dear guest");
+        System.out.println("Welcome dear guest");
         Citys c1 = new Citys("Quito", 85, 225);
         Citys c2 = new Citys("Ambato", 62, 105);
         Citys c3 = new Citys("Cuenca", 69, 82);
@@ -54,9 +54,9 @@ public class SystemTouristGuest {
         Citys c26 = new Citys("The Uyuni Salt Flats", 7, 9);
         Citys c27 = new Citys("Torotoro National Park", 7, 9);
 
-        Citys c28 = new Citys("Santigo de Chile", 26, 15);
-        Citys c29 = new Citys("Arica", 12, 15);
-        Citys c30 = new Citys("Montt port", 15, 12);
+        Citys c28 = new Citys("Holguín", 26, 15);
+        Citys c29 = new Citys("The tunas", 12, 15);
+        Citys c30 = new Citys("Bayamo", 15, 12);
 
         Country p1 = new Country("Ecuador", 17268.000, "Spanish", "American");
         Country p2 = new Country("Italy", 59641.488, "Italian", "American");
@@ -67,7 +67,7 @@ public class SystemTouristGuest {
         Country p7 = new Country("Brazil", 210147.000, "Portuguse", "American");
         Country p8 = new Country("Argetina", 44939.000, "Spanish", "American");
         Country p9 = new Country("Bolivia", 25550.000, "Spanish", "American");
-        Country p10 = new Country("Chile", 18095.000, "Spanish", "American");
+        Country p10 = new Country("Cuba", 18095.000, "Spanish", "American");
 
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
