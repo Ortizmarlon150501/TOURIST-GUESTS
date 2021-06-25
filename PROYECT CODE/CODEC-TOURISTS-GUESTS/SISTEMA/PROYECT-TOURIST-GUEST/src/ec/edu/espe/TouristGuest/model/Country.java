@@ -7,33 +7,42 @@ package ec.edu.espe.TouristGuest.model;
 
 import java.util.ArrayList;
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+import java.util.ArrayList;
+
 /**
  *
- * @author Marlon Ortiz Codec ESPE-DCCO
+ * @author Bryan Maisincho  Codec ESPE-DCCO
  */
 public class Country {
     private String name;
     private double numberofinhabitants;
      private String idiom;
-     private String country;
+     private String continent;
      private ArrayList<Citys> listCitys;
-    
-    public Country(String name, double numberofinhabitants, String idiom, String Country) {
+
+    public Country(String name, double numberofinhabitants, String idiom, String continent) {
         this.name = name;
         this.numberofinhabitants = numberofinhabitants;
         this.idiom = idiom;
-        this.country = Country;
+        this.continent = continent;
         this.listCitys= new ArrayList<>();
     }
+    
+   
     public String getinfo(){
         String date = "";
         date += "\n Info of "+ this.getName() + ":";
         date +="\n Number of inhabitants: " +this.getNumberofinhabitants();
         date +="\n idiom: "+ this.getIdiom();
-        date +="\n contnet: "+ this.getCountry();
-       
+        date +="\n continet: "+ this.getContinent();
       
-        
  
        for(Citys citys : this.getListCitys()) {
             
@@ -92,17 +101,7 @@ public class Country {
     /**
      * @return the country
      */
-    public String getCountry() {
-        return country;
-    }
-
-    /**
-     * @param country the country to set
-     */
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
+ 
     /**
      * @return the listCitys
      */
@@ -115,5 +114,19 @@ public class Country {
      */
     public void setListCitys(ArrayList<Citys> listCitys) {
         this.listCitys = listCitys;
+    }
+
+    /**
+     * @return the continent
+     */
+    public String getContinent() {
+        return continent;
+    }
+
+    /**
+     * @param continent the continent to set
+     */
+    public void setContinent(String continent) {
+        this.continent = continent;
     }
             }
