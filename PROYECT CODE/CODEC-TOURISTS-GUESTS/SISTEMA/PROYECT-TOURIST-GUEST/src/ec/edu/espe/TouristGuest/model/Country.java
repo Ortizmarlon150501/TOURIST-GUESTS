@@ -22,7 +22,7 @@ import java.util.ArrayList;
  */
 public class Country {
     private String name;
-    private double numberofinhabitants;
+    private double numberofinhabitants;//does not occupy the camelcase
      private String idiom;
      private String continent;
      private ArrayList<Citys> listCitys;

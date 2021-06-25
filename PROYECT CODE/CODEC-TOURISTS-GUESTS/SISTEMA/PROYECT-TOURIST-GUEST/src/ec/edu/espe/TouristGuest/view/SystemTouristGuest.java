@@ -76,7 +76,7 @@ public class SystemTouristGuest {
         String jsonCountry = "";
 
         p1.addCitys(c1);
-        p1.addCitys(c2);
+        p1.addCitys(c2);//missing use functions
         p1.addCitys(c3);
 
         p2.addCitys(c4);
@@ -154,7 +154,7 @@ public class SystemTouristGuest {
         System.out.println(p10.getinfo());
         System.out.println(c28.getinfocity());
         System.out.println(c29.getinfocity());
-        System.out.println(c30.getinfocity());
+        System.out.println(c30.getinfocity());//missing use functions
 
         jsonCountry = gson.toJson(p1);
         System.out.println("jsonCountry -> " + jsonCountry);
@@ -184,8 +184,8 @@ public class SystemTouristGuest {
         System.out.println("jsonCountry -> " + jsonCountry);
 
         jsonCountry = gson.toJson(p10);
-        System.out.println("jsonCountry -> " + jsonCountry);
-
+        System.out.println("jsonCountry -> " + jsonCountry);//missing use functions
+   
     }
 
 }
