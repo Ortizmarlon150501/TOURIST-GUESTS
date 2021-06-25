@@ -18,6 +18,7 @@ public class SystemTouristGuest {
 
     public static void main(String[] args) {
         System.out.println("Welcome dear guest");
+        System.out.println("Members \n"+"Iza Lilian \n"+ "Jaramillo Carlos \n"+"Maisincho Bryan \n"+"Mosquera Kerly \n"+"Ortiz Marlon ");
         Citys c1 = new Citys("Quito", 85, 225);
         Citys c2 = new Citys("Ambato", 62, 105);
         Citys c3 = new Citys("Cuenca", 69, 82);
