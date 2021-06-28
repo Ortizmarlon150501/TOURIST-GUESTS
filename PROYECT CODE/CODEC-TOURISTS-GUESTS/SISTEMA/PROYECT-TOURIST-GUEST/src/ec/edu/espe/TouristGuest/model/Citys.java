@@ -11,22 +11,22 @@ package ec.edu.espe.TouristGuest.model;
  */
 public class Citys {
     private String name;
-    private int numberofuniversity;
-    private int numberofmuseum;
+    private int numberOfUniversity;
+    private int numberOfMuseum;
 
-    public Citys(String name, int numberofuniversity, int numberofmuseum) {//does not occupy the camelcase
+    public Citys(String name, int numberOfUniversity, int numberOfMuseum) {//does not occupy the camelcase
         this.name = name;
-        this.numberofuniversity = numberofuniversity;
-        this.numberofmuseum = numberofmuseum;
+        this.numberOfUniversity = numberOfUniversity;
+        this.numberOfMuseum = numberOfMuseum;
     }
  
 
-     public String getinfocity(){//does not occupy the camelcase
-        String inf= "";
-        inf += "\n Info of "+ this.getName() + ":";
-        inf +="\n number of universitys: "+ this.getNumberofuniversity() ;
-        inf +="\n number of museum : "+ this.getNumberofmuseum();
-        return inf; 
+     public String getinfoCity(){//does not occupy the camelcase
+        String information= "";
+        information += "\n Info of "+ this.getName() + ":";
+        information +="\n number of universitys: "+ this.getNumberofuniversity() ;
+        information +="\n number of museum : "+ this.getNumberofmuseum();
+        return information; 
  
      }
     /**
@@ -47,28 +47,28 @@ public class Citys {
      * @return the numberofuniversity
      */
     public int getNumberofuniversity() {//does not occupy the camelcase
-        return numberofuniversity;
+        return numberOfUniversity;
     }
 
     /**
      * @param numberofuniversity the numberofuniversity to set
      */
     public void setNumberofuniversity(int numberofuniversity) {//does not occupy the camelcase
-        this.numberofuniversity = numberofuniversity;
+        this.numberOfUniversity = numberofuniversity;
     }
 
     /**
      * @return the numberofmuseum
      */
     public int getNumberofmuseum() {
-        return numberofmuseum;//does not occupy the camelcase
+        return numberOfMuseum;//does not occupy the camelcase
     }
 
     /**
      * @param numberofmuseum the numberofmuseum to set
      */
     public void setNumberofmuseum(int numberofmuseum) {//does not occupy the camelcase
-        this.numberofmuseum = numberofmuseum;//does not occupy the camelcase
+        this.numberOfMuseum = numberofmuseum;//does not occupy the camelcase
     }
     
     

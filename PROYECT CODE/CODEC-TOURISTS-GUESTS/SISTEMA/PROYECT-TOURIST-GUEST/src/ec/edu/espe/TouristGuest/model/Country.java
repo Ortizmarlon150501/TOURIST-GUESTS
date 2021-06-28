@@ -22,14 +22,14 @@ import java.util.ArrayList;
  */
 public class Country {
     private String name;
-    private double numberofinhabitants;//does not occupy the camelcase
+    private double numberOfInhabitants;//does not occupy the camelcase
      private String idiom;
      private String continent;
      private ArrayList<Citys> listCitys;
 
     public Country(String name, double numberofinhabitants, String idiom, String continent) {
         this.name = name;
-        this.numberofinhabitants = numberofinhabitants;
+        this.numberOfInhabitants = numberofinhabitants;
         this.idiom = idiom;
         this.continent = continent;
         this.listCitys= new ArrayList<>();
@@ -37,18 +37,18 @@ public class Country {
     
    
     public String getinfo(){
-        String date = "";
-        date += "\n Info of "+ this.getName() + ":";
-        date +="\n Number of inhabitants: " +this.getNumberofinhabitants();
-        date +="\n idiom: "+ this.getIdiom();
-        date +="\n continet: "+ this.getContinent();
+        String information = "";
+        information += "\n Info Of "+ this.getName() + ":";
+        information +="\n Number Of inhabitants: " +this.getNumberofinhabitants();
+        information +="\n Idiom: "+ this.getIdiom();
+        information +="\n Continet: "+ this.getContinent();
       
  
        for(Citys citys : this.getListCitys()) {
             
-            date +="\n\t"+citys.getName();
+            information +="\n\t"+citys.getName();
         }
-        return date;
+        return information;
     
     }
     
@@ -74,14 +74,14 @@ public class Country {
      * @return the numberofinhabitants
      */
     public double getNumberofinhabitants() {
-        return numberofinhabitants;
+        return numberOfInhabitants;
     }
 
     /**
      * @param numberofinhabitants the numberofinhabitants to set
      */
     public void setNumberofinhabitants(double numberofinhabitants) {
-        this.numberofinhabitants = numberofinhabitants;
+        this.numberOfInhabitants = numberofinhabitants;
     }
 
     /**
@@ -122,7 +122,8 @@ public class Country {
     public String getContinent() {
         return continent;
     }
-
+    
+    
     /**
      * @param continent the continent to set
      */
