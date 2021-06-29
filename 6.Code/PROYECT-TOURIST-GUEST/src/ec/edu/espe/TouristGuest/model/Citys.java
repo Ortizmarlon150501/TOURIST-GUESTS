@@ -11,21 +11,21 @@ package ec.edu.espe.TouristGuest.model;
  */
 public class Citys {
     private String name;
-    private int numberofuniversity;
-    private int numberofmuseum;
+    private int numberOfUniversity;
+    private int numberOfMuseum;
 
     public Citys(String name, int numberofuniversity, int numberofmuseum) {
         this.name = name;
-        this.numberofuniversity = numberofuniversity;
-        this.numberofmuseum = numberofmuseum;
+        this.numberOfUniversity = numberofuniversity;
+        this.numberOfMuseum = numberofmuseum;
     }
  
 
      public String getinfocity(){
         String n= "";
         n += "\n Info of "+ this.getName() + ":";
-        n +="\n number of universitys: "+ this.getNumberofuniversity() ;
-        n +="\n number of museum : "+ this.getNumberofmuseum();
+        n +="\n number of universitys: "+ this.getNumberOfUniversity() ;
+        n +="\n number of museum : "+ this.getNumberOfMuseum();
         return n; 
  
     
@@ -45,31 +45,31 @@ public class Citys {
     } 
 
     /**
-     * @return the numberofuniversity
+     * @return the numberOfUniversity
      */
-    public int getNumberofuniversity() {
-        return numberofuniversity;
+    public int getNumberOfUniversity() {
+        return numberOfUniversity;
     }
 
     /**
-     * @param numberofuniversity the numberofuniversity to set
+     * @param numberOfUniversity the numberOfUniversity to set
      */
-    public void setNumberofuniversity(int numberofuniversity) {
-        this.numberofuniversity = numberofuniversity;
+    public void setNumberOfUniversity(int numberOfUniversity) {
+        this.numberOfUniversity = numberOfUniversity;
     }
 
     /**
-     * @return the numberofmuseum
+     * @return the numberOfMuseum
      */
-    public int getNumberofmuseum() {
-        return numberofmuseum;
+    public int getNumberOfMuseum() {
+        return numberOfMuseum;
     }
 
     /**
-     * @param numberofmuseum the numberofmuseum to set
+     * @param numberOfMuseum the numberOfMuseum to set
      */
-    public void setNumberofmuseum(int numberofmuseum) {
-        this.numberofmuseum = numberofmuseum;
+    public void setNumberOfMuseum(int numberOfMuseum) {
+        this.numberOfMuseum = numberOfMuseum;
     }
     
     

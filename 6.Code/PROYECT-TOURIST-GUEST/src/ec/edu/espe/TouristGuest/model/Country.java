@@ -13,14 +13,14 @@ import java.util.ArrayList;
  */
 public class Country {
     private String name;
-    private double numberofinhabitants;
+    private double numberOfInHabitants;
      private String idiom;
      private String continent;
      private ArrayList<Citys> listCitys;
 
     public Country(String name, double numberofinhabitants, String idiom, String continent) {
         this.name = name;
-        this.numberofinhabitants = numberofinhabitants;
+        this.numberOfInHabitants = numberofinhabitants;
         this.idiom = idiom;
         this.continent = continent;
         this.listCitys= new ArrayList<>();
@@ -30,7 +30,7 @@ public class Country {
     public String getinfo(){
         String date = "";
         date += "\n Info of "+ this.getName() + ":";
-        date +="\n Number of inhabitants: " +this.getNumberofinhabitants();
+        date +="\n Number of inhabitants: " +this.getNumberOfInHabitants();
         date +="\n idiom: "+ this.getIdiom();
         date +="\n continet: "+ this.getContinent();
       
@@ -62,17 +62,17 @@ public class Country {
     }
 
     /**
-     * @return the numberofinhabitants
+     * @return the numberOfInHabitants
      */
-    public double getNumberofinhabitants() {
-        return numberofinhabitants;
+    public double getNumberOfInHabitants() {
+        return numberOfInHabitants;
     }
 
     /**
-     * @param numberofinhabitants the numberofinhabitants to set
+     * @param numberOfInHabitants the numberOfInHabitants to set
      */
-    public void setNumberofinhabitants(double numberofinhabitants) {
-        this.numberofinhabitants = numberofinhabitants;
+    public void setNumberOfInHabitants(double numberOfInHabitants) {
+        this.numberOfInHabitants = numberOfInHabitants;
     }
 
     /**
