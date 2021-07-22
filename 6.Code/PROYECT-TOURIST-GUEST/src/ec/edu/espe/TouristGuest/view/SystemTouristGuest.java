@@ -9,6 +9,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import ec.edu.espe.TouristGuest.model.Citys;
 import ec.edu.espe.TouristGuest.model.Country;
+import ec.edu.espe.TouristGuest.model.Ticket;
 
 /**
  *
@@ -114,6 +115,7 @@ public class SystemTouristGuest {
         p10.addCitys(c29);
         p10.addCitys(c30);
 
+        
         System.out.println(p1.getinfo());
         System.out.println(c1.getinfocity());
         System.out.println(c2.getinfocity());
@@ -185,6 +187,18 @@ public class SystemTouristGuest {
         jsonCountry = gson.toJson(p10);
         System.out.println("jsonCountry -> " + jsonCountry);
 
+    
+        double Galapagos = 10000.0F;
+        float discount = 50.0F;
+        int clas = 500;
+        
+        float discountType= Ticket.discount(discount);
+        
+        double totalPrice= Ticket.ticketCost(Galapagos, clas);
+        
+        System.out.println("The discount for you is : "+ discountType + " and you Total Cost is: " +totalPrice);
+        
+ 
     }
 
 }
