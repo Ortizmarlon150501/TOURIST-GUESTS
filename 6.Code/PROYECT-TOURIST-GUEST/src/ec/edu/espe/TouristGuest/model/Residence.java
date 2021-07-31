@@ -7,7 +7,7 @@ package ec.edu.espe.TouristGuest.model;
 
 /**
  *
- * @author Jean Jaramillo
+ * @author JARAMILLO JEAN CODEC OPP-ESPE
  */
 public class Residence {
     
@@ -15,6 +15,12 @@ public class Residence {
       private float costOfAcommodation;
       private float feedingCost;
       private float tourismCost;
+      
+      public static float costOfResidence(float costOfAcommodation, float feedingCost, float tourismCost){
+          float costTotalResicence;
+          costTotalResicence = costOfAcommodation + feedingCost + tourismCost;
+          return costTotalResicence;
+      }
       
       
       
