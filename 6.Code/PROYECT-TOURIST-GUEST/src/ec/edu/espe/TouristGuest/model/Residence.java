@@ -11,4 +11,14 @@ package ec.edu.espe.TouristGuest.model;
  */
 public class Residence {
     
-}
+    private double destination;
+      private float costOfAcommodation;
+      private float feedingCost;
+      private float tourismCost;
+      
+      
+      
+      }
+      
+    
+
