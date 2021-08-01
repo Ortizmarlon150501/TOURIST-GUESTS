@@ -40,6 +40,7 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
         pxtPassword = new javax.swing.JPasswordField();
         btcEnter = new javax.swing.JButton();
         btnCreate_new_user = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -90,7 +91,7 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
                 btcEnterActionPerformed(evt);
             }
         });
-        jpIngreso.add(btcEnter, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 100, -1));
+        jpIngreso.add(btcEnter, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 340, 100, -1));
 
         btnCreate_new_user.setText("Create new user");
         btnCreate_new_user.addActionListener(new java.awt.event.ActionListener() {
@@ -98,7 +99,15 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
                 btnCreate_new_userActionPerformed(evt);
             }
         });
-        jpIngreso.add(btnCreate_new_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 340, -1, -1));
+        jpIngreso.add(btnCreate_new_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, -1, -1));
+
+        jButton1.setText("Cancel");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jpIngreso.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 340, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -134,6 +143,10 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
     private void btnCreate_new_userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreate_new_userActionPerformed
 
     }//GEN-LAST:event_btnCreate_new_userActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,6 +186,7 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btcEnter;
     private javax.swing.JButton btnCreate_new_user;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
