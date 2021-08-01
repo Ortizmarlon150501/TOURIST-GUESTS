@@ -31,24 +31,24 @@ public class SystemTouristGuest {
         while (!salir) {
 
             System.out.println("1. Argentina");
-            System.out.println("2. Brasil");
+            System.out.println("2. Brazil");
             System.out.println("3. Bolivia");
             System.out.println("4. Chile");
             System.out.println("5. Colombia");
             System.out.println("6. Ecuador");
             System.out.println("7. Paraguay");
-            System.out.println("8. Peu");
+            System.out.println("8. Perú");
             System.out.println("9. Uruguay");
-            System.out.println("10. Venezuela");
-            System.out.println("11. Salir");
+            System.out.println("10.Venezuela");
+            System.out.println("11.Go out");
 
-            System.out.println("Escriba su pais de destino");
+            System.out.println("Write your destination country");
             opcion = sn.nextInt();
 
             switch (opcion) {
                 case 1:
 
-                    System.out.println("La informacion de Ecuador y su costo es: ");
+                    System.out.println("The information of Ecuador and its cost is: ");
                     Country p1 = new Country("Ecuador", 17268.000, "Spanish", "American");
                     jsonCountry = gson.toJson(p1);
                     System.out.println("jsonCountry -> " + jsonCountry);
@@ -64,7 +64,7 @@ public class SystemTouristGuest {
                     System.out.println(c3.getinfocity());
                     break;
                 case 2:
-                    System.out.println("Has seleccionado la opcion 2");
+                    System.out.println("The information of Brazil and its cost is:");
                     Country p2 = new Country("Italy", 59641.488, "Italian", "American");
                     jsonCountry = gson.toJson(p2);
                     System.out.println("jsonCountry -> " + jsonCountry);
