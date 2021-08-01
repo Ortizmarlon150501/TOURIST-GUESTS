@@ -67,9 +67,9 @@ public class SystemTouristGuest {
                     Country p2 = new Country("Argetina", 44939.000, "Spanish", "American");
                     jsonCountry = gson.toJson(p2);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    City c4 = new City("Iguazú Falls", 10, 12);
-                    City c5 = new City("Ushuaia", 10, 13);
-                    City c6 = new City("City Mendoza", 10, 11);
+                    City c4 = new City("Salta", 10, 12);
+                    City c5 = new City("Rosario", 10, 13);
+                    City c6 = new City("Buenos Aires", 10, 11);
                     p2.addCitys(c4);
                     p2.addCitys(c5);
                     p2.addCitys(c6);
@@ -96,12 +96,12 @@ public class SystemTouristGuest {
                     break;
                 case 4:   
                     System.out.println("You have selected option 4");
-                    Country p4 = new Country("Chile", 18095.000, "Spanish", "American");
+                    Country p4 = new Country("Chile", 19107.000, "Spanish", "American");
                     jsonCountry = gson.toJson(p4);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    City c10 = new City("Holguín", 26, 15);
-                    City c11 = new City("The tunas", 12, 15);
-                    City c12 = new City("Bayamo", 15, 12);
+                    City c10 = new City("Concepción", 26, 15);
+                    City c11 = new City("Talca", 12, 15);
+                    City c12 = new City("Iquique", 15, 12);
                     p4.addCitys(c10);
                     p4.addCitys(c11);
                     p4.addCitys(c12);
@@ -144,12 +144,12 @@ public class SystemTouristGuest {
                     break;
                 case 7:
                     System.out.println("You have selected option 7");
-                    Country p7 = new Country("Mexico", 1278.000, "Spanish", "American");
+                    Country p7 = new Country("Paraguay", 7353.038, "Spanish", "American");
                     jsonCountry = gson.toJson(p7);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    City c19 = new City("Jalisco ", 39, 32);
-                    City c20 = new City("Cancún", 48, 41);
-                    City c21 = new City("Campeche", 58, 43);
+                    City c19 = new City("Asunción", 39, 32);
+                    City c20 = new City("Encarnación", 48, 41);
+                    City c21 = new City("Luque", 58, 43);
                     p7.addCitys(c19);
                     p7.addCitys(c20);
                     p7.addCitys(c21);
@@ -160,12 +160,12 @@ public class SystemTouristGuest {
                     break;
                 case 8:
                     System.out.println("You have selected option 8");
-                    Country p8 = new Country("France", 68011.000, "French", "American");
+                    Country p8 = new Country("Perú", 33.035304, "Spanish", "American");
                     jsonCountry = gson.toJson(p8);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    City c22 = new City("París", 183, 13);
-                    City c23 = new City("Toulouse", 37, 18);
-                    City c24 = new City("Marsella", 54, 22);
+                    City c22 = new City("Lima", 183, 13);
+                    City c23 = new City("Cusco", 37, 18);
+                    City c24 = new City("Arequipa", 54, 22);
                     p8.addCitys(c22);
                     p8.addCitys(c23);
                     p8.addCitys(c24);
@@ -176,12 +176,12 @@ public class SystemTouristGuest {
                     break;
                 case 9:
                     System.out.println("You have selected option 9");
-                    Country p9 = new Country("Dominican Republic", 10358.000, "Spanish", "American");
+                    Country p9 = new Country("Uruguay",3461.734, "Spanish", "American");
                     jsonCountry = gson.toJson(p9);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    City c25 = new City("Las Terrenas", 24, 23);
-                    City c26 = new City("Isla Saona", 23, 43);
-                    City c27 = new City("Boca Chica", 24, 30);
+                    City c25 = new City("Montevideo", 24, 23);
+                    City c26 = new City("Fray Bentos", 23, 43);
+                    City c27 = new City("Maldonado", 24, 30);
                     p9.addCitys(c25);
                     p9.addCitys(c26);
                     p9.addCitys(c27);
@@ -192,12 +192,12 @@ public class SystemTouristGuest {
                     break;
                 case 10:
                     System.out.println("You have selected option 10");
-                    Country p10 = new Country("Brazil", 210147.000, "Portuguse", "American");
+                    Country p10 = new Country("Venezuela",28.515829, "Spanish", "American");
                     jsonCountry = gson.toJson(p10);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    City c28 = new City("São Paulo", 22, 10);
-                    City c29 = new City("Rio de Janeiro ", 17, 12);
-                    City c30 = new City("Gramado", 19, 12);
+                    City c28 = new City("Caracas", 22, 10);
+                    City c29 = new City("Maracaibo ", 17, 12);
+                    City c30 = new City("Valencia", 19, 12);
                     p10.addCitys(c28);
                     p10.addCitys(c29);
                     p10.addCitys(c30);
@@ -210,7 +210,7 @@ public class SystemTouristGuest {
                     salir = true;
                     break;
                 default:
-                    System.out.println("Solo números entre 1 y 4");
+                    System.out.println("Only numbers between 1 amd 4");
             }
 
         }
