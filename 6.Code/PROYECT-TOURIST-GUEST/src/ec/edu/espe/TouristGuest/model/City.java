@@ -9,12 +9,12 @@ package ec.edu.espe.TouristGuest.model;
  *
  * @author Marlon Ortiz Codec ESPE-DCCO
  */
-public class Citys {
+public class City {
     private String name;
     private int numberOfUniversity;
     private int numberOfMuseum;
 
-    public Citys(String name, int numberofuniversity, int numberofmuseum) {
+    public City(String name, int numberofuniversity, int numberofmuseum) {
         this.name = name;
         this.numberOfUniversity = numberofuniversity;
         this.numberOfMuseum = numberofmuseum;

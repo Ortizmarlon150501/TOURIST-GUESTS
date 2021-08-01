@@ -16,7 +16,7 @@ public class Country {
     private double numberOfInHabitants;
      private String idiom;
      private String continent;
-     private ArrayList<Citys> listCitys;
+     private ArrayList<City> listCitys;
 
     public Country(String name, double numberofinhabitants, String idiom, String continent) {
         this.name = name;
@@ -35,7 +35,7 @@ public class Country {
         date +="\n continet: "+ this.getContinent();
       
  
-       for(Citys citys : this.getListCitys()) {
+       for(City citys : this.getListCitys()) {
             
             date +="\n\t"+citys.getName();
         }
@@ -43,7 +43,7 @@ public class Country {
     
     }
     
-    public void addCitys(Citys citys){
+    public void addCitys(City citys){
         this.getListCitys().add(citys);
     }
     
@@ -96,14 +96,14 @@ public class Country {
     /**
      * @return the listCitys
      */
-    public ArrayList<Citys> getListCitys() {
+    public ArrayList<City> getListCitys() {
         return listCitys;
     }
 
     /**
      * @param listCitys the listCitys to set
      */
-    public void setListCitys(ArrayList<Citys> listCitys) {
+    public void setListCitys(ArrayList<City> listCitys) {
         this.listCitys = listCitys;
     }
 
