@@ -63,6 +63,7 @@ public class Register_Form extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,8 +72,8 @@ public class Register_Form extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(153, 153, 153));
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel1.setText("       Register");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 0, 215, -1));
+        jLabel1.setText("       REGISTER");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 260, -1));
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 11, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Pictures\\Proyectos de video\\icons8_User_96px_2.png")); // NOI18N
@@ -170,8 +171,11 @@ public class Register_Form extends javax.swing.JFrame {
         jButton3.setText("Edit");
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 23, 60, 30));
 
-        jButton4.setText("Enter");
+        jButton4.setText("Start");
         jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 23, 60, 30));
+
+        jButton5.setText("Update");
+        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, 70, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -243,6 +247,7 @@ public class Register_Form extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
