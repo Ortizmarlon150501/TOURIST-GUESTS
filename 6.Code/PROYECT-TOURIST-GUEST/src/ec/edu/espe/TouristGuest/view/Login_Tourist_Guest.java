@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.TouristGuest.view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Bryan Maisincho Codes ESPE-DCCO
@@ -111,6 +113,11 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/close_icon.jpeg"))); // NOI18N
         jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
         jpIngreso.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 10, -1, 20));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/minimize_icono.jpeg"))); // NOI18N
@@ -162,8 +169,14 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setState(Login_Tourist_Guest.ICONIFIED);
         
+        
        
     }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        int dialog = JOptionPane.YES_NO_OPTION;
+        int result = JOptionPane.showConfirmDialog(null, "Exit");
+    }//GEN-LAST:event_jLabel10MouseClicked
 
     /**
      * @param args the command line arguments
