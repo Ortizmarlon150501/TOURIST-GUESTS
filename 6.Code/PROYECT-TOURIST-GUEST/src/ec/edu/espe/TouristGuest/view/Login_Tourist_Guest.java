@@ -42,6 +42,8 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
         btnCreate_new_user = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -49,22 +51,16 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("WELCOME A TOURSIT-GUEST");
-        jpIngreso.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(272, 11, -1, -1));
+        jpIngreso.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("Please login to your account");
-        jpIngreso.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, -1, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Pictures\\Proyectos de video\\icons8_User_96px_2.png")); // NOI18N
+        jpIngreso.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, -1, -1));
         jpIngreso.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 76, -1, 90));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Pictures\\Proyectos de video\\icons8_customer_32px_1.png")); // NOI18N
         jpIngreso.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 30, 20));
 
         jLabel3.setText("Username:");
         jpIngreso.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 70, 30));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Pictures\\Proyectos de video\\icons8_Key_32px.png")); // NOI18N
         jpIngreso.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 250, 30, 20));
 
         jLabel4.setText("Password:");
@@ -113,14 +109,19 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
         jButton2.setText("All Records");
         jpIngreso.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, -1, -1));
 
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/close_icon.jpeg"))); // NOI18N
+        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jpIngreso.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 10, -1, 20));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/minimize_icono.jpeg"))); // NOI18N
+        jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jpIngreso.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 10, -1, 20));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jpIngreso, javax.swing.GroupLayout.DEFAULT_SIZE, 688, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jpIngreso, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -195,6 +196,8 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
