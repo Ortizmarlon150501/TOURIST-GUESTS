@@ -53,17 +53,17 @@ public class Register_Form extends javax.swing.JFrame {
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
         jLabel13 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
-        jCheckBox5 = new javax.swing.JCheckBox();
+        jCheckBoxPlan = new javax.swing.JCheckBox();
+        jCheckBox2Sport_Tourism = new javax.swing.JCheckBox();
+        jCheckBox3Mountaineering = new javax.swing.JCheckBox();
+        jCheckBox4Go_On_Excursions = new javax.swing.JCheckBox();
+        jCheckBox5Hourse_Trips = new javax.swing.JCheckBox();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnSave_Regi = new javax.swing.JButton();
+        btnDelete_Regi = new javax.swing.JButton();
+        btnEdit_Regi = new javax.swing.JButton();
+        btnStar_Regi = new javax.swing.JButton();
+        btn_Update_Regi = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -140,42 +140,42 @@ public class Register_Form extends javax.swing.JFrame {
         jLabel13.setText("Recreational Activities:");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, 120, -1));
 
-        jCheckBox1.setText("Plan A Party.");
-        jPanel1.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, -1, -1));
+        jCheckBoxPlan.setText("Plan A Party.");
+        jPanel1.add(jCheckBoxPlan, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, -1, -1));
 
-        jCheckBox2.setText("Sports Tourism");
-        jPanel1.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, -1, -1));
+        jCheckBox2Sport_Tourism.setText("Sports Tourism");
+        jPanel1.add(jCheckBox2Sport_Tourism, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, 110, -1));
 
-        jCheckBox3.setText("Mountaineering ");
-        jPanel1.add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, -1, -1));
+        jCheckBox3Mountaineering.setText("Mountaineering ");
+        jPanel1.add(jCheckBox3Mountaineering, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, -1, -1));
 
-        jCheckBox4.setText("Go On Excursions");
-        jPanel1.add(jCheckBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, -1, -1));
+        jCheckBox4Go_On_Excursions.setText("Go On Excursions");
+        jPanel1.add(jCheckBox4Go_On_Excursions, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, -1, -1));
 
-        jCheckBox5.setText("Horse trips");
-        jPanel1.add(jCheckBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 330, -1, -1));
+        jCheckBox5Hourse_Trips.setText("Horse Trips");
+        jPanel1.add(jCheckBox5Hourse_Trips, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 330, -1, -1));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("Save");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnSave_Regi.setText("Save");
+        btnSave_Regi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnSave_RegiActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, 34));
+        jPanel2.add(btnSave_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 24, -1, 30));
 
-        jButton2.setText("Delete");
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, -1, 34));
+        btnDelete_Regi.setText("Delete");
+        jPanel2.add(btnDelete_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 24, -1, 30));
 
-        jButton3.setText("Edit");
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 23, 60, 30));
+        btnEdit_Regi.setText("Edit");
+        jPanel2.add(btnEdit_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 23, 60, 30));
 
-        jButton4.setText("Start");
-        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 23, 60, 30));
+        btnStar_Regi.setText("Start");
+        jPanel2.add(btnStar_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 23, 60, 30));
 
-        jButton5.setText("Update");
-        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, 70, 30));
+        btn_Update_Regi.setText("Update");
+        jPanel2.add(btn_Update_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 20, 70, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -199,9 +199,9 @@ public class Register_Form extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnSave_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSave_RegiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnSave_RegiActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
@@ -243,16 +243,16 @@ public class Register_Form extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
+    private javax.swing.JButton btnDelete_Regi;
+    private javax.swing.JButton btnEdit_Regi;
+    private javax.swing.JButton btnSave_Regi;
+    private javax.swing.JButton btnStar_Regi;
+    private javax.swing.JButton btn_Update_Regi;
+    private javax.swing.JCheckBox jCheckBox2Sport_Tourism;
+    private javax.swing.JCheckBox jCheckBox3Mountaineering;
+    private javax.swing.JCheckBox jCheckBox4Go_On_Excursions;
+    private javax.swing.JCheckBox jCheckBox5Hourse_Trips;
+    private javax.swing.JCheckBox jCheckBoxPlan;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
