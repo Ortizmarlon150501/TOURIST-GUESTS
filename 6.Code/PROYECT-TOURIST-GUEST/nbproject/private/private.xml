@@ -3,14 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Kerly/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/Ticket.java</file>
-            <file>file:/C:/Users/Kerly/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/OldMansTicket.java</file>
-            <file>file:/C:/Users/Kerly/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/Country.java</file>
-            <file>file:/C:/Users/Kerly/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/NormalTicket.java</file>
-            <file>file:/C:/Users/Kerly/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/Residence.java</file>
-            <file>file:/C:/Users/Kerly/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/City.java</file>
-            <file>file:/C:/Users/Kerly/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/StudentTicket.java</file>
-            <file>file:/C:/Users/Kerly/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/SystemTouristGuest.java</file>
+            <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/Ticket.java</file>
+            <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/SystemTouristGuest.java</file>
+            <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/City.java</file>
+            <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/ViewRegister.java</file>
+            <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/Register_Form.java</file>
+            <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/StudentTicket.java</file>
+            <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/Login_Tourist_Guest.java</file>
+            <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/conexion.java</file>
+            <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/Flight.java</file>
         </group>
     </open-files>
 </project-private>
