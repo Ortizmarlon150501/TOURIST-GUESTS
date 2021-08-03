@@ -5,16 +5,36 @@
  */
 package ec.edu.espe.TouristGuest.view;
 
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
+import com.mongodb.Mongo;
+import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Bryan Maisincho Codes ESPE-DCCO
  */
 public class Register_Form extends javax.swing.JFrame {
 
+    DB db;
+    DBCollection Table;
+    
     /**
      * Creates new form Register_Form
      */
     public Register_Form() {
+        try {
+            Mongo mongo = new Mongo("LocalHost",27017);
+            db= mongo.getDB("CityDate");
+            Table= db.getCollection("Table");
+            
+            
+        } catch (UnknownHostException ex) {
+            Logger.getLogger(Register_Form.class.getName()).log(Level.SEVERE, null, ex);
+        }
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -78,8 +98,8 @@ public class Register_Form extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
         jButton3 = new javax.swing.JButton();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
         jLabel15 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -217,6 +237,11 @@ public class Register_Form extends javax.swing.JFrame {
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 170, -1, -1));
 
         jButton2.setText("do not");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 160, -1, -1));
 
         jLabel17.setText("Existing Case. How Many Children");
@@ -241,10 +266,15 @@ public class Register_Form extends javax.swing.JFrame {
         });
         jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 120, -1));
 
-        jButton4.setText(" Information of each site to visit");
+        jButton4.setText("Information of All Countries");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Brasil", "Item 2", "Item 3", "Item 4", " " }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Argentina", "Brazil", "Bolivia", "Chile", "Colombia", "Ecuador", "Paraguay", "Peru", "Uruguay", "Venezuela" }));
         jComboBox1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -256,13 +286,13 @@ public class Register_Form extends javax.swing.JFrame {
         jButton3.setText("Total Travel Cost");
         jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane3.setViewportView(jTextArea2);
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jScrollPane4.setViewportView(jTextArea3);
 
-        jPanel3.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 480, 170));
+        jPanel3.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 480, 200));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, 520, 450));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, 520, 480));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_customer_32px_1.png"))); // NOI18N
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 10, -1, -1));
@@ -368,6 +398,19 @@ public class Register_Form extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jCheckBoxPlanActionPerformed
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    
+        DBCursor cursor= Table.find();
+        while(cursor.hasNext()){
+        jTextArea3.setText(jTextArea3.getText()+ "\n" + cursor.next());
+        
+        }
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -447,7 +490,7 @@ public class Register_Form extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
@@ -455,7 +498,7 @@ public class Register_Form extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JTable jTable_View_Register;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
