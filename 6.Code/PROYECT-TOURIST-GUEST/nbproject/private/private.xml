@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/Ticket.java</file>
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/SystemTouristGuest.java</file>
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/City.java</file>
@@ -12,6 +13,12 @@
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/Login_Tourist_Guest.java</file>
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/conexion.java</file>
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/Flight.java</file>
+=======
+            <file>file:/C:/Users/Dell/Desktop/Varios/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/Register_Form.java</file>
+            <file>file:/C:/Users/Dell/Desktop/Varios/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/Flight.java</file>
+            <file>file:/C:/Users/Dell/Desktop/Varios/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/SystemTouristGuest.java</file>
+            <file>file:/C:/Users/Dell/Desktop/Varios/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/Ticket.java</file>
+>>>>>>> 4153b7619d81b985e326372464d1bd3dc17d36f5
         </group>
     </open-files>
 </project-private>

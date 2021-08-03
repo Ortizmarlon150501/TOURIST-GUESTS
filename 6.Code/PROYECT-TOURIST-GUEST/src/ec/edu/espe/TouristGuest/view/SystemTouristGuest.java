@@ -10,15 +10,15 @@ import com.google.gson.GsonBuilder;
 import ec.edu.espe.TouristGuest.model.City;
 import ec.edu.espe.TouristGuest.model.Country;
 import ec.edu.espe.TouristGuest.model.Residence;
-import ec.edu.espe.TouristGuest.model.StudentTicket;
 import ec.edu.espe.TouristGuest.model.Ticket;
 import java.util.Scanner;
 
 /**
  *
- * @author JARAMILLO JEAN TOUR GUEST OPP-ESPE
+ * @author  ORTIZ MARLON TOUR GUEST OPP-ESPE
  */
 public class SystemTouristGuest {
+    
 
     public static void main(String[] args) {
         GsonBuilder gsonBuilder = new GsonBuilder();
@@ -51,11 +51,10 @@ public class SystemTouristGuest {
                     Country p1 = new Country("Brazil", 210147.000, "Portuguse", "American");
                     jsonCountry = gson.toJson(p1);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    
+
                     /*Residence r1 = new Residence();
                     float costTotalResicence = r1.costOfResidence(200.0, 200.0, 200.0);
                     System.out.println(" The cost total residence is: " + costTotalResicence);*/
-                    
                     City c1 = new City("São Paulo", 22, 10);
                     City c2 = new City("Rio de Janeiro ", 17, 12);
                     City c3 = new City("Gramado", 19, 12);
@@ -66,17 +65,27 @@ public class SystemTouristGuest {
                     System.out.println(c1.getinfocity());
                     System.out.println(c2.getinfocity());
                     System.out.println(c3.getinfocity());
+                    
+                    double  Brazil = 3195.0F;
+                    float discount = 50.0F;
+                    int clas = 200;
+
+                    float discountType = Ticket.discount(discount);
+
+                    double totalPrice = Ticket.ticketCost(Brazil, clas);
+
+                    System.out.println("Your destino is: " + "Brazil" + " The discount for you is : " + discountType + " and you Total Cost is: " + totalPrice);
+
                     break;
                 case 2:
                     System.out.println("You have selected option 2");
                     Country p2 = new Country("Argetina", 44939.000, "Spanish", "American");
                     jsonCountry = gson.toJson(p2);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    
+
                     /*Residence r1 = new Residence(opcion, opcion, opcion);
                     float costTotalResicence = r1.costOfResidence(200.0, 200.0, 200.0);
                     System.out.println(" The cost total residence is: " + costTotalResicence);*/
-                    
                     City c4 = new City("Salta", 10, 12);
                     City c5 = new City("Rosario", 10, 13);
                     City c6 = new City("Buenos Aires", 10, 11);
@@ -88,16 +97,15 @@ public class SystemTouristGuest {
                     System.out.println(c5.getinfocity());
                     System.out.println(c6.getinfocity());
                     break;
-                case 3:   
+                case 3:
                     System.out.println("You have selected option 3");
                     Country p3 = new Country("Bolivia", 25550.000, "Spanish", "American");
                     jsonCountry = gson.toJson(p3);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    
+
                     /*Residence r1 = new Residence(opcion, opcion, opcion);
                     float costTotalResicence = r1.costOfResidence(200.0, 200.0, 200.0);
                     System.out.println(" The cost total residence is: " + costTotalResicence);*/
-                    
                     City c7 = new City("City Potosí", 6, 11);
                     City c8 = new City("The Uyuni Salt Flats", 7, 9);
                     City c9 = new City("Torotoro National Park", 7, 9);
@@ -109,16 +117,15 @@ public class SystemTouristGuest {
                     System.out.println(c8.getinfocity());
                     System.out.println(c9.getinfocity());
                     break;
-                case 4:   
+                case 4:
                     System.out.println("You have selected option 4");
                     Country p4 = new Country("Chile", 19107.000, "Spanish", "American");
                     jsonCountry = gson.toJson(p4);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    
+
                     /*Residence r1 = new Residence(opcion, opcion, opcion);
                     float costTotalResicence = r1.costOfResidence(200.0, 200.0, 200.0);
                     System.out.println(" The cost total residence is: " + costTotalResicence);*/
-                    
                     City c10 = new City("Concepción", 26, 15);
                     City c11 = new City("Talca", 12, 15);
                     City c12 = new City("Iquique", 15, 12);
@@ -135,14 +142,13 @@ public class SystemTouristGuest {
                     Country p5 = new Country("Colombia", 1278.000, "Spanish", "American");
                     jsonCountry = gson.toJson(p5);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    
+
                     /*Residence r1 = new Residence(opcion, opcion, opcion);
                     float costTotalResicence = r1.costOfResidence(200.0, 200.0, 200.0);
                     System.out.println(" The cost total residence is: " + costTotalResicence);*/
-                    
                     City c13 = new City("Cartagena", 68, 20);
                     City c14 = new City("Medellín", 23, 26);
-                    City c15= new City("Cali", 105, 32);
+                    City c15 = new City("Cali", 105, 32);
                     p5.addCitys(c13);
                     p5.addCitys(c14);
                     p5.addCitys(c15);
@@ -156,14 +162,13 @@ public class SystemTouristGuest {
                     Country p6 = new Country("Ecuador", 17268.000, "Spanish", "American");
                     jsonCountry = gson.toJson(p6);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    
+
                     /*Residence r1 = new Residence(opcion, opcion, opcion);
                     float costTotalResicence = r1.costOfResidence(200.0, 200.0, 200.0);
                     System.out.println(" The cost total residence is: " + costTotalResicence);*/
-                    
                     City c16 = new City("Quito", 85, 225);
                     City c17 = new City("Ambato", 62, 105);
-                    City c18= new City("Cuenca", 69, 82);
+                    City c18 = new City("Cuenca", 69, 82);
                     p6.addCitys(c16);
                     p6.addCitys(c17);
                     p6.addCitys(c18);
@@ -177,11 +182,10 @@ public class SystemTouristGuest {
                     Country p7 = new Country("Paraguay", 7353.038, "Spanish", "American");
                     jsonCountry = gson.toJson(p7);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    
+
                     /*Residence r1 = new Residence(opcion, opcion, opcion);
                     float costTotalResicence = r1.costOfResidence(200.0, 200.0, 200.0);
                     System.out.println(" The cost total residence is: " + costTotalResicence);*/
-                    
                     City c19 = new City("Asunción", 39, 32);
                     City c20 = new City("Encarnación", 48, 41);
                     City c21 = new City("Luque", 58, 43);
@@ -198,11 +202,10 @@ public class SystemTouristGuest {
                     Country p8 = new Country("Perú", 33.035304, "Spanish", "American");
                     jsonCountry = gson.toJson(p8);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    
+
                     /*Residence r1 = new Residence(opcion, opcion, opcion);
                     float costTotalResicence = r1.costOfResidence(200.0, 200.0, 200.0);
                     System.out.println(" The cost total residence is: " + costTotalResicence);*/
-                    
                     City c22 = new City("Lima", 183, 13);
                     City c23 = new City("Cusco", 37, 18);
                     City c24 = new City("Arequipa", 54, 22);
@@ -216,14 +219,13 @@ public class SystemTouristGuest {
                     break;
                 case 9:
                     System.out.println("You have selected option 9");
-                    Country p9 = new Country("Uruguay",3461.734, "Spanish", "American");
+                    Country p9 = new Country("Uruguay", 3461.734, "Spanish", "American");
                     jsonCountry = gson.toJson(p9);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    
+
                     /*Residence r1 = new Residence(opcion, opcion, opcion);
                     float costTotalResicence = r1.costOfResidence(200.0, 200.0, 200.0);
                     System.out.println(" The cost total residence is: " + costTotalResicence);*/
-                    
                     City c25 = new City("Montevideo", 24, 23);
                     City c26 = new City("Fray Bentos", 23, 43);
                     City c27 = new City("Maldonado", 24, 30);
@@ -237,14 +239,13 @@ public class SystemTouristGuest {
                     break;
                 case 10:
                     System.out.println("You have selected option 10");
-                    Country p10 = new Country("Venezuela",28.515829, "Spanish", "American");
+                    Country p10 = new Country("Venezuela", 28.515829, "Spanish", "American");
                     jsonCountry = gson.toJson(p10);
                     System.out.println("jsonCountry -> " + jsonCountry);
-                    
+
                     /*Residence r1 = new Residence(opcion, opcion, opcion);
                     float costTotalResicence = r1.costOfResidence(200.0, 200.0, 200.0);
                     System.out.println(" The cost total residence is: " + costTotalResicence);*/
-                    
                     City c28 = new City("Caracas", 22, 10);
                     City c29 = new City("Maracaibo ", 17, 12);
                     City c30 = new City("Valencia", 19, 12);
@@ -265,18 +266,6 @@ public class SystemTouristGuest {
 
         }
 
-        double Galapagos = 10000.0F;
-        double España = 35.000F;
-        float discount = 50.0F;
-        int clas = 500;
-
-        float discountType = Ticket.discount(discount);
-
-        double totalPrice = Ticket.ticketCost(España, clas);
-
-        System.out.println("Your destino is: " + "España" + " The discount for you is : " + discountType + " and you Total Cost is: " + totalPrice);
-
-        
     }
 
 }

@@ -36,7 +36,6 @@ public class Flight extends javax.swing.JFrame {
         txtFligth_Code = new javax.swing.JTextField();
         txtAirport_Of_Origin = new javax.swing.JTextField();
         txtDestination_Airport = new javax.swing.JTextField();
-        jcal_Date = new com.toedter.calendar.JDateChooser();
         jLabel6 = new javax.swing.JLabel();
         txtDeparture_Time = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
@@ -76,7 +75,6 @@ public class Flight extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtDestination_Airport, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 160, -1));
-        jPanel1.add(jcal_Date, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 180, -1));
 
         jLabel6.setText("Departure Time:");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
@@ -187,7 +185,6 @@ public class Flight extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
-    private com.toedter.calendar.JDateChooser jcal_Date;
     private javax.swing.JTextField txtAirport_Of_Origin;
     private javax.swing.JTextField txtDeparture_Time;
     private javax.swing.JTextField txtDestination_Airport;
