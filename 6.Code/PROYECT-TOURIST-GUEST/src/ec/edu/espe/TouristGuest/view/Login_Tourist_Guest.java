@@ -176,6 +176,9 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         int dialog = JOptionPane.YES_NO_OPTION;
         int result = JOptionPane.showConfirmDialog(null, "Exit");
+        if(result == 0){
+            System.exit(0);
+        }
     }//GEN-LAST:event_jLabel10MouseClicked
 
     /**
