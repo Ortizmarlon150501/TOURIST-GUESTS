@@ -43,7 +43,6 @@ public class Register_Form extends javax.swing.JFrame {
         txtUsername = new javax.swing.JTextField();
         pxtPassword = new javax.swing.JPasswordField();
         pxtRetypePass = new javax.swing.JPasswordField();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
@@ -75,8 +74,6 @@ public class Register_Form extends javax.swing.JFrame {
         jLabel1.setText("       REGISTER");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 260, -1));
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 11, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Pictures\\Proyectos de video\\icons8_User_96px_2.png")); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, -1, 60));
 
         jLabel4.setText("First Name:");
@@ -108,7 +105,6 @@ public class Register_Form extends javax.swing.JFrame {
 
         pxtRetypePass.setText("jPasswordField2eeikddd");
         jPanel1.add(pxtRetypePass, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 160, -1));
-        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 160, -1));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -166,6 +162,11 @@ public class Register_Form extends javax.swing.JFrame {
         jPanel2.add(btnSave_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 24, -1, 30));
 
         btnDelete_Regi.setText("Delete");
+        btnDelete_Regi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDelete_RegiActionPerformed(evt);
+            }
+        });
         jPanel2.add(btnDelete_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 24, -1, 30));
 
         btnEdit_Regi.setText("Edit");
@@ -206,6 +207,10 @@ public class Register_Form extends javax.swing.JFrame {
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void btnDelete_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelete_RegiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDelete_RegiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -253,7 +258,6 @@ public class Register_Form extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox4Go_On_Excursions;
     private javax.swing.JCheckBox jCheckBox5Hourse_Trips;
     private javax.swing.JCheckBox jCheckBoxPlan;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
