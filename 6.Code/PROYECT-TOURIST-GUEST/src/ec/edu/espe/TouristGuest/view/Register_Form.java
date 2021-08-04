@@ -418,6 +418,7 @@ public class Register_Form extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    @SuppressWarnings("empty-statement")
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
 
         int NumberOfPeople;
@@ -438,7 +439,7 @@ public class Register_Form extends javax.swing.JFrame {
             TotalCost=NumberOfPeople*500;
         }
         
-        if(option.equals("") && option1.equals("Yes")){
+        if(option.equals("Brazil") && option1.equals("Yes")){
             TotalCost=NumberOfPeople*250+NumberChildren*110;;
             TotalTravelCost.setText(""+TotalCost);
             
@@ -447,7 +448,7 @@ public class Register_Form extends javax.swing.JFrame {
             TotalCost=NumberOfPeople*250;
         }
         
-        if(option.equals("") && option1.equals("Yes")){
+        if(option.equals("Bolivia") && option1.equals("Yes")){
             TotalCost=NumberOfPeople*300+NumberChildren*140;;
             TotalTravelCost.setText(""+TotalCost);
             
@@ -456,7 +457,7 @@ public class Register_Form extends javax.swing.JFrame {
             TotalCost=NumberOfPeople*300;
         }
         
-        if(option.equals("") && option1.equals("Yes")){
+        if(option.equals("Chile") && option1.equals("Yes")){
             TotalCost=NumberOfPeople*150+NumberChildren*150;;
             TotalTravelCost.setText(""+TotalCost);
             
@@ -465,7 +466,7 @@ public class Register_Form extends javax.swing.JFrame {
             TotalCost=NumberOfPeople*150;
         }
         
-        if(option.equals("") && option1.equals("Yes")){
+        if(option.equals("Colombia") && option1.equals("Yes")){
             TotalCost=NumberOfPeople*400+NumberChildren*120;;
             TotalTravelCost.setText(""+TotalCost);
             
@@ -474,7 +475,7 @@ public class Register_Form extends javax.swing.JFrame {
             TotalCost=NumberOfPeople*400;
         }
         
-        if(option.equals("") && option1.equals("Yes")){
+        if(option.equals("Ecuador") && option1.equals("Yes")){
             TotalCost=NumberOfPeople*0+NumberChildren*0;;
             TotalTravelCost.setText(""+TotalCost);
             
@@ -483,7 +484,7 @@ public class Register_Form extends javax.swing.JFrame {
             TotalCost=NumberOfPeople*250;
         }
         
-        if(option.equals("") && option1.equals("Yes")){
+        if(option.equals("Paraguay") && option1.equals("Yes")){
             TotalCost=NumberOfPeople*360+NumberChildren*100;;
             TotalTravelCost.setText(""+TotalCost);
             
@@ -492,7 +493,7 @@ public class Register_Form extends javax.swing.JFrame {
             TotalCost=NumberOfPeople*360;
         }
         
-        if(option.equals("") && option1.equals("Yes")){
+        if(option.equals("Peru") && option1.equals("Yes")){
             TotalCost=NumberOfPeople*700+NumberChildren*130;;
             TotalTravelCost.setText(""+TotalCost);
             
@@ -501,7 +502,7 @@ public class Register_Form extends javax.swing.JFrame {
             TotalCost=NumberOfPeople*700;
         }
         
-        if(option.equals("") && option1.equals("Yes")){
+        if(option.equals("Uruguay") && option1.equals("Yes")){
             TotalCost=NumberOfPeople*150+NumberChildren*140;;
             TotalTravelCost.setText(""+TotalCost);
             
@@ -510,7 +511,7 @@ public class Register_Form extends javax.swing.JFrame {
             TotalCost=NumberOfPeople*150;
         }
         
-        if(option.equals("") && option1.equals("Yes")){
+        if(option.equals("Venezuela") && option1.equals("Yes")){
             TotalCost=NumberOfPeople*326+NumberChildren*150;;
             TotalTravelCost.setText(""+TotalCost);
             
