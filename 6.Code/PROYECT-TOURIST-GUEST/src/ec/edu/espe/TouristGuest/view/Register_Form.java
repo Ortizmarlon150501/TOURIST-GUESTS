@@ -406,13 +406,13 @@ public class Register_Form extends javax.swing.JFrame {
     private void btnDelete_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelete_RegiActionPerformed
         int RowSelected= table_Register.getSelectedRow();
         if(RowSelected >=0){
-            
+         model.removeRow(RowSelected);
         }
         else{
-            
+          JOptionPane.showMessageDialog(null,"Please select a row");  
         }    
     }//GEN-LAST:event_btnDelete_RegiActionPerformed
-
+    DefaultTableModel model= new DefaultTableModel();
     int filas;
     private void btnEdit_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEdit_RegiActionPerformed
         // TODO add your handling code here:
