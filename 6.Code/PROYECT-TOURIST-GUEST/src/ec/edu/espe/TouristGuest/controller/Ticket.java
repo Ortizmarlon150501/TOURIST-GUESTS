@@ -4,10 +4,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.TouristGuest.model;
-
-
-
+package ec.edu.espe.TouristGuest.controller;
 /**
  *
  * @author Marlon Ortiz Codec ESPE-DCCO

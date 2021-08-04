@@ -10,7 +10,7 @@ import com.google.gson.GsonBuilder;
 import ec.edu.espe.TouristGuest.model.City;
 import ec.edu.espe.TouristGuest.model.Country;
 import ec.edu.espe.TouristGuest.model.Residence;
-import ec.edu.espe.TouristGuest.model.Ticket;
+import ec.edu.espe.TouristGuest.controller.Ticket;
 import java.util.Scanner;
 
 /**
@@ -18,6 +18,7 @@ import java.util.Scanner;
  * @author  ORTIZ MARLON TOUR GUEST OPP-ESPE
  */
 public class SystemTouristGuest {
+    
     
 
     public static void main(String[] args) {
