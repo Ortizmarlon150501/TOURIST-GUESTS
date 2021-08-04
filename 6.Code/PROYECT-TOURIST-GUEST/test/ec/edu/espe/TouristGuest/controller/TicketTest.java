@@ -43,10 +43,10 @@ public class TicketTest {
     @Test
     public void testDiscount() {
         System.out.println("discount");
-        float type = 0.0F;
-        float expResult = 0.0F;
+        float type = 4.0F;
+        float expResult = 2.0F;
         float result = Ticket.discount(type);
-        assertEquals(expResult, result, 0.0);   
+        assertEquals(expResult, result, 25.0);   
     }
 
     /**
@@ -55,11 +55,11 @@ public class TicketTest {
     @Test
     public void testTicketCost() {
         System.out.println("ticketCost");
-        double Destino = 0.0;
-        int clas = 0;
-        double expResult = 0.0;
+        double Destino = 124.0;
+        int clas = 150;
+        double expResult = 249.0;
         double result = Ticket.ticketCost(Destino, clas);
-        assertEquals(expResult, result, 0.0);
+        assertEquals(expResult, result, 249.0);
         
     }
     
