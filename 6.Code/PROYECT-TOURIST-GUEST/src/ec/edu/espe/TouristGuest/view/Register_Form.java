@@ -68,7 +68,7 @@ public class Register_Form extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtCI = new javax.swing.JTextField();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
@@ -91,10 +91,10 @@ public class Register_Form extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
+        txtNumberOfPeople = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        txtNumberChildren = new javax.swing.JTextField();
+        TotalTravelCost = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         CBCity = new javax.swing.JComboBox<>();
         jButton3 = new javax.swing.JButton();
@@ -161,7 +161,7 @@ public class Register_Form extends javax.swing.JFrame {
 
         jLabel12.setText(" Gender:");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, -1, -1));
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, 160, -1));
+        jPanel1.add(txtCI, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, 160, -1));
 
         jRadioButton1.setText("Male");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -231,7 +231,7 @@ public class Register_Form extends javax.swing.JFrame {
         jLabel9.setText("Choose your travel destination");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 70, -1, -1));
 
-        jLabel14.setText("Number Of People Who Will Travel");
+        jLabel14.setText("Number Of People Who Will Travel:");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 120, -1, -1));
 
         jLabel16.setText("There Are Children Traveling With You:");
@@ -245,11 +245,11 @@ public class Register_Form extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 160, -1, -1));
 
-        jLabel17.setText("Existing Case. How Many Children");
+        jLabel17.setText("Existing Case. How Many Children:");
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 210, -1, -1));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, 120, -1));
+        jPanel3.add(txtNumberOfPeople, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, 120, -1));
 
         jButton1.setText("yes");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -258,14 +258,15 @@ public class Register_Form extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
-        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 120, -1));
+        jPanel3.add(txtNumberChildren, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 120, -1));
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        TotalTravelCost.setEditable(false);
+        TotalTravelCost.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                TotalTravelCostActionPerformed(evt);
             }
         });
-        jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 120, -1));
+        jPanel3.add(TotalTravelCost, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 120, -1));
 
         jButton4.setText("Information of All Countries");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -397,9 +398,9 @@ public class Register_Form extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void TotalTravelCostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalTravelCostActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_TotalTravelCostActionPerformed
 
     private void jCheckBoxPlanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxPlanActionPerformed
 
@@ -455,6 +456,7 @@ public class Register_Form extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CBCity;
+    private javax.swing.JTextField TotalTravelCost;
     private javax.swing.JButton btnDelete_Regi;
     private javax.swing.JButton btnEdit_Regi;
     private javax.swing.JButton btnSave_Regi;
@@ -507,14 +509,13 @@ public class Register_Form extends javax.swing.JFrame {
     private javax.swing.JTable jTable_View_Register;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JPasswordField pxtPassword;
     private javax.swing.JPasswordField pxtRetypePass;
+    private javax.swing.JTextField txtCI;
     private javax.swing.JTextField txtFistName;
     private javax.swing.JTextField txtLastName;
+    private javax.swing.JTextField txtNumberChildren;
+    private javax.swing.JTextField txtNumberOfPeople;
     private javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
 }
