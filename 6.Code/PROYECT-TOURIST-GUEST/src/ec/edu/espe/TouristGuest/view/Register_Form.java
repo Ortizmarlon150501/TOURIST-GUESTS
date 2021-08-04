@@ -88,11 +88,9 @@ public class Register_Form extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         txtNumberOfPeople = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
         txtNumberChildren = new javax.swing.JTextField();
         TotalTravelCost = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
@@ -101,6 +99,7 @@ public class Register_Form extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
         jLabel19 = new javax.swing.JLabel();
+        CBChildren = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -237,27 +236,11 @@ public class Register_Form extends javax.swing.JFrame {
         jLabel16.setText("There Are Children Traveling With You:");
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 170, -1, -1));
 
-        jButton2.setText("do not");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 160, -1, -1));
-
         jLabel17.setText("Existing Case. How Many Children:");
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 210, -1, -1));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel3.add(txtNumberOfPeople, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, 120, -1));
-
-        jButton1.setText("yes");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
         jPanel3.add(txtNumberChildren, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 120, -1));
 
         TotalTravelCost.setEditable(false);
@@ -306,6 +289,20 @@ public class Register_Form extends javax.swing.JFrame {
 
         jLabel19.setText("The Information of All Countries ");
         jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 200, 20));
+
+        CBChildren.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
+        CBChildren.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        CBChildren.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBChildrenMouseClicked(evt);
+            }
+        });
+        CBChildren.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBChildrenActionPerformed(evt);
+            }
+        });
+        jPanel3.add(CBChildren, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, 520, 480));
 
@@ -404,10 +401,6 @@ public class Register_Form extends javax.swing.JFrame {
      
     }//GEN-LAST:event_CBCityActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void TotalTravelCostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalTravelCostActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TotalTravelCostActionPerformed
@@ -425,10 +418,6 @@ public class Register_Form extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
 
         int NumberOfPeople;
@@ -438,37 +427,88 @@ public class Register_Form extends javax.swing.JFrame {
         NumberOfPeople=Integer.parseInt(txtNumberOfPeople.getText());
         NumberChildren=Integer.parseInt(txtNumberChildren.getText()); 
         String option=(String)CBCity.getSelectedItem();
+        String option1=(String)CBChildren.getSelectedItem();
         
-        if(option.equals("Argentina")){
-            TotalCost=NumberOfPeople*500;
+        if(option.equals("Argentina") && option1.equals("Yes")){
+            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalTravelCost.setText(""+TotalCost);
             
-        
     }
+        else{
+            TotalCost=NumberOfPeople*500;
+        }
+        
+        if(option.equals("") && option1.equals("Yes")){
+            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalTravelCost.setText(""+TotalCost);
+            
+    }
+        else{
+            TotalCost=NumberOfPeople*500;
+        }
+        
+        if(option.equals("") && option1.equals("Yes")){
+            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalTravelCost.setText(""+TotalCost);
+            
+    }
+        else{
+            TotalCost=NumberOfPeople*500;
+        }
+        
+        if(option.equals("") && option1.equals("Yes")){
+            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalTravelCost.setText(""+TotalCost);
+            
+    }
+        else{
+            TotalCost=NumberOfPeople*500;
+        }
+        
+        if(option.equals("") && option1.equals("Yes")){
+            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalTravelCost.setText(""+TotalCost);
+            
+    }
+        else{
+            TotalCost=NumberOfPeople*500;
+        }
+        
+        if(option.equals("") && option1.equals("Yes")){
+            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalTravelCost.setText(""+TotalCost);
+            
+    }
+        else{
+            TotalCost=NumberOfPeople*500;
+        }
+        
+        if(option.equals("") && option1.equals("Yes")){
+            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalTravelCost.setText(""+TotalCost);
+            
+    
         
         
-        
-        
-        
-
+       
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3MouseClicked
 
     private void CBCityMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBCityMouseClicked
 
-        String Argentina;
-        String Brazil;
-        String Bolivia;
-        String Chile;
-        String Colombia;
-        String Ecuador;
-        String Paraguay;
-        String Peru;
-        String Uruguay;
-        String Venezuela;
+        
 
                 
         // TODO add your handling code here:
     }//GEN-LAST:event_CBCityMouseClicked
+
+    private void CBChildrenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBChildrenMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CBChildrenMouseClicked
+
+    private void CBChildrenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBChildrenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CBChildrenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -506,6 +546,7 @@ public class Register_Form extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> CBChildren;
     private javax.swing.JComboBox<String> CBCity;
     private javax.swing.JTextField TotalTravelCost;
     private javax.swing.JButton btnDelete_Regi;
@@ -514,8 +555,6 @@ public class Register_Form extends javax.swing.JFrame {
     private javax.swing.JButton btnStar_Regi;
     private javax.swing.JButton btn_Update_Regi;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
