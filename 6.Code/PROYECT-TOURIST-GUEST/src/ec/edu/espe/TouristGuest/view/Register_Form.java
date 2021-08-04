@@ -439,84 +439,84 @@ public class Register_Form extends javax.swing.JFrame {
         }
         
         if(option.equals("") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalCost=NumberOfPeople*250+NumberChildren*110;;
             TotalTravelCost.setText(""+TotalCost);
             
     }
         else{
-            TotalCost=NumberOfPeople*500;
+            TotalCost=NumberOfPeople*250;
         }
         
         if(option.equals("") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalCost=NumberOfPeople*300+NumberChildren*140;;
             TotalTravelCost.setText(""+TotalCost);
             
     }
         else{
-            TotalCost=NumberOfPeople*500;
+            TotalCost=NumberOfPeople*300;
         }
         
         if(option.equals("") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalCost=NumberOfPeople*150+NumberChildren*150;;
             TotalTravelCost.setText(""+TotalCost);
             
     }
         else{
-            TotalCost=NumberOfPeople*500;
+            TotalCost=NumberOfPeople*150;
         }
         
         if(option.equals("") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalCost=NumberOfPeople*400+NumberChildren*120;;
             TotalTravelCost.setText(""+TotalCost);
             
     }
         else{
-            TotalCost=NumberOfPeople*500;
+            TotalCost=NumberOfPeople*400;
         }
         
         if(option.equals("") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalCost=NumberOfPeople*0+NumberChildren*0;;
             TotalTravelCost.setText(""+TotalCost);
             
     }
         else{
-            TotalCost=NumberOfPeople*500;
+            TotalCost=NumberOfPeople*250;
         }
         
         if(option.equals("") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalCost=NumberOfPeople*360+NumberChildren*100;;
             TotalTravelCost.setText(""+TotalCost);
             
     }
         else{
-            TotalCost=NumberOfPeople*500;
+            TotalCost=NumberOfPeople*360;
         }
         
         if(option.equals("") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalCost=NumberOfPeople*700+NumberChildren*130;;
             TotalTravelCost.setText(""+TotalCost);
             
     }
         else{
-            TotalCost=NumberOfPeople*500;
+            TotalCost=NumberOfPeople*700;
         }
         
         if(option.equals("") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalCost=NumberOfPeople*150+NumberChildren*140;;
             TotalTravelCost.setText(""+TotalCost);
             
     }
         else{
-            TotalCost=NumberOfPeople*500;
+            TotalCost=NumberOfPeople*150;
         }
         
         if(option.equals("") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalCost=NumberOfPeople*326+NumberChildren*150;;
             TotalTravelCost.setText(""+TotalCost);
             
     }
         else{
-            TotalCost=NumberOfPeople*500;
+            TotalCost=NumberOfPeople*326;
         }
         
         
