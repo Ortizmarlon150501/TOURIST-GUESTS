@@ -589,7 +589,26 @@ public class Register_Form extends javax.swing.JFrame {
 
     private void btnEdit_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEdit_RegiActionPerformed
         // TODO add your handling code here:
-        
+        DefaultTableModel model = (DefaultTableModel)table_Register.getModel();
+      int  i = table_Register.getSelectedRow();
+      if(i >= 0)
+      {
+          model.setValueAt(txtFistName.getText(), i, 0);
+          model.setValueAt(txtLastName.getText(), i, 0);
+          model.setValueAt(txtUsername.getText(), i, 0);
+          model.setValueAt(pxtPassword.getPassword(), i, 0);
+          model.setValueAt(txa_Address.getText(), i, 0);
+          model.setValueAt(txtC_I.getText(), i, 0);
+          model.setValueAt(cbx_Gender.getSelectedItem(), i, 0);
+          model.setValueAt(chbxPlan_A_Party.getSelectedObjects(), i, 0);
+           model.setValueAt(chbxPlan_A_Party.getSelectedObjects(), i, 0);
+            model.setValueAt(chbx_Go_On_Excursions.getSelectedObjects(), i, 0);
+             model.setValueAt(chbx_Horse_Trips.getSelectedObjects(), i, 0);
+              model.setValueAt(chbx_Mountaineering.getSelectedObjects(), i, 0);
+               model.setValueAt(chbx_Sport_Tourism.getSelectedObjects(), i, 0);
+      }else{
+          JOptionPane.showMessageDialog(null, "Error");
+      }
         
     }//GEN-LAST:event_btnEdit_RegiActionPerformed
 
