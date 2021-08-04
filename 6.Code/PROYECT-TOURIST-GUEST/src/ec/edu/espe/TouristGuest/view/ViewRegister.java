@@ -30,7 +30,7 @@ public class ViewRegister extends javax.swing.JFrame {
 
         View_Register_User = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        btnSearchByFligthtCode = new javax.swing.JLabel();
         btnSearch_For = new javax.swing.JButton();
         btnSee_Everything = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -47,8 +47,8 @@ public class ViewRegister extends javax.swing.JFrame {
         jLabel1.setText("VIEW REGISTER");
         View_Register_User.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, -1, -1));
 
-        jLabel2.setText("Search By Flight Code ");
-        View_Register_User.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, -1, -1));
+        btnSearchByFligthtCode.setText("Search By Flight Code ");
+        View_Register_User.add(btnSearchByFligthtCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, -1, -1));
 
         btnSearch_For.setText("Search For");
         View_Register_User.add(btnSearch_For, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, -1, -1));
@@ -93,9 +93,7 @@ public class ViewRegister extends javax.swing.JFrame {
 
         btnTO_Return.setText("To Return");
         View_Register_User.add(btnTO_Return, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 350, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Pictures\\Proyectos de video\\icons8_Handshake_96px.png")); // NOI18N
-        View_Register_User.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 10, 100, 50));
+        View_Register_User.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 100, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -160,11 +158,11 @@ public class ViewRegister extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel View_Register_User;
+    private javax.swing.JLabel btnSearchByFligthtCode;
     private javax.swing.JButton btnSearch_For;
     private javax.swing.JButton btnSee_Everything;
     private javax.swing.JButton btnTO_Return;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable_View_Register;

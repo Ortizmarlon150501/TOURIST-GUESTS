@@ -5,11 +5,21 @@
  */
 package ec.edu.espe.TouristGuest.view;
 
+<<<<<<< HEAD
 import java.sql.*;
 import static javafx.beans.binding.Bindings.select;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.PlainDocument;
+=======
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
+import com.mongodb.Mongo;
+import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
 
 /**
  *
@@ -17,10 +27,22 @@ import javax.swing.text.PlainDocument;
  */
 public class Register_Form extends javax.swing.JFrame {
 
+    DB db;
+    DBCollection Table;
+    
     /**
      * Creates new form Register_Form
      */
     public Register_Form() {
+        try {
+            Mongo mongo = new Mongo("LocalHost",27017);
+            db= mongo.getDB("CityDate");
+            Table= db.getCollection("Table");
+            
+            
+        } catch (UnknownHostException ex) {
+            Logger.getLogger(Register_Form.class.getName()).log(Level.SEVERE, null, ex);
+        }
         initComponents();
         this.setLocationRelativeTo(null);
         this.table_Register.setModel(model);
@@ -88,7 +110,14 @@ public class Register_Form extends javax.swing.JFrame {
         txa_Address = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+<<<<<<< HEAD
         txtC_I = new javax.swing.JTextField();
+=======
+        txtCI = new javax.swing.JTextField();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
         jLabel13 = new javax.swing.JLabel();
         chbxPlan_A_Party = new javax.swing.JCheckBox();
         chbx_Sport_Tourism = new javax.swing.JCheckBox();
@@ -107,8 +136,8 @@ public class Register_Form extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         btn_do_not = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
+<<<<<<< HEAD
         txt_NumberOf_People = new javax.swing.JTextField();
         btn_Yes = new javax.swing.JButton();
         txt_Children = new javax.swing.JTextField();
@@ -117,6 +146,20 @@ public class Register_Form extends javax.swing.JFrame {
         comb_Country = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
         cbx_Gender = new javax.swing.JComboBox<>();
+=======
+        txtNumberOfPeople = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        txtNumberChildren = new javax.swing.JTextField();
+        TotalTravelCost = new javax.swing.JTextField();
+        jButton4 = new javax.swing.JButton();
+        CBCity = new javax.swing.JComboBox<>();
+        jButton3 = new javax.swing.JButton();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
         jPanel2 = new javax.swing.JPanel();
         btnSave_Regi = new javax.swing.JButton();
         btnDelete_Regi = new javax.swing.JButton();
@@ -179,14 +222,43 @@ public class Register_Form extends javax.swing.JFrame {
         pantalla_Pan.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 70, -1, -1));
 
         jLabel12.setText(" Gender:");
+<<<<<<< HEAD
         pantalla_Pan.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, -1, -1));
         pantalla_Pan.add(txtC_I, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, 160, -1));
+=======
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, -1, -1));
+        jPanel1.add(txtCI, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, 160, -1));
+
+        jRadioButton1.setText("Male");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 100, -1, -1));
+
+        jRadioButton2.setText("Feminine");
+        jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 140, -1, -1));
+
+        jRadioButton3.setText("Others");
+        jPanel1.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, -1, -1));
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
 
         jLabel13.setText("Recreational Activities:");
         pantalla_Pan.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, 120, -1));
 
+<<<<<<< HEAD
         chbxPlan_A_Party.setText("Plan A Party.");
         pantalla_Pan.add(chbxPlan_A_Party, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, -1, -1));
+=======
+        jCheckBoxPlan.setText("Plan A Party.");
+        jCheckBoxPlan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxPlanActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jCheckBoxPlan, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, -1, -1));
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
 
         chbx_Sport_Tourism.setText("Sports Tourism");
         pantalla_Pan.add(chbx_Sport_Tourism, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, 110, -1));
@@ -237,12 +309,18 @@ public class Register_Form extends javax.swing.JFrame {
         jLabel9.setText("Choose your travel destination");
         pantalla_Pan.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 70, -1, -1));
 
+<<<<<<< HEAD
         jLabel14.setText("Number Of People Who Will Travel");
         pantalla_Pan.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 120, -1, -1));
+=======
+        jLabel14.setText("Number Of People Who Will Travel:");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 120, -1, -1));
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
 
         jLabel16.setText("There Are Children Traveling With You:");
         pantalla_Pan.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 170, -1, -1));
 
+<<<<<<< HEAD
         btn_do_not.setText("do not");
         pantalla_Pan.add(btn_do_not, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 160, -1, -1));
 
@@ -258,12 +336,28 @@ public class Register_Form extends javax.swing.JFrame {
         pantalla_Pan.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 260, -1, -1));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+=======
+        jButton2.setText("do not");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 160, -1, -1));
+
+        jLabel17.setText("Existing Case. How Many Children:");
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 210, -1, -1));
+
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel3.add(txtNumberOfPeople, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, 120, -1));
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
 
         txt_NumberOf_People.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_NumberOf_PeopleActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         jPanel3.add(txt_NumberOf_People, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, 120, -1));
 
         btn_Yes.setText("yes");
@@ -281,10 +375,28 @@ public class Register_Form extends javax.swing.JFrame {
             }
         });
         jPanel3.add(txt_Total_Travel_Cost, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 120, -1));
+=======
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
+        jPanel3.add(txtNumberChildren, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 120, -1));
 
-        jButton4.setText(" Information of each site to visit");
+        TotalTravelCost.setEditable(false);
+        TotalTravelCost.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TotalTravelCostActionPerformed(evt);
+            }
+        });
+        jPanel3.add(TotalTravelCost, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 120, -1));
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
+
+        jButton4.setText("Information of All Countries");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
 
+<<<<<<< HEAD
         comb_Country.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Brasil", "Item 2", "Item 3", "Item 4", " " }));
         comb_Country.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         comb_Country.addActionListener(new java.awt.event.ActionListener() {
@@ -295,12 +407,49 @@ public class Register_Form extends javax.swing.JFrame {
         jPanel3.add(comb_Country, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
 
         pantalla_Pan.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, 520, 360));
+=======
+        CBCity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Argentina", "Brazil", "Bolivia", "Chile", "Colombia", "Ecuador", "Paraguay", "Peru", "Uruguay", "Venezuela" }));
+        CBCity.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        CBCity.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBCityMouseClicked(evt);
+            }
+        });
+        CBCity.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCityActionPerformed(evt);
+            }
+        });
+        jPanel3.add(CBCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
+
+        jButton3.setText("Total Travel Cost");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, -1, -1));
+
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jScrollPane4.setViewportView(jTextArea3);
+
+        jPanel3.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 480, 190));
+
+        jLabel19.setText("The Information of All Countries ");
+        jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 200, 20));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, 520, 480));
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_customer_32px_1.png"))); // NOI18N
         pantalla_Pan.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 10, -1, -1));
 
         cbx_Gender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Femenine", "Others" }));
         pantalla_Pan.add(cbx_Gender, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, -1, -1));
+
+        jLabel18.setText("Traveler Data");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 120, 20));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -318,7 +467,7 @@ public class Register_Form extends javax.swing.JFrame {
                 btnDelete_RegiActionPerformed(evt);
             }
         });
-        jPanel2.add(btnDelete_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, -1, 30));
+        jPanel2.add(btnDelete_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, -1, 30));
 
         btnEdit_Regi.setText("Update");
         btnEdit_Regi.addActionListener(new java.awt.event.ActionListener() {
@@ -326,7 +475,11 @@ public class Register_Form extends javax.swing.JFrame {
                 btnEdit_RegiActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         jPanel2.add(btnEdit_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 70, 30));
+=======
+        jPanel2.add(btnEdit_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 60, 30));
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
 
         btnStar_Regi.setText("Start");
         btnStar_Regi.addActionListener(new java.awt.event.ActionListener() {
@@ -334,8 +487,14 @@ public class Register_Form extends javax.swing.JFrame {
                 btnStar_RegiActionPerformed(evt);
             }
         });
-        jPanel2.add(btnStar_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 60, 30));
+        jPanel2.add(btnStar_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 60, 30));
 
+<<<<<<< HEAD
+=======
+        btn_Update_Regi.setText("Update");
+        jPanel2.add(btn_Update_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 70, 30));
+
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
         jButton5.setText("Record Of Previous Trips");
         jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, -1, 30));
 
@@ -346,14 +505,27 @@ public class Register_Form extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                     .addComponent(pantalla_Pan, javax.swing.GroupLayout.PREFERRED_SIZE, 1367, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(252, Short.MAX_VALUE))
+=======
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1367, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(242, Short.MAX_VALUE))
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addComponent(pantalla_Pan, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+=======
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -430,6 +602,7 @@ public class Register_Form extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnStar_RegiActionPerformed
 
+<<<<<<< HEAD
     private void comb_CountryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comb_CountryActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_comb_CountryActionPerformed
@@ -445,11 +618,17 @@ public class Register_Form extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+=======
+    private void CBCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCityActionPerformed
+     
+    }//GEN-LAST:event_CBCityActionPerformed
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
 
     private void txt_NumberOf_PeopleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_NumberOf_PeopleActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_NumberOf_PeopleActionPerformed
 
+<<<<<<< HEAD
     private void table_RegisterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_RegisterMouseClicked
         // TODO add your handling code here:
         int fila_select=table_Register.getSelectedRow();
@@ -473,6 +652,52 @@ public class Register_Form extends javax.swing.JFrame {
     private void txtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsernameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUsernameActionPerformed
+=======
+    private void TotalTravelCostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalTravelCostActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TotalTravelCostActionPerformed
+
+    private void jCheckBoxPlanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxPlanActionPerformed
+
+    }//GEN-LAST:event_jCheckBoxPlanActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    
+        DBCursor cursor= Table.find();
+        while(cursor.hasNext()){
+        jTextArea3.setText(jTextArea3.getText()+ "\n" + cursor.next());
+        
+        }
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+
+        int NumOfPeople;
+        int NumOfChildren;
+        float TotalTravelCost;
+        
+        /*NumOfPeople=Intenger.parseInt(txtNumOfPeople.getText());
+        NumOfChildren=Integer.parseInt(txtNumOfChildren.getText());
+        
+        TotalTravelCost=
+        */
+        
+        
+        
+        
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void CBCityMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBCityMouseClicked
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CBCityMouseClicked
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
 
     /**
      * @param args the command line arguments
@@ -510,6 +735,8 @@ public class Register_Form extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> CBCity;
+    private javax.swing.JTextField TotalTravelCost;
     private javax.swing.JButton btnDelete_Regi;
     private javax.swing.JButton btnEdit_Regi;
     private javax.swing.JButton btnSave_Regi;
@@ -527,6 +754,14 @@ public class Register_Form extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+<<<<<<< HEAD
+=======
+    private javax.swing.JCheckBox jCheckBox2Sport_Tourism;
+    private javax.swing.JCheckBox jCheckBox3Mountaineering;
+    private javax.swing.JCheckBox jCheckBox4Go_On_Excursions;
+    private javax.swing.JCheckBox jCheckBox5Hourse_Trips;
+    private javax.swing.JCheckBox jCheckBoxPlan;
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -536,6 +771,8 @@ public class Register_Form extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -548,19 +785,31 @@ public class Register_Form extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
+<<<<<<< HEAD
     private javax.swing.JPanel pantalla_Pan;
     private javax.swing.JPasswordField pxtPassword;
     private javax.swing.JPasswordField pxtRetypePass;
     private javax.swing.JTable table_Register;
     private javax.swing.JTextArea txa_Address;
     private javax.swing.JTextField txtC_I;
+=======
+    private javax.swing.JTable jTable_View_Register;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JPasswordField pxtPassword;
+    private javax.swing.JPasswordField pxtRetypePass;
+    private javax.swing.JTextField txtCI;
+>>>>>>> 66d593ffdb6d2cd58f8c79ffe4c04f71b1e44c15
     private javax.swing.JTextField txtFistName;
     private javax.swing.JTextField txtLastName;
+    private javax.swing.JTextField txtNumberChildren;
+    private javax.swing.JTextField txtNumberOfPeople;
     private javax.swing.JTextField txtUsername;
     private javax.swing.JTextField txt_Children;
     private javax.swing.JTextField txt_NumberOf_People;
