@@ -53,23 +53,23 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jLabel4" min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="txt_total" min="-2" pref="54" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jTextField2" min="-2" pref="97" max="-2" attributes="0"/>
+                                  <Component id="Text_total" min="-2" pref="97" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel1" alignment="0" min="-2" pref="43" max="-2" attributes="0"/>
-                                      <Component id="jLabel2" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                                      <Component id="jLabel3" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
+                                      <Component id="txt_ticket" alignment="0" min="-2" pref="43" max="-2" attributes="0"/>
+                                      <Component id="txt_price" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
+                                      <Component id="txt_quality" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jSpinner1" min="-2" pref="66" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jTextField1" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                                              <Component id="jComboBox1" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                                              <Component id="Text_price" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                                              <Component id="Cbo_ticket" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Component id="jButton1" min="-2" pref="88" max="-2" attributes="0"/>
@@ -92,25 +92,25 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace pref="46" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Cbo_ticket" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_ticket" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel2" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="jTextField1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_price" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="Text_price" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton1" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel3" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                      <Component id="txt_quality" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                       <Component id="jSpinner1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="188" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel4" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
-                      <Component id="jTextField2" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="txt_total" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                      <Component id="Text_total" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -118,22 +118,22 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="txt_ticket">
           <Properties>
             <Property name="text" type="java.lang.String" value="TICKET"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel2">
+        <Component class="javax.swing.JLabel" name="txt_price">
           <Properties>
             <Property name="text" type="java.lang.String" value="PRICE"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="txt_quality">
           <Properties>
             <Property name="text" type="java.lang.String" value="QUALITY"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="Cbo_ticket">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -148,20 +148,22 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="Text_price">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="                           0.0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JSpinner" name="jSpinner1">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel4">
+        <Component class="javax.swing.JLabel" name="txt_total">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel4"/>
+            <Property name="text" type="java.lang.String" value="TOTAL"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JTextField" name="Text_total">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="                       0.0"/>
           </Properties>
         </Component>
@@ -172,7 +174,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="jTable1">
+            <Component class="javax.swing.JTable" name="Table">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -188,6 +190,33 @@
                     <Column editable="true" title="Title 3" type="java.lang.Object"/>
                     <Column editable="true" title="Title 4" type="java.lang.Object"/>
                   </Table>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
             </Component>
