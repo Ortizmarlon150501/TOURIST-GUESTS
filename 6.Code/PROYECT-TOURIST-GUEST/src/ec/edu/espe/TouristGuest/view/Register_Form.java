@@ -278,6 +278,11 @@ public class Register_Form extends javax.swing.JFrame {
 
         CBCity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Argentina", "Brazil", "Bolivia", "Chile", "Colombia", "Ecuador", "Paraguay", "Peru", "Uruguay", "Venezuela" }));
         CBCity.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        CBCity.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBCityMouseClicked(evt);
+            }
+        });
         CBCity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CBCityActionPerformed(evt);
@@ -286,6 +291,11 @@ public class Register_Form extends javax.swing.JFrame {
         jPanel3.add(CBCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
 
         jButton3.setText("Total Travel Cost");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
         jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, -1, -1));
 
         jTextArea3.setColumns(20);
@@ -418,6 +428,30 @@ public class Register_Form extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+
+        int NumOfPeople;
+        int NumOfChildren;
+        float TotalTravelCost;
+        
+        /*NumOfPeople=Intenger.parseInt(txtNumOfPeople.getText());
+        NumOfChildren=Integer.parseInt(txtNumOfChildren.getText());
+        
+        TotalTravelCost=
+        */
+        
+        
+        
+        
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void CBCityMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBCityMouseClicked
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CBCityMouseClicked
 
     /**
      * @param args the command line arguments
