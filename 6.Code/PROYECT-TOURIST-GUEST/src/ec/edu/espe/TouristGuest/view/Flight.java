@@ -29,21 +29,21 @@ public class Flight extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        btnCode = new javax.swing.JLabel();
+        btnDate = new javax.swing.JLabel();
+        btnAirportOfOrigin = new javax.swing.JLabel();
+        btnDestinationAirport = new javax.swing.JLabel();
         txtFligth_Code = new javax.swing.JTextField();
         txtAirport_Of_Origin = new javax.swing.JTextField();
         txtDestination_Airport = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        btnDepartureTime = new javax.swing.JLabel();
         txtDeparture_Time = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jButton4 = new javax.swing.JButton();
-        jToggleButton2 = new javax.swing.JToggleButton();
+        btnSave = new javax.swing.JButton();
+        btnEditadnSave = new javax.swing.JButton();
+        btnView = new javax.swing.JButton();
+        btnReturn = new javax.swing.JToggleButton();
+        btnNext = new javax.swing.JButton();
+        btnExit = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,17 +55,17 @@ public class Flight extends javax.swing.JFrame {
         jLabel1.setText("FLIGHT SYSTEM");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
 
-        jLabel2.setText("Code :");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
+        btnCode.setText("Code :");
+        jPanel1.add(btnCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
 
-        jLabel3.setText(" Date:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
+        btnDate.setText(" Date:");
+        jPanel1.add(btnDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
 
-        jLabel4.setText("AirportOf Origin:");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
+        btnAirportOfOrigin.setText("AirportOf Origin:");
+        jPanel1.add(btnAirportOfOrigin, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
-        jLabel5.setText("Destination Airport:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
+        btnDestinationAirport.setText("Destination Airport:");
+        jPanel1.add(btnDestinationAirport, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
         jPanel1.add(txtFligth_Code, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 160, -1));
         jPanel1.add(txtAirport_Of_Origin, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 160, -1));
 
@@ -76,42 +76,42 @@ public class Flight extends javax.swing.JFrame {
         });
         jPanel1.add(txtDestination_Airport, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 160, -1));
 
-        jLabel6.setText("Departure Time:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
+        btnDepartureTime.setText("Departure Time:");
+        jPanel1.add(btnDepartureTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
         jPanel1.add(txtDeparture_Time, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 160, -1));
 
-        jButton1.setText("Save");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, -1, -1));
+        btnSave.setText("Save");
+        jPanel1.add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, -1, -1));
 
-        jButton2.setText("Edit and Save");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnEditadnSave.setText("Edit and Save");
+        btnEditadnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnEditadnSaveActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, -1, -1));
+        jPanel1.add(btnEditadnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, -1, -1));
 
-        jButton3.setText("View Register");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnView.setText("View Register");
+        btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnViewActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, -1, -1));
+        jPanel1.add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, -1, -1));
 
-        jToggleButton1.setText("Return");
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnReturn.setText("Return");
+        btnReturn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
+                btnReturnActionPerformed(evt);
             }
         });
-        jPanel1.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, -1, -1));
+        jPanel1.add(btnReturn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, -1, -1));
 
-        jButton4.setText(" Next");
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, -1, -1));
+        btnNext.setText(" Next");
+        jPanel1.add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, -1, -1));
 
-        jToggleButton2.setText("Exit");
-        jPanel1.add(jToggleButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 290, -1, -1));
+        btnExit.setText("Exit");
+        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 290, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -133,17 +133,17 @@ public class Flight extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDestination_AirportActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnViewActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnEditadnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditadnSaveActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnEditadnSaveActionPerformed
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
+    }//GEN-LAST:event_btnReturnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -181,19 +181,19 @@ public class Flight extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel btnAirportOfOrigin;
+    private javax.swing.JLabel btnCode;
+    private javax.swing.JLabel btnDate;
+    private javax.swing.JLabel btnDepartureTime;
+    private javax.swing.JLabel btnDestinationAirport;
+    private javax.swing.JButton btnEditadnSave;
+    private javax.swing.JToggleButton btnExit;
+    private javax.swing.JButton btnNext;
+    private javax.swing.JToggleButton btnReturn;
+    private javax.swing.JButton btnSave;
+    private javax.swing.JButton btnView;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JTextField txtAirport_Of_Origin;
     private javax.swing.JTextField txtDeparture_Time;
     private javax.swing.JTextField txtDestination_Airport;
