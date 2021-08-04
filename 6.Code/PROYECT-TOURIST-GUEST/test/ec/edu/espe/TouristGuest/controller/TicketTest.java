@@ -46,9 +46,7 @@ public class TicketTest {
         float type = 0.0F;
         float expResult = 0.0F;
         float result = Ticket.discount(type);
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, result, 0.0);   
     }
 
     /**
@@ -62,8 +60,7 @@ public class TicketTest {
         double expResult = 0.0;
         double result = Ticket.ticketCost(Destino, clas);
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
