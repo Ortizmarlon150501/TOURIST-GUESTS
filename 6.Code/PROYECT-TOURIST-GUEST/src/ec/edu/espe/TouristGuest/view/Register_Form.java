@@ -405,7 +405,12 @@ public class Register_Form extends javax.swing.JFrame {
 
     private void btnDelete_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelete_RegiActionPerformed
         int RowSelected= table_Register.getSelectedRow();
-        
+        if(RowSelected >=0){
+            
+        }
+        else{
+            
+        }    
     }//GEN-LAST:event_btnDelete_RegiActionPerformed
 
     int filas;
