@@ -42,8 +42,8 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
         pxtPassword = new javax.swing.JPasswordField();
         btcEnter = new javax.swing.JButton();
         btnCreate_new_user = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
+        btnAllRecords = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
 
@@ -100,16 +100,16 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
         });
         jpIngreso.add(btnCreate_new_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, -1, -1));
 
-        jButton1.setText("Exit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnExitActionPerformed(evt);
             }
         });
-        jpIngreso.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, -1, -1));
+        jpIngreso.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, -1, -1));
 
-        jButton2.setText("All Records");
-        jpIngreso.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, -1, -1));
+        btnAllRecords.setText("All Records");
+        jpIngreso.add(btnAllRecords, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, -1, -1));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/close_icon.jpeg"))); // NOI18N
         jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -161,9 +161,9 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnCreate_new_userActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnExitActionPerformed
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
         // TODO add your handling code here:
@@ -220,9 +220,9 @@ public class Login_Tourist_Guest extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btcEnter;
+    private javax.swing.JButton btnAllRecords;
     private javax.swing.JButton btnCreate_new_user;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnExit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

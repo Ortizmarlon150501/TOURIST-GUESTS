@@ -38,8 +38,8 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
         txt_ticket = new javax.swing.JLabel();
         txt_price = new javax.swing.JLabel();
         txt_quality = new javax.swing.JLabel();
-        Cbo_ticket = new javax.swing.JComboBox<>();
-        Text_price = new javax.swing.JTextField();
+        txtCbo_ticket = new javax.swing.JComboBox<>();
+        txtprice = new javax.swing.JTextField();
         Spnquality = new javax.swing.JSpinner();
         txt_total = new javax.swing.JLabel();
         Text_total = new javax.swing.JTextField();
@@ -60,15 +60,15 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
 
         txt_quality.setText("QUALITY");
 
-        Cbo_ticket.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose the Ticket", "Adult", "Teen", "Kind" }));
-        Cbo_ticket.addActionListener(new java.awt.event.ActionListener() {
+        txtCbo_ticket.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose the Ticket", "Adult", "Teen", "Kind" }));
+        txtCbo_ticket.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cbo_ticketActionPerformed(evt);
+                txtCbo_ticketActionPerformed(evt);
             }
         });
 
-        Text_price.setEditable(false);
-        Text_price.setText("                           0.0");
+        txtprice.setEditable(false);
+        txtprice.setText("                           0.0");
 
         txt_total.setText("TOTAL");
 
@@ -119,8 +119,8 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
                                     .addComponent(Spnquality, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Text_price, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Cbo_ticket, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(txtprice, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtCbo_ticket, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(161, 161, 161))
@@ -133,13 +133,14 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(46, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Cbo_ticket, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCbo_ticket, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_ticket))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_price, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Text_price, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtprice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txt_price, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_quality, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Spnquality, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -166,33 +167,33 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Cbo_ticketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cbo_ticketActionPerformed
+    private void txtCbo_ticketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCbo_ticketActionPerformed
         int choose;
-         choose = Cbo_ticket.getSelectedIndex();
+         choose = txtCbo_ticket.getSelectedIndex();
            if (choose == 0){
-           Text_price.setText("0.0");
+           txtprice.setText("0.0");
            }else if (choose == 1){
-           Text_price.setText("500.0");
+           txtprice.setText("500.0");
            }else if (choose == 2){
-           Text_price.setText("200.0");
+           txtprice.setText("200.0");
            }else if (choose == 3){
-           Text_price.setText("100.0");
+           txtprice.setText("100.0");
            }
         
         
-    }//GEN-LAST:event_Cbo_ticketActionPerformed
+    }//GEN-LAST:event_txtCbo_ticketActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String tickets,prices, qualitys, subtotals;
         int quality;
         double price,total,subtotal;
         quality = Integer.parseInt(Spnquality.getValue().toString());
-        price = Double.parseDouble(Text_price.getText());
+        price = Double.parseDouble(txtprice.getText());
         subtotal = price * quality;
         total = Double.parseDouble(Text_total.getText());
         total = total + subtotal;
        
-        tickets =Cbo_ticket.getSelectedItem().toString();
+        tickets =txtCbo_ticket.getSelectedItem().toString();
         prices = "" + price;
         qualitys = "" + quality;
         subtotals = "" + subtotal;
@@ -239,17 +240,17 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> Cbo_ticket;
     private javax.swing.JSpinner Spnquality;
     private javax.swing.JTable Table;
-    private javax.swing.JTextField Text_price;
     private javax.swing.JTextField Text_total;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JComboBox<String> txtCbo_ticket;
     private javax.swing.JLabel txt_price;
     private javax.swing.JLabel txt_quality;
     private javax.swing.JLabel txt_ticket;
     private javax.swing.JLabel txt_total;
+    private javax.swing.JTextField txtprice;
     // End of variables declaration//GEN-END:variables
 }
