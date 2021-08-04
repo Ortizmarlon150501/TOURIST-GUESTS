@@ -5,17 +5,23 @@
  */
 package ec.edu.espe.TouristGuest.view;
 
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author LILIAN IZA TOURIST GUEST OPP-ESPE
  */
 public class Ticket_Tourist_Guest extends javax.swing.JFrame {
-
+      DefaultTableModel model;
+      String data[][]= {};
+      String head[]={"TICKET","PRICE","QUALITY","SUBTOTAL"};
     /**
      * Creates new form Ticket_Tourist_Guest
      */
     public Ticket_Tourist_Guest() {
         initComponents();
+        model = new DefaultTableModel(data,head);
+        Table.setModel(model);
         this.setLocationRelativeTo(null);
     }
 
@@ -34,7 +40,7 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
         txt_quality = new javax.swing.JLabel();
         Cbo_ticket = new javax.swing.JComboBox<>();
         Text_price = new javax.swing.JTextField();
-        jSpinner1 = new javax.swing.JSpinner();
+        Spnquality = new javax.swing.JSpinner();
         txt_total = new javax.swing.JLabel();
         Text_total = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -52,6 +58,11 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
         txt_quality.setText("QUALITY");
 
         Cbo_ticket.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose the Ticket", "Adult", "Teen", "Kind" }));
+        Cbo_ticket.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cbo_ticketActionPerformed(evt);
+            }
+        });
 
         Text_price.setEditable(false);
         Text_price.setText("                           0.0");
@@ -76,6 +87,11 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
         jScrollPane1.setViewportView(Table);
 
         jButton1.setText("ADD");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -97,7 +113,7 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
                                     .addComponent(txt_quality, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(62, 62, 62)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Spnquality, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(Text_price, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -123,7 +139,7 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_quality, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Spnquality, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
@@ -146,6 +162,43 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Cbo_ticketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cbo_ticketActionPerformed
+        int choose;
+         choose = Cbo_ticket.getSelectedIndex();
+           if (choose == 0){
+           Text_price.setText("0.0");
+           }else if (choose == 1){
+           Text_price.setText("500.0");
+           }else if (choose == 2){
+           Text_price.setText("200.0");
+           }else if (choose == 3){
+           Text_price.setText("100.0");
+           }
+        
+        
+    }//GEN-LAST:event_Cbo_ticketActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String tickets,prices, qualitys, subtotals;
+        int quality;
+        double price,total,subtotal;
+        quality = Integer.parseInt(Spnquality.getValue().toString());
+        price = Double.parseDouble(Text_price.getText());
+        subtotal = price * quality;
+        total = Double.parseDouble(Text_total.getText());
+        total = total + subtotal;
+       
+        tickets =Cbo_ticket.getSelectedItem().toString();
+        prices = "" + price;
+        qualitys = "" + quality;
+        subtotals = "" + subtotal;
+        
+        String data[]= {tickets,prices, qualitys, subtotals};
+        model.addRow(data);
+        
+        Text_total.setText(""+ total);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,13 +237,13 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> Cbo_ticket;
+    private javax.swing.JSpinner Spnquality;
     private javax.swing.JTable Table;
     private javax.swing.JTextField Text_price;
     private javax.swing.JTextField Text_total;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JLabel txt_price;
     private javax.swing.JLabel txt_quality;
     private javax.swing.JLabel txt_ticket;
