@@ -487,7 +487,37 @@ public class Register_Form extends javax.swing.JFrame {
             TotalCost=NumberOfPeople*500+NumberChildren*100;;
             TotalTravelCost.setText(""+TotalCost);
             
-    
+    }
+        else{
+            TotalCost=NumberOfPeople*500;
+        }
+        
+        if(option.equals("") && option1.equals("Yes")){
+            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalTravelCost.setText(""+TotalCost);
+            
+    }
+        else{
+            TotalCost=NumberOfPeople*500;
+        }
+        
+        if(option.equals("") && option1.equals("Yes")){
+            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalTravelCost.setText(""+TotalCost);
+            
+    }
+        else{
+            TotalCost=NumberOfPeople*500;
+        }
+        
+        if(option.equals("") && option1.equals("Yes")){
+            TotalCost=NumberOfPeople*500+NumberChildren*100;;
+            TotalTravelCost.setText(""+TotalCost);
+            
+    }
+        else{
+            TotalCost=NumberOfPeople*500;
+        }
         
         
        
