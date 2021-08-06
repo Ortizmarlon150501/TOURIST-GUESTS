@@ -25,7 +25,7 @@ public class Register_Form extends javax.swing.JFrame {
 
     DB db;
     DBCollection Table;
-    
+    DBCollection Table_Register;
     /**
      * Creates new form Register_Form
      */
@@ -33,7 +33,11 @@ public class Register_Form extends javax.swing.JFrame {
         try {
             Mongo mongo = new Mongo("LocalHost",27017);
             db= mongo.getDB("CityDate");
+            db=mongo.getDB("Register");
             Table= db.getCollection("Table");
+            Table_Register=db.getCollection("Table_Register");
+            
+        
             
             
         } catch (UnknownHostException ex) {
@@ -50,6 +54,7 @@ public class Register_Form extends javax.swing.JFrame {
         this.model.addColumn("CI");
         this.model.addColumn("Gender");
         
+            
     }
 
     /**
@@ -386,10 +391,19 @@ public class Register_Form extends javax.swing.JFrame {
     private void btnSave_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSave_RegiActionPerformed
         // TODO add your handling code here:
       
+BasicDBObject document = new BasicDBObject();
+        document.put("Fist_Name","'"+txtFistName.getText()+"'");
+        document.put("Last_Name","'"+txtLastName.getText()+"'");
+        document.put("Password","'"+pxtPassword.getText() +"'");
+        document.put("Address","'"+jTextArea1.getText()+"'");
+        document.put("CI","'"+txtCI.getText()+"'");
+        document.put("Gender","'"+jComboBoxItem1.getSelectedItem().toString()+"'");
+         
+        Table_Register.insert(document);
        
         
         this.model.addRow(new Object[]{this.txtFistName.getText(),this.txtLastName.getText() ,
-           this.txtUsername.getText(), this.pxtPassword.getPassword(), this.jTextArea1.getText(),
+           this.txtUsername.getText(), this.pxtPassword.getText(), this.jTextArea1.getText(),
            this.txtCI.getText(),this.jComboBoxItem1.getSelectedItem(),
                });
        
@@ -426,11 +440,11 @@ public class Register_Form extends javax.swing.JFrame {
         datos[0]=txtFistName.getText();
         datos[1]=txtLastName.getText();
         datos[2]=txtUsername.getText();
-        datos[3]=pxtPassword.getPassword().toString();
+        datos[3]=pxtPassword.getText();
         datos[4]=jTextArea1.getText();
         datos[5]=txtCI.getText();
         datos[6]=jComboBoxItem1.getSelectedItem().toString();
-         
+        
         for (int i = 0; i <table_Register.getColumnCount(); i++){
         model.setValueAt(datos[i], filas, i);
     } 
@@ -441,6 +455,8 @@ public class Register_Form extends javax.swing.JFrame {
 
     private void btnStar_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStar_RegiActionPerformed
         // TODO add your handling code here:
+      
+        
         JOptionPane.showMessageDialog(this,"User Register successfully" );
 
     }//GEN-LAST:event_btnStar_RegiActionPerformed
@@ -591,7 +607,7 @@ public class Register_Form extends javax.swing.JFrame {
 
     private void table_RegisterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_RegisterMouseClicked
         // TODO add your handling code here:
-        
+        DBCursor curso=Table_Register.find();
             int fila_select=table_Register.getSelectedRow();
         
         txtFistName.setText(table_Register.getValueAt(fila_select,0).toString());
