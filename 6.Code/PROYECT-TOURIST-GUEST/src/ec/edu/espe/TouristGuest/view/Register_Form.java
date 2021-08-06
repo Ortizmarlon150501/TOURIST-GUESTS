@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.TouristGuest.view;
 
+import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
@@ -384,6 +385,9 @@ public class Register_Form extends javax.swing.JFrame {
     
     private void btnSave_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSave_RegiActionPerformed
         // TODO add your handling code here:
+      
+       
+        
         this.model.addRow(new Object[]{this.txtFistName.getText(),this.txtLastName.getText() ,
            this.txtUsername.getText(), this.pxtPassword.getPassword(), this.jTextArea1.getText(),
            this.txtCI.getText(),this.jComboBoxItem1.getSelectedItem(),
@@ -412,13 +416,13 @@ public class Register_Form extends javax.swing.JFrame {
           JOptionPane.showMessageDialog(null,"Please select a row");  
         }    
     }//GEN-LAST:event_btnDelete_RegiActionPerformed
-    DefaultTableModel model= new DefaultTableModel();
+   
     int filas;
     private void btnEdit_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEdit_RegiActionPerformed
         // TODO add your handling code here:
         
        
-        String []datos=new String[6];
+        String []datos=new String[7];
         datos[0]=txtFistName.getText();
         datos[1]=txtLastName.getText();
         datos[2]=txtUsername.getText();
