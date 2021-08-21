@@ -43,6 +43,7 @@ public class Register_Form extends javax.swing.JFrame {
         } catch (UnknownHostException ex) {
             Logger.getLogger(Register_Form.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
         initComponents();
         this.setLocationRelativeTo(null);
         this.table_Register.setModel(model);
