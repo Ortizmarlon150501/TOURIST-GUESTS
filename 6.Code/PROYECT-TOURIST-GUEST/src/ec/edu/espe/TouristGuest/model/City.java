@@ -19,6 +19,7 @@ public class City {
         this.numberOfUniversity = numberofuniversity;
         this.numberOfMuseum = numberofmuseum;
     }
+    
  
 
      public String getinfocity(){
