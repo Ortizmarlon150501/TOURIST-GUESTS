@@ -5,16 +5,23 @@
  */
 package ec.edu.espe.TouristGuest.controller;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.Mongo;
+import ec.edu.espe.TouristGuest.model.City;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author Marlon Ortiz Codec ESPE-DCCO
  */
 public class CountryController {
-        DB DataBase;
+     DB DataBase;
     DBCollection collection;
     BasicDBObject document = new BasicDBObject();
     
@@ -22,14 +29,26 @@ public class CountryController {
         
         try{
             Mongo mongo = new Mongo("localhost", 27017);
-            DataBase = mongo.getDB("InfoCountry");
-            collection = DataBase.getCollection("Country");
-            System.out.println("successful connection");
-           }catch(UnknownHostException ex){
-            Logger.getLogger(CountryController.class.getName()).log(Level.SEVERE, null, ex);            
+            DataBase = mongo.getDB("Concessionaire");
+            collection = DataBase.getCollection("Car");
+            System.out.println("Connected");
+      } catch (UnknownHostException ex) {
+            Logger.getLogger(CountryController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+    } 
+    
+    public boolean add(String country, String name, int numberOfUniversity, int numberOfMuseum, String idiom){
+        ArrayList<City> cities = new ArrayList<>();
+        cities.add(new City(country, name, numberOfUniversity, numberOfMuseum, idiom));
+        for (City pueC : cities){
+            collection.insert(pueC.dbCitiesInfo());
+            
+
     }
-    
-    
-    
+        int input = JOptionPane.showConfirmDialog(null, "Successful Registration","OK", JOptionPane.DEFAULT_OPTION);
+        
+        System.out.println(input);
+        return true;
+
+       }
 }
