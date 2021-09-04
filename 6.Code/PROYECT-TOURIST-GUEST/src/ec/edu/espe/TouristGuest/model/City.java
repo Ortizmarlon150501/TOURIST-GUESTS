@@ -15,11 +15,11 @@ import com.mongodb.BasicDBObject;
 public class City {
     private String country;
     private String name;
-    private int numberOfUniversity;
-    private int numberOfMuseum;
+    private String numberOfUniversity;
+    private String numberOfMuseum;
     private String idiom;
 
-    public City(String country, String name, int numberOfUniversity, int numberOfMuseum, String idiom) {
+    public City(String country, String name, String numberOfUniversity, String numberOfMuseum, String idiom) {
         this.country = country;
         this.name = name;
         this.numberOfUniversity = numberOfUniversity;
@@ -28,13 +28,14 @@ public class City {
     }
 
    
+   
     
     
       public City(BasicDBObject dBInfoCity) {
         this.country=dBInfoCity.getString("Country");
         this.name = dBInfoCity.getString("Principal City");
-        this.numberOfMuseum =dBInfoCity.getInt("Number Of Museum");
-        this.numberOfUniversity = dBInfoCity.getInt("RegistrationNumber");
+        this.numberOfMuseum =dBInfoCity.getString("Number Of Museum");
+        this.numberOfUniversity = dBInfoCity.getString("RegistrationNumber");
         this.idiom = dBInfoCity.getString("Idiom");
         
     }
@@ -86,28 +87,28 @@ public class City {
     /**
      * @return the numberOfUniversity
      */
-    public int getNumberOfUniversity() {
+    public String getNumberOfUniversity() {
         return numberOfUniversity;
     }
 
     /**
      * @param numberOfUniversity the numberOfUniversity to set
      */
-    public void setNumberOfUniversity(int numberOfUniversity) {
+    public void setNumberOfUniversity(String numberOfUniversity) {
         this.numberOfUniversity = numberOfUniversity;
     }
 
     /**
      * @return the numberOfMuseum
      */
-    public int getNumberOfMuseum() {
+    public String getNumberOfMuseum() {
         return numberOfMuseum;
     }
 
     /**
      * @param numberOfMuseum the numberOfMuseum to set
      */
-    public void setNumberOfMuseum(int numberOfMuseum) {
+    public void setNumberOfMuseum(String numberOfMuseum) {
         this.numberOfMuseum = numberOfMuseum;
     }
 
@@ -125,6 +126,5 @@ public class City {
         this.idiom = idiom;
     }
 
-  
-    
+ 
 }
