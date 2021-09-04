@@ -30,7 +30,7 @@ public class CountryController {
         try{
             Mongo mongo = new Mongo("localhost", 27017);
             DataBase = mongo.getDB("Concessionaire");
-            collection = DataBase.getCollection("Car");
+            collection = DataBase.getCollection("Cities Of Country");
             System.out.println("Connected");
       } catch (UnknownHostException ex) {
             Logger.getLogger(CountryController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
@@ -39,7 +39,7 @@ public class CountryController {
     
     public boolean add(String country, String name, int numberOfUniversity, int numberOfMuseum, String idiom){
         ArrayList<City> cities = new ArrayList<>();
-        cities.add(new City(country, name, numberOfUniversity, numberOfMuseum, idiom));
+        cities.add(new City(country, name, country, name, idiom));
         for (City pueC : cities){
             collection.insert(pueC.dbCitiesInfo());
             

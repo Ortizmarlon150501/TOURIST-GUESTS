@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
  */
 public class InfoOfConuntry extends javax.swing.JFrame {
     ArrayList<City> citiess= new ArrayList<City>();
-    CountryController carss = new CountryController();
+    CountryController data = new CountryController();
 
     public InfoOfConuntry() {
         initComponents();
@@ -100,11 +100,11 @@ public class InfoOfConuntry extends javax.swing.JFrame {
                             .addComponent(jLabel7))
                         .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtCountry)
+                            .addComponent(txtCountry, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
                             .addComponent(txtName)
                             .addComponent(txtMuseum)
                             .addComponent(txtUniversity)
-                            .addComponent(txtIdiom, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)))
+                            .addComponent(txtIdiom)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -136,10 +136,10 @@ public class InfoOfConuntry extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
-                    .addComponent(txtIdiom, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(txtIdiom, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(BtnRegister)
                 .addGap(27, 27, 27))
         );
@@ -148,7 +148,7 @@ public class InfoOfConuntry extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRegisterActionPerformed
-        City city = new City(txtCountry.getText(), txtName.getText(), txtMuseum.getText(),txtUniversity.getText(), txtIdiom.getText());
+        City city = new City(txtCountry.getText(), txtName.getText(), txtMuseum.getText(),txtUniversity.getText(),txtIdiom.getText());
         citiess.add(city);
         
         mostrar();
@@ -157,10 +157,11 @@ public class InfoOfConuntry extends javax.swing.JFrame {
         txtMuseum.setText("");
         txtUniversity.setText("");
         txtIdiom.setText("");
+        
     }
         
         public void mostrar(){
-            String matris [][]= new String [citiess.size()][4];
+            String matris [][]= new String [citiess.size()][5];
             
             for (int i = 0; i < citiess.size(); i++) {
                 
@@ -179,7 +180,7 @@ public class InfoOfConuntry extends javax.swing.JFrame {
         ));
         
      
-     String Brand , Model, RegistrationNumber , Color;
+     String Country , Name, NumberOfMuseum , NumberOfUniversity, Idiom;
     
     if (txtCountry.getText().length() ==0 || txtName.getText().length() == 0 ||
             txtMuseum.getText().length() == 0 || txtUniversity.getText().length() == 0 || txtIdiom.getText().length() == 0  ){
@@ -188,19 +189,19 @@ public class InfoOfConuntry extends javax.swing.JFrame {
        BtnRegister.enable(false);
     } else{
         BtnRegister.enable(true);
-        Brand = this.txtBrand.getText();
-        Model = this.txtModel.getText();
-        RegistrationNumber = this.txtNumber.getText();
-        Color = this.txtColor.getText();
-   
-       carss.add(Brand, Model,RegistrationNumber, Color);
+        Country = this.txtCountry.getText();
+        Name = this.txtName.getText();
+        NumberOfMuseum = this.txtMuseum.getText();
+        NumberOfUniversity = this.txtUniversity.getText();
+        Idiom= this.txtIdiom.getText();
+       data.add(Country, Name, PROPERTIES, PROPERTIES, Idiom);
       
     }
-    txtBrand.setText("");
-    txtModel.setText(""); 
-    txtNumber.setText("");
-    txtColor.setText("");
-
+    txtCountry.setText("");
+    txtName.setText(""); 
+    txtMuseum.setText("");
+    txtUniversity.setText("");
+    txtIdiom.setText("");
     }//GEN-LAST:event_BtnRegisterActionPerformed
 
     /**

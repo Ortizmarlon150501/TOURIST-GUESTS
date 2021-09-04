@@ -28,9 +28,7 @@ public class City {
     }
 
    
-   
-    
-    
+  
       public City(BasicDBObject dBInfoCity) {
         this.country=dBInfoCity.getString("Country");
         this.name = dBInfoCity.getString("Principal City");
