@@ -27,12 +27,21 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         MnuExit = new javax.swing.JMenu();
         ItmFlight = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        ItmResidence = new javax.swing.JMenuItem();
+        ItmFood = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Stencil", 0, 15)); // NOI18N
+        jLabel1.setText("TOURIST GUEST \"CODE\"");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/travel_transmit_route_tourism_flight_icon_133654.png"))); // NOI18N
 
         MnuExit.setText("Exit");
         MnuExit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -53,6 +62,19 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         });
         ItmFlight.add(jMenuItem1);
 
+        ItmResidence.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
+        ItmResidence.setText("Residence / Month");
+        ItmFlight.add(ItmResidence);
+
+        ItmFood.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.ALT_MASK));
+        ItmFood.setText("Food / Month");
+        ItmFood.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItmFoodActionPerformed(evt);
+            }
+        });
+        ItmFlight.add(ItmFood);
+
         jMenuBar1.add(ItmFlight);
 
         setJMenuBar(jMenuBar1);
@@ -61,11 +83,23 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(172, 172, 172)
+                .addComponent(jLabel2)
+                .addContainerGap(190, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(85, 85, 85)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         pack();
@@ -79,6 +113,10 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         FrmFlightCost frmFlightCost = new FrmFlightCost();
         frmFlightCost.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void ItmFoodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmFoodActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ItmFoodActionPerformed
 
     /**
      * @param args the command line arguments
@@ -117,7 +155,11 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu ItmFlight;
+    private javax.swing.JMenuItem ItmFood;
+    private javax.swing.JMenuItem ItmResidence;
     private javax.swing.JMenu MnuExit;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     // End of variables declaration//GEN-END:variables

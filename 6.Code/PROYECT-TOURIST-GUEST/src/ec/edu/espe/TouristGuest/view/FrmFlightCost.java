@@ -42,6 +42,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         txtNumberChildren = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
+        btnCancelFlightCost = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -128,6 +129,11 @@ public class FrmFlightCost extends javax.swing.JFrame {
 
         jLabel17.setText("How many children: in case it didn't say (0):");
 
+        txtNumberChildren.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNumberChildrenActionPerformed(evt);
+            }
+        });
         txtNumberChildren.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtNumberChildrenKeyTyped(evt);
@@ -135,6 +141,13 @@ public class FrmFlightCost extends javax.swing.JFrame {
         });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Airplane_Grey_icon-icons.com_54909 (1).png"))); // NOI18N
+
+        btnCancelFlightCost.setText("CANCEL");
+        btnCancelFlightCost.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelFlightCostActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -170,6 +183,10 @@ public class FrmFlightCost extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(20, 20, 20))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCancelFlightCost)
+                .addGap(131, 131, 131))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -199,7 +216,9 @@ public class FrmFlightCost extends javax.swing.JFrame {
                     .addComponent(txtNumberChildren, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCancelFlightCost)
+                .addContainerGap())
         );
 
         pack();
@@ -358,6 +377,15 @@ public class FrmFlightCost extends javax.swing.JFrame {
         
     }//GEN-LAST:event_txtNumberChildrenKeyTyped
 
+    private void txtNumberChildrenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumberChildrenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNumberChildrenActionPerformed
+
+    private void btnCancelFlightCostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelFlightCostActionPerformed
+        this.setVisible(false);
+        new TouristsGuestMenu().setVisible(true);
+    }//GEN-LAST:event_btnCancelFlightCostActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -397,6 +425,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> CBChildren;
     private javax.swing.JComboBox<String> CBCity;
     private javax.swing.JTextField TotalTravelCost;
+    private javax.swing.JButton btnCancelFlightCost;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;
