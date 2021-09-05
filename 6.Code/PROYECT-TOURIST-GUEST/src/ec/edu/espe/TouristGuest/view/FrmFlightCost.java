@@ -126,7 +126,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
             }
         });
 
-        jLabel17.setText("Existing Case. How Many Children:");
+        jLabel17.setText("How many children: in case it didn't say (0):");
 
         txtNumberChildren.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -195,7 +195,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
                         .addComponent(jLabel2)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel17)
+                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNumberChildren, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -347,12 +347,15 @@ public class FrmFlightCost extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNumberOfPeopleKeyTyped
 
     private void txtNumberChildrenKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNumberChildrenKeyTyped
-        // TODO add your handling code here:
         char validar=evt.getKeyChar();
         if(Character.isLetter(validar)){
             getToolkit().beep();
             evt.consume();
             JOptionPane.showMessageDialog(rootPane, "Enter only numbers");
+            
+        }
+        
+        
     }//GEN-LAST:event_txtNumberChildrenKeyTyped
 
     /**
