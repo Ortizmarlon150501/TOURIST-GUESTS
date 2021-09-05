@@ -7,13 +7,12 @@ package ec.edu.espe.TouristGuest.view;
 
 
 import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
-import com.mongodb.Mongo;
+
+
 import ec.edu.espe.TouristGuest.controller.RegisterController;
-import java.net.UnknownHostException;
 
 import java.util.logging.Level;
-import java.util.logging.Logger;
+
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -341,7 +340,7 @@ public class Register_Form extends javax.swing.JFrame {
     private void btnStar_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStar_RegiActionPerformed
         // TODO add your handling code here:
       
-        
+        RegisterController Controller_register = new RegisterController();
         JOptionPane.showMessageDialog(this,"User Register successfully" );
 
     }//GEN-LAST:event_btnStar_RegiActionPerformed
