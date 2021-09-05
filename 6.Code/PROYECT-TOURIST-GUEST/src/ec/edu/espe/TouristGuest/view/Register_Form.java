@@ -110,21 +110,6 @@ public class Register_Form extends javax.swing.JFrame {
         jSeparator5 = new javax.swing.JSeparator();
         jScrollPane2 = new javax.swing.JScrollPane();
         table_Register = new javax.swing.JTable();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        txtNumberOfPeople = new javax.swing.JTextField();
-        txtNumberChildren = new javax.swing.JTextField();
-        TotalTravelCost = new javax.swing.JTextField();
-        jButton4 = new javax.swing.JButton();
-        CBCity = new javax.swing.JComboBox<>();
-        jButton3 = new javax.swing.JButton();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
-        jLabel19 = new javax.swing.JLabel();
-        CBChildren = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jComboBoxItem1 = new javax.swing.JComboBox<>();
@@ -235,85 +220,6 @@ public class Register_Form extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 490, 90));
 
-        jLabel9.setText("Choose your travel destination");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 70, -1, -1));
-
-        jLabel14.setText("Number Of People Who Will Travel:");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 120, -1, -1));
-
-        jLabel16.setText("There Are Children Traveling With You:");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 170, -1, -1));
-
-        jLabel17.setText("Existing Case. How Many Children:");
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 210, -1, -1));
-
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(txtNumberOfPeople, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, 120, -1));
-        jPanel3.add(txtNumberChildren, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 120, -1));
-
-        TotalTravelCost.setEditable(false);
-        TotalTravelCost.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TotalTravelCostActionPerformed(evt);
-            }
-        });
-        jPanel3.add(TotalTravelCost, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 120, -1));
-
-        jButton4.setText("Information of All Countries");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
-
-        CBCity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Argentina", "Brazil", "Bolivia", "Chile", "Colombia", "Ecuador", "Paraguay", "Peru", "Uruguay", "Venezuela" }));
-        CBCity.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        CBCity.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CBCityMouseClicked(evt);
-            }
-        });
-        CBCity.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CBCityActionPerformed(evt);
-            }
-        });
-        jPanel3.add(CBCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, -1, -1));
-
-        jButton3.setText("Total Travel Cost");
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton3MouseClicked(evt);
-            }
-        });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, -1, -1));
-
-        jTextArea3.setColumns(20);
-        jTextArea3.setRows(5);
-        jScrollPane4.setViewportView(jTextArea3);
-
-        jPanel3.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 480, 190));
-
-        jLabel19.setText("The Information of All Countries ");
-        jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 200, 20));
-
-        CBChildren.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
-        CBChildren.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        CBChildren.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CBChildrenMouseClicked(evt);
-            }
-        });
-        CBChildren.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CBChildrenActionPerformed(evt);
-            }
-        });
-        jPanel3.add(CBChildren, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
-
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, 520, 480));
-
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_customer_32px_1.png"))); // NOI18N
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 10, -1, -1));
 
@@ -365,19 +271,19 @@ public class Register_Form extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1367, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(242, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 825, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -462,149 +368,9 @@ BasicDBObject document = new BasicDBObject();
 
     }//GEN-LAST:event_btnStar_RegiActionPerformed
 
-    private void CBCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCityActionPerformed
-     
-    }//GEN-LAST:event_CBCityActionPerformed
-
-    private void TotalTravelCostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalTravelCostActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TotalTravelCostActionPerformed
-
     private void jCheckBoxPlanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxPlanActionPerformed
 
     }//GEN-LAST:event_jCheckBoxPlanActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-    
-        DBCursor cursor= Table.find();
-        while(cursor.hasNext()){
-        jTextArea3.setText(jTextArea3.getText()+ "\n" + cursor.next());
-        
-        }
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    @SuppressWarnings("empty-statement")
-    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-
-        int NumberOfPeople;
-        int NumberChildren;
-        float TotalCost;
-        
-        NumberOfPeople=Integer.parseInt(txtNumberOfPeople.getText());
-        NumberChildren=Integer.parseInt(txtNumberChildren.getText()); 
-        String option=(String)CBCity.getSelectedItem();
-        String option1=(String)CBChildren.getSelectedItem();
-        
-        if(option.equals("Argentina") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
-            TotalTravelCost.setText(""+TotalCost);
-            
-    }
-        else{
-            TotalCost=NumberOfPeople*500;
-        }
-        
-        if(option.equals("Brazil") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*250+NumberChildren*110;;
-            TotalTravelCost.setText(""+TotalCost);
-            
-    }
-        else{
-            TotalCost=NumberOfPeople*250;
-        }
-        
-        if(option.equals("Bolivia") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*300+NumberChildren*140;;
-            TotalTravelCost.setText(""+TotalCost);
-            
-    }
-        else{
-            TotalCost=NumberOfPeople*300;
-        }
-        
-        if(option.equals("Chile") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*150+NumberChildren*150;;
-            TotalTravelCost.setText(""+TotalCost);
-            
-    }
-        else{
-            TotalCost=NumberOfPeople*150;
-        }
-        
-        if(option.equals("Colombia") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*400+NumberChildren*120;;
-            TotalTravelCost.setText(""+TotalCost);
-            
-    }
-        else{
-            TotalCost=NumberOfPeople*400;
-        }
-        
-        if(option.equals("Ecuador") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*0+NumberChildren*0;;
-            TotalTravelCost.setText(""+TotalCost);
-            
-    }
-        else{
-            TotalCost=NumberOfPeople*250;
-        }
-        
-        if(option.equals("Paraguay") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*360+NumberChildren*100;;
-            TotalTravelCost.setText(""+TotalCost);
-            
-    }
-        else{
-            TotalCost=NumberOfPeople*360;
-        }
-        
-        if(option.equals("Peru") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*700+NumberChildren*130;;
-            TotalTravelCost.setText(""+TotalCost);
-            
-    }
-        else{
-            TotalCost=NumberOfPeople*700;
-        }
-        
-        if(option.equals("Uruguay") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*150+NumberChildren*140;;
-            TotalTravelCost.setText(""+TotalCost);
-            
-    }
-        else{
-            TotalCost=NumberOfPeople*150;
-        }
-        
-        if(option.equals("Venezuela") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*326+NumberChildren*150;;
-            TotalTravelCost.setText(""+TotalCost);
-            
-    }
-        else{
-            TotalCost=NumberOfPeople*326;
-        }
-        
-        
-       
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3MouseClicked
-
-    private void CBCityMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBCityMouseClicked
-
-        
-
-                
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CBCityMouseClicked
-
-    private void CBChildrenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBChildrenMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CBChildrenMouseClicked
-
-    private void CBChildrenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBChildrenActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CBChildrenActionPerformed
 
     private void table_RegisterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_RegisterMouseClicked
         // TODO add your handling code here:
@@ -657,16 +423,11 @@ BasicDBObject document = new BasicDBObject();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> CBChildren;
-    private javax.swing.JComboBox<String> CBCity;
-    private javax.swing.JTextField TotalTravelCost;
     private javax.swing.JButton btnDelete_Regi;
     private javax.swing.JButton btnEdit_Regi;
     private javax.swing.JButton btnSave_Regi;
     private javax.swing.JButton btnStar_Regi;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JCheckBox jCheckBox2Sport_Tourism;
     private javax.swing.JCheckBox jCheckBox3Mountaineering;
@@ -679,12 +440,8 @@ BasicDBObject document = new BasicDBObject();
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -692,28 +449,22 @@ BasicDBObject document = new BasicDBObject();
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JPasswordField pxtPassword;
     private javax.swing.JPasswordField pxtRetypePass;
     private javax.swing.JTable table_Register;
     private javax.swing.JTextField txtCI;
     private javax.swing.JTextField txtFistName;
     private javax.swing.JTextField txtLastName;
-    private javax.swing.JTextField txtNumberChildren;
-    private javax.swing.JTextField txtNumberOfPeople;
     private javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
 }
