@@ -262,52 +262,52 @@ public class FrmResidenceCosts extends javax.swing.JFrame {
         String option=(String)CBCountryResidence.getSelectedItem();
         
         if(option.equals("Argentina")){
-            TotalCost=TimeOfResidence*500+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*500+NumbersOfGuests*53;;
             txtCostInHotel.setText(""+TotalCost);
             
         }
         if(option.equals("Brazil")){
-            TotalCost=TimeOfResidence*50+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*400+NumbersOfGuests*52;;
             txtCostInHotel.setText(""+TotalCost);
             
         }
         if(option.equals("Bolivia")){
-            TotalCost=TimeOfResidence*300+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*450+NumbersOfGuests*51;;
             txtCostInHotel.setText(""+TotalCost);
             
         }
         if(option.equals("Chile")){
-            TotalCost=TimeOfResidence*200+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*470+NumbersOfGuests*50;;
             txtCostInHotel.setText(""+TotalCost);
             
         }
         if(option.equals("Colombia")){
-            TotalCost=TimeOfResidence*100+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*490+NumbersOfGuests*49;;
             txtCostInHotel.setText(""+TotalCost);
             
         }
         if(option.equals("Ecuador")){
-            TotalCost=TimeOfResidence*500+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*500+NumbersOfGuests*48;;
             txtCostInHotel.setText(""+TotalCost);
             
         }
         if(option.equals("Paraguay")){
-            TotalCost=TimeOfResidence*400+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*495+NumbersOfGuests*47;;
             txtCostInHotel.setText(""+TotalCost);
             
         }
         if(option.equals("Peru")){
-            TotalCost=TimeOfResidence*300+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*475+NumbersOfGuests*46;;
             txtCostInHotel.setText(""+TotalCost);
             
         }
         if(option.equals("Uruguay")){
-            TotalCost=TimeOfResidence*200+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*465+NumbersOfGuests*44;;
             txtCostInHotel.setText(""+TotalCost);
             
         }
         if(option.equals("Venezuela")){
-            TotalCost=TimeOfResidence*100+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*501+NumbersOfGuests*40;;
             txtCostInHotel.setText(""+TotalCost);
             
         }
@@ -325,52 +325,52 @@ public class FrmResidenceCosts extends javax.swing.JFrame {
         String option=(String)CBCountryResidence.getSelectedItem();
         
         if(option.equals("Argentina")){
-            TotalCost=TimeOfResidence*500+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*250+NumbersOfGuests*20;;
             txtCostInDepa.setText(""+TotalCost);
             
         }
         if(option.equals("Brazil")){
-            TotalCost=TimeOfResidence*400+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*180+NumbersOfGuests*21;;
             txtCostInDepa.setText(""+TotalCost);
             
         }
         if(option.equals("Bolivia")){
-            TotalCost=TimeOfResidence*300+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*200+NumbersOfGuests*22;;
             txtCostInDepa.setText(""+TotalCost);
             
         }
         if(option.equals("Chile")){
-            TotalCost=TimeOfResidence*200+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*220+NumbersOfGuests*23;;
             txtCostInDepa.setText(""+TotalCost);
             
         }
         if(option.equals("Colombia")){
-            TotalCost=TimeOfResidence*100+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*260+NumbersOfGuests*24;;
             txtCostInDepa.setText(""+TotalCost);
             
         }
         if(option.equals("Ecuador")){
-            TotalCost=TimeOfResidence*500+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*240+NumbersOfGuests*25;;
             txtCostInDepa.setText(""+TotalCost);
             
         }
         if(option.equals("Paraguay")){
-            TotalCost=TimeOfResidence*400+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*230+NumbersOfGuests*26;;
             txtCostInDepa.setText(""+TotalCost);
             
         }
         if(option.equals("Peru")){
-            TotalCost=TimeOfResidence*300+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*250+NumbersOfGuests*27;;
             txtCostInDepa.setText(""+TotalCost);
             
         }
         if(option.equals("Uruguay")){
-            TotalCost=TimeOfResidence*200+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*210+NumbersOfGuests*28;;
             txtCostInDepa.setText(""+TotalCost);
             
         }
         if(option.equals("Venezuela")){
-            TotalCost=TimeOfResidence*100+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*270+NumbersOfGuests*29;;
             txtCostInDepa.setText(""+TotalCost);
             
         }
@@ -386,52 +386,52 @@ public class FrmResidenceCosts extends javax.swing.JFrame {
         String option=(String)CBCountryResidence.getSelectedItem();
         
         if(option.equals("Argentina")){
-            TotalCost=TimeOfResidence*500+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*300+NumbersOfGuests*1;;
             txtCostInHome.setText(""+TotalCost);
             
         }
         if(option.equals("Brazil")){
-            TotalCost=TimeOfResidence*400+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*360+NumbersOfGuests*1;;
             txtCostInHome.setText(""+TotalCost);
             
         }
         if(option.equals("Bolivia")){
-            TotalCost=TimeOfResidence*300+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*370+NumbersOfGuests*1;;
             txtCostInHome.setText(""+TotalCost);
             
         }
         if(option.equals("Chile")){
-            TotalCost=TimeOfResidence*200+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*380+NumbersOfGuests*1;;
             txtCostInHome.setText(""+TotalCost);
             
         }
         if(option.equals("Colombia")){
-            TotalCost=TimeOfResidence*100+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*390+NumbersOfGuests*1;;
             txtCostInHome.setText(""+TotalCost);
             
         }
         if(option.equals("Ecuador")){
-            TotalCost=TimeOfResidence*500+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*400+NumbersOfGuests*1;;
             txtCostInHome.setText(""+TotalCost);
             
         }
         if(option.equals("Paraguay")){
-            TotalCost=TimeOfResidence*400+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*390+NumbersOfGuests*1;;
             txtCostInHome.setText(""+TotalCost);
             
         }
         if(option.equals("Peru")){
-            TotalCost=TimeOfResidence*300+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*380+NumbersOfGuests*1;;
             txtCostInHome.setText(""+TotalCost);
             
         }
         if(option.equals("Uruguay")){
-            TotalCost=TimeOfResidence*200+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*360+NumbersOfGuests*1;;
             txtCostInHome.setText(""+TotalCost);
             
         }
         if(option.equals("Venezuela")){
-            TotalCost=TimeOfResidence*100+NumbersOfGuests*50;;
+            TotalCost=TimeOfResidence*365+NumbersOfGuests*1;;
             txtCostInHome.setText(""+TotalCost);
          }
     }//GEN-LAST:event_btnHomeMouseClicked

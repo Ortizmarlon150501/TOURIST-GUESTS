@@ -5,6 +5,8 @@
  */
 package ec.edu.espe.TouristGuest.view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Jean Jaramillo
@@ -32,8 +34,10 @@ public class FrmFoodCosts extends javax.swing.JFrame {
         btnCancelFlightCost = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         CBCountryResidence = new javax.swing.JComboBox<>();
+        jButton1 = new javax.swing.JButton();
+        txtMaketBasket = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtNumberOfPeop = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,39 +68,56 @@ public class FrmFoodCosts extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("Market Basket:");
+        jButton1.setText("Basic Food Basket:");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
 
-        jTextField1.setEditable(false);
+        txtMaketBasket.setEditable(false);
+
+        jLabel3.setText("Numbers Of People");
+
+        txtNumberOfPeop.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNumberOfPeopKeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel3))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(CBCountryResidence, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNumberOfPeop, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                        .addComponent(jLabel2)
+                        .addGap(24, 24, 24))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtMaketBasket, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(153, 153, 153))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnCancelFlightCost)
-                                .addGap(107, 107, 107))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(27, 27, 27)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addGap(18, 18, 18)
-                                .addComponent(CBCountryResidence, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
-                        .addGap(24, 24, 24))))
+                        .addComponent(jLabel1)
+                        .addGap(153, 153, 153))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnCancelFlightCost)
+                        .addGap(110, 110, 110))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -111,14 +132,18 @@ public class FrmFoodCosts extends javax.swing.JFrame {
                         .addGap(25, 25, 25)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CBCountryResidence, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(72, 72, 72)
+                            .addComponent(CBCountryResidence, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(txtNumberOfPeop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtMaketBasket, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(73, 73, 73)
                 .addComponent(btnCancelFlightCost)
-                .addContainerGap())
+                .addGap(33, 33, 33))
         );
 
         pack();
@@ -137,6 +162,75 @@ public class FrmFoodCosts extends javax.swing.JFrame {
     private void CBCountryResidenceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCountryResidenceActionPerformed
 
     }//GEN-LAST:event_CBCountryResidenceActionPerformed
+
+    private void txtNumberOfPeopKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNumberOfPeopKeyTyped
+        char validar=evt.getKeyChar();
+        if(Character.isLetter(validar)){
+            getToolkit().beep();
+            evt.consume();
+            JOptionPane.showMessageDialog(rootPane, "Enter only numbers");
+            
+        }
+    }//GEN-LAST:event_txtNumberOfPeopKeyTyped
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        int NumbersOfPeople;
+        float TotalCost;
+
+        NumbersOfPeople=Integer.parseInt(txtNumberOfPeop.getText());
+        String option=(String)CBCountryResidence.getSelectedItem();
+        
+        if(option.equals("Argentina")){
+            TotalCost=NumbersOfPeople*350;;
+            txtMaketBasket.setText(""+TotalCost);
+            
+        }
+        if(option.equals("Brazil")){
+            TotalCost=NumbersOfPeople*361;;
+            txtMaketBasket.setText(""+TotalCost);
+            
+        }
+        if(option.equals("Bolivia")){
+            TotalCost=NumbersOfPeople*365;;
+            txtMaketBasket.setText(""+TotalCost);
+            
+        }
+        if(option.equals("Chile")){
+            TotalCost=NumbersOfPeople*320;;
+            txtMaketBasket.setText(""+TotalCost);
+            
+        }
+        if(option.equals("Colombia")){
+            TotalCost=NumbersOfPeople*280;;
+            txtMaketBasket.setText(""+TotalCost);
+            
+        }
+        if(option.equals("Ecuador")){
+            TotalCost=NumbersOfPeople*350;;
+            txtMaketBasket.setText(""+TotalCost);
+            
+        }
+        if(option.equals("Paraguay")){
+            TotalCost=NumbersOfPeople*290;;
+            txtMaketBasket.setText(""+TotalCost);
+            
+        }
+        if(option.equals("Peru")){
+            TotalCost=NumbersOfPeople*285;;
+            txtMaketBasket.setText(""+TotalCost);
+            
+        }
+        if(option.equals("Uruguay")){
+            TotalCost=NumbersOfPeople*264;;
+            txtMaketBasket.setText(""+TotalCost);
+            
+        }
+        if(option.equals("Venezuela")){
+            TotalCost=NumbersOfPeople*240;;
+            txtMaketBasket.setText(""+TotalCost);
+            
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -176,10 +270,12 @@ public class FrmFoodCosts extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CBCountryResidence;
     private javax.swing.JButton btnCancelFlightCost;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField txtMaketBasket;
+    private javax.swing.JTextField txtNumberOfPeop;
     // End of variables declaration//GEN-END:variables
 }
