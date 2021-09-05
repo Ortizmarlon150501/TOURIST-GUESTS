@@ -37,6 +37,10 @@ public class City {
         this.idiom = dBInfoCity.getString("Idiom");
         
     }
+
+    public City(String maracaibo_, int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     public BasicDBObject dbCitiesInfo(){
@@ -122,6 +126,10 @@ public class City {
      */
     public void setIdiom(String idiom) {
         this.idiom = idiom;
+    }
+
+    public boolean getinfocity() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
  

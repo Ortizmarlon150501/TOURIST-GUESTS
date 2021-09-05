@@ -5,11 +5,11 @@
  */
 package ec.edu.espe.TouristGuest.view;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
+
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.Mongo;
+import ec.edu.espe.TouristGuest.controller.RegisterController;
 import java.net.UnknownHostException;
 
 import java.util.logging.Level;
@@ -23,26 +23,13 @@ import javax.swing.table.DefaultTableModel;
  */
 public class Register_Form extends javax.swing.JFrame {
 
-    DB db;
-    DBCollection Table;
+  
     DBCollection Table_Register;
     /**
      * Creates new form Register_Form
      */
     public Register_Form() {
-        try {
-            Mongo mongo = new Mongo("LocalHost",27017);
-            db= mongo.getDB("CityDate");
-            db=mongo.getDB("Register");
-            Table= db.getCollection("Table");
-            Table_Register=db.getCollection("Table_Register");
-            
-        
-            
-            
-        } catch (UnknownHostException ex) {
-            Logger.getLogger(Register_Form.class.getName()).log(Level.SEVERE, null, ex);
-        }
+       
         
         initComponents();
         this.setLocationRelativeTo(null);
@@ -93,7 +80,7 @@ public class Register_Form extends javax.swing.JFrame {
         pxtPassword = new javax.swing.JPasswordField();
         pxtRetypePass = new javax.swing.JPasswordField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txa_Address = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         txtCI = new javax.swing.JTextField();
@@ -112,13 +99,12 @@ public class Register_Form extends javax.swing.JFrame {
         table_Register = new javax.swing.JTable();
         jLabel15 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jComboBoxItem1 = new javax.swing.JComboBox<>();
+        cmb_Gender = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         btnSave_Regi = new javax.swing.JButton();
         btnDelete_Regi = new javax.swing.JButton();
         btnEdit_Regi = new javax.swing.JButton();
         btnStar_Regi = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -159,9 +145,9 @@ public class Register_Form extends javax.swing.JFrame {
         pxtRetypePass.setText("jPasswordField2eeikddd");
         jPanel1.add(pxtRetypePass, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 160, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txa_Address.setColumns(20);
+        txa_Address.setRows(5);
+        jScrollPane1.setViewportView(txa_Address);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 160, -1));
 
@@ -226,8 +212,8 @@ public class Register_Form extends javax.swing.JFrame {
         jLabel18.setText("Traveler Data");
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 120, 20));
 
-        jComboBoxItem1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Femenine", "Others", " " }));
-        jPanel1.add(jComboBoxItem1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 110, -1, -1));
+        cmb_Gender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Femenine", "Others", " " }));
+        jPanel1.add(cmb_Gender, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 110, -1, -1));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -237,7 +223,7 @@ public class Register_Form extends javax.swing.JFrame {
                 btnSave_RegiActionPerformed(evt);
             }
         });
-        jPanel2.add(btnSave_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, 30));
+        jPanel2.add(btnSave_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, -1, 30));
 
         btnDelete_Regi.setText("Delete");
         btnDelete_Regi.addActionListener(new java.awt.event.ActionListener() {
@@ -245,7 +231,7 @@ public class Register_Form extends javax.swing.JFrame {
                 btnDelete_RegiActionPerformed(evt);
             }
         });
-        jPanel2.add(btnDelete_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, -1, 30));
+        jPanel2.add(btnDelete_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, -1, 30));
 
         btnEdit_Regi.setText("Edit");
         btnEdit_Regi.addActionListener(new java.awt.event.ActionListener() {
@@ -253,7 +239,7 @@ public class Register_Form extends javax.swing.JFrame {
                 btnEdit_RegiActionPerformed(evt);
             }
         });
-        jPanel2.add(btnEdit_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 60, 30));
+        jPanel2.add(btnEdit_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 10, 60, 30));
 
         btnStar_Regi.setText("Start");
         btnStar_Regi.addActionListener(new java.awt.event.ActionListener() {
@@ -261,21 +247,20 @@ public class Register_Form extends javax.swing.JFrame {
                 btnStar_RegiActionPerformed(evt);
             }
         });
-        jPanel2.add(btnStar_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 60, 30));
-
-        jButton5.setText("Record Of Previous Trips");
-        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, -1, -1));
+        jPanel2.add(btnStar_Regi, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 10, 60, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 825, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 825, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -297,21 +282,16 @@ public class Register_Form extends javax.swing.JFrame {
     
     private void btnSave_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSave_RegiActionPerformed
         // TODO add your handling code here:
-      
-BasicDBObject document = new BasicDBObject();
-        document.put("Fist_Name","'"+txtFistName.getText()+"'");
-        document.put("Last_Name","'"+txtLastName.getText()+"'");
-        document.put("Password","'"+pxtPassword.getText() +"'");
-        document.put("Address","'"+jTextArea1.getText()+"'");
-        document.put("CI","'"+txtCI.getText()+"'");
-        document.put("Gender","'"+jComboBoxItem1.getSelectedItem().toString()+"'");
+      RegisterController register = new RegisterController();
+      register.addRegister(txtFistName, txtLastName, txtUsername, pxtPassword, pxtRetypePass, txa_Address, txtCI, cmb_Gender, rootPane);
+       
          
-        Table_Register.insert(document);
+        
        
         
         this.model.addRow(new Object[]{this.txtFistName.getText(),this.txtLastName.getText() ,
-           this.txtUsername.getText(), this.pxtPassword.getText(), this.jTextArea1.getText(),
-           this.txtCI.getText(),this.jComboBoxItem1.getSelectedItem(),
+           this.txtUsername.getText(), this.pxtPassword.getText(), this.txa_Address.getText(),
+           this.txtCI.getText(),this.cmb_Gender.getSelectedItem(),
                });
        
        
@@ -319,9 +299,9 @@ BasicDBObject document = new BasicDBObject();
        this.txtLastName.setText("");
        this.txtUsername.setText("");
        this.pxtPassword.setText("");
-       this.jTextArea1.setText("");
+       this.txa_Address.setText("");
        this.txtCI.setText("");
-       this.jComboBoxItem1.setSelectedIndex(0);
+       this.cmb_Gender.setSelectedIndex(0);
        
        
        txtFistName.grabFocus();
@@ -341,16 +321,16 @@ BasicDBObject document = new BasicDBObject();
     int filas;
     private void btnEdit_RegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEdit_RegiActionPerformed
         // TODO add your handling code here:
-        
-       
+         RegisterController registerEdit = new RegisterController();
+        registerEdit.table_RegisterMouse(txtFistName, txtLastName, txtUsername, pxtPassword, pxtRetypePass, txa_Address, txtCI, cmb_Gender, rootPane);
         String []datos=new String[7];
         datos[0]=txtFistName.getText();
         datos[1]=txtLastName.getText();
         datos[2]=txtUsername.getText();
         datos[3]=pxtPassword.getText();
-        datos[4]=jTextArea1.getText();
+        datos[4]=txa_Address.getText();
         datos[5]=txtCI.getText();
-        datos[6]=jComboBoxItem1.getSelectedItem().toString();
+        datos[6]=cmb_Gender.getSelectedItem().toString();
         
         for (int i = 0; i <table_Register.getColumnCount(); i++){
         model.setValueAt(datos[i], filas, i);
@@ -374,16 +354,17 @@ BasicDBObject document = new BasicDBObject();
 
     private void table_RegisterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_RegisterMouseClicked
         // TODO add your handling code here:
-        DBCursor curso=Table_Register.find();
-            int fila_select=table_Register.getSelectedRow();
         
+        RegisterController  registerEdit = new RegisterController(); 
+        registerEdit.table_RegisterMouse(txtFistName, txtLastName, txtUsername, pxtPassword, pxtRetypePass, txa_Address, txtCI, cmb_Gender, rootPane);
+        int fila_select=table_Register.getSelectedRow();
         txtFistName.setText(table_Register.getValueAt(fila_select,0).toString());
         txtLastName.setText(table_Register.getValueAt(fila_select, 1).toString());
         txtUsername.setText(table_Register.getValueAt(fila_select, 2).toString());
         pxtPassword.setText(table_Register.getValueAt(fila_select, 3).toString());
-        jTextArea1.setText(table_Register.getValueAt(fila_select, 4).toString());
+        txa_Address.setText(table_Register.getValueAt(fila_select, 4).toString());
         txtCI.setText(table_Register.getValueAt(fila_select, 5).toString());
-        jComboBoxItem1.setSelectedItem(table_Register.getValueAt(fila_select, 6).toString());
+        cmb_Gender.setSelectedItem(table_Register.getValueAt(fila_select, 6).toString());
         
     }//GEN-LAST:event_table_RegisterMouseClicked
 
@@ -428,13 +409,12 @@ BasicDBObject document = new BasicDBObject();
     private javax.swing.JButton btnSave_Regi;
     private javax.swing.JButton btnStar_Regi;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JComboBox<String> cmb_Gender;
     private javax.swing.JCheckBox jCheckBox2Sport_Tourism;
     private javax.swing.JCheckBox jCheckBox3Mountaineering;
     private javax.swing.JCheckBox jCheckBox4Go_On_Excursions;
     private javax.swing.JCheckBox jCheckBox5Hourse_Trips;
     private javax.swing.JCheckBox jCheckBoxPlan;
-    private javax.swing.JComboBox<String> jComboBoxItem1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -458,10 +438,10 @@ BasicDBObject document = new BasicDBObject();
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JPasswordField pxtPassword;
     private javax.swing.JPasswordField pxtRetypePass;
     private javax.swing.JTable table_Register;
+    private javax.swing.JTextArea txa_Address;
     private javax.swing.JTextField txtCI;
     private javax.swing.JTextField txtFistName;
     private javax.swing.JTextField txtLastName;

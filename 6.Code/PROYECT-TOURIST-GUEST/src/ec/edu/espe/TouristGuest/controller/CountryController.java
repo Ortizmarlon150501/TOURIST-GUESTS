@@ -9,10 +9,9 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.Mongo;
-<<<<<<< HEAD
-=======
+
 import ec.edu.espe.TouristGuest.model.City;
->>>>>>> aaeb919cbc5e4e4d05a9a9ce38e7446fabeea7ab
+
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.logging.Level;
