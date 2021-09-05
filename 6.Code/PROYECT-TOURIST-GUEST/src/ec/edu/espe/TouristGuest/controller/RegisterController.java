@@ -42,9 +42,7 @@ public class RegisterController {
         }
         
     }
-    
-
-    public void addRegister(JTextField txtFistName, JTextField txtLastName, JTextField txtUsername, JTextField pxtPassword,
+        public void addRegister(JTextField txtFistName, JTextField txtLastName, JTextField txtUsername, JTextField pxtPassword,
             JTextField pxtRetypePass, JTextArea txa_Address, JTextField txtCI,JComboBox cmb_Gender, JRootPane rootPane) {
         if ("".equals(txtFistName.getText()) || "".equals(txtLastName.getText()) || "".equals(txtUsername.getText()) || "".equals(pxtPassword.getText()) || "".equals(pxtRetypePass.getText())
                 || "" .equals(txa_Address.getText()) || ""  .equals(txtCI.getText()) || ""  .equals(cmb_Gender.getSelectedItem())  ) {
@@ -84,6 +82,8 @@ public class RegisterController {
            
        }
     }
+
+
 }
         
         

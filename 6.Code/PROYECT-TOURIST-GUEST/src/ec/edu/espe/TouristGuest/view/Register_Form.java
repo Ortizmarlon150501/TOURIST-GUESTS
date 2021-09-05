@@ -114,7 +114,7 @@ public class Register_Form extends javax.swing.JFrame {
         jLabel1.setBackground(new java.awt.Color(153, 153, 153));
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel1.setText("       REGISTER");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 260, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 260, -1));
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 11, -1, -1));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, -1, 60));
 
@@ -167,19 +167,19 @@ public class Register_Form extends javax.swing.JFrame {
                 jCheckBoxPlanActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBoxPlan, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, -1, -1));
+        jPanel1.add(jCheckBoxPlan, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, -1, -1));
 
         jCheckBox2Sport_Tourism.setText("Sports Tourism");
-        jPanel1.add(jCheckBox2Sport_Tourism, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, 110, -1));
+        jPanel1.add(jCheckBox2Sport_Tourism, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 110, -1));
 
         jCheckBox3Mountaineering.setText("Mountaineering ");
-        jPanel1.add(jCheckBox3Mountaineering, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, -1, -1));
+        jPanel1.add(jCheckBox3Mountaineering, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, -1, -1));
 
         jCheckBox4Go_On_Excursions.setText("Go On Excursions");
-        jPanel1.add(jCheckBox4Go_On_Excursions, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, -1, -1));
+        jPanel1.add(jCheckBox4Go_On_Excursions, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, -1, -1));
 
         jCheckBox5Hourse_Trips.setText("Horse Trips");
-        jPanel1.add(jCheckBox5Hourse_Trips, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 330, -1, -1));
+        jPanel1.add(jCheckBox5Hourse_Trips, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 330, 100, -1));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, 0, 350));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 10, -1, 380));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 400, -1, -1));
@@ -207,7 +207,7 @@ public class Register_Form extends javax.swing.JFrame {
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 490, 90));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_customer_32px_1.png"))); // NOI18N
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 10, -1, -1));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 30, 40));
 
         jLabel18.setText("Traveler Data");
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 120, 20));
@@ -254,14 +254,12 @@ public class Register_Form extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 825, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 816, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
