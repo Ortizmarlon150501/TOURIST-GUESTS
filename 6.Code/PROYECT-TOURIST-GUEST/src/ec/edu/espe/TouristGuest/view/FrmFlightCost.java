@@ -43,6 +43,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
         txtNumberChildren = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         btnCancelFlightCost = new javax.swing.JButton();
+        btnOK = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -149,6 +150,13 @@ public class FrmFlightCost extends javax.swing.JFrame {
             }
         });
 
+        btnOK.setText("OK");
+        btnOK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOKActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -160,6 +168,8 @@ public class FrmFlightCost extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnOK)
+                .addGap(40, 40, 40)
                 .addComponent(btnCancelFlightCost)
                 .addGap(131, 131, 131))
             .addGroup(layout.createSequentialGroup()
@@ -215,7 +225,9 @@ public class FrmFlightCost extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnCancelFlightCost)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCancelFlightCost)
+                    .addComponent(btnOK))
                 .addContainerGap())
         );
 
@@ -384,6 +396,12 @@ public class FrmFlightCost extends javax.swing.JFrame {
         new TouristsGuestMenu().setVisible(true);
     }//GEN-LAST:event_btnCancelFlightCostActionPerformed
 
+    private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
+        this.setVisible(false);
+        new TouristsGuestMenu().setVisible(true);                                     
+        
+    }//GEN-LAST:event_btnOKActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -424,6 +442,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> CBCity;
     private javax.swing.JTextField TotalTravelCost;
     private javax.swing.JButton btnCancelFlightCost;
+    private javax.swing.JButton btnOK;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;

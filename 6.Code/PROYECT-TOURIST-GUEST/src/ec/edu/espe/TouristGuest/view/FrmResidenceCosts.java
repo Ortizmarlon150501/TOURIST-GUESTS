@@ -45,6 +45,7 @@ public class FrmResidenceCosts extends javax.swing.JFrame {
         btnHotel = new javax.swing.JButton();
         btnDepa = new javax.swing.JButton();
         btnHome = new javax.swing.JButton();
+        btnOK = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -120,12 +121,21 @@ public class FrmResidenceCosts extends javax.swing.JFrame {
             }
         });
 
+        btnOK.setText("OK");
+        btnOK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOKActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnOK)
+                .addGap(46, 46, 46)
                 .addComponent(btnCancelFlightCost)
                 .addGap(122, 122, 122))
             .addGroup(layout.createSequentialGroup()
@@ -167,9 +177,8 @@ public class FrmResidenceCosts extends javax.swing.JFrame {
                         .addGap(15, 15, 15)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(txtCostInHome, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtCostInHotel, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
-                                .addComponent(txtCostInDepa)))))
+                            .addComponent(txtCostInHotel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
+                            .addComponent(txtCostInDepa, javax.swing.GroupLayout.Alignment.LEADING))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -209,7 +218,9 @@ public class FrmResidenceCosts extends javax.swing.JFrame {
                     .addComponent(txtCostInHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnHome))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(btnCancelFlightCost)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCancelFlightCost)
+                    .addComponent(btnOK))
                 .addContainerGap())
         );
 
@@ -436,6 +447,11 @@ public class FrmResidenceCosts extends javax.swing.JFrame {
          }
     }//GEN-LAST:event_btnHomeMouseClicked
 
+    private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
+        this.setVisible(false);
+        new TouristsGuestMenu().setVisible(true);
+    }//GEN-LAST:event_btnOKActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -477,6 +493,7 @@ public class FrmResidenceCosts extends javax.swing.JFrame {
     private javax.swing.JButton btnDepa;
     private javax.swing.JButton btnHome;
     private javax.swing.JButton btnHotel;
+    private javax.swing.JButton btnOK;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

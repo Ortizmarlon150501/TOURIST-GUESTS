@@ -38,6 +38,7 @@ public class FrmFoodCosts extends javax.swing.JFrame {
         txtMaketBasket = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtNumberOfPeop = new javax.swing.JTextField();
+        btnOK = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -85,6 +86,13 @@ public class FrmFoodCosts extends javax.swing.JFrame {
             }
         });
 
+        btnOK.setText("OK");
+        btnOK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOKActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -116,6 +124,8 @@ public class FrmFoodCosts extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addGap(153, 153, 153))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnOK)
+                        .addGap(37, 37, 37)
                         .addComponent(btnCancelFlightCost)
                         .addGap(110, 110, 110))))
         );
@@ -142,7 +152,9 @@ public class FrmFoodCosts extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtMaketBasket, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(73, 73, 73)
-                .addComponent(btnCancelFlightCost)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCancelFlightCost)
+                    .addComponent(btnOK))
                 .addGap(33, 33, 33))
         );
 
@@ -232,6 +244,12 @@ public class FrmFoodCosts extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
+    private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
+        this.setVisible(false);
+        new TouristsGuestMenu().setVisible(true);
+
+    }//GEN-LAST:event_btnOKActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -270,6 +288,7 @@ public class FrmFoodCosts extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> CBCountryResidence;
     private javax.swing.JButton btnCancelFlightCost;
+    private javax.swing.JButton btnOK;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
