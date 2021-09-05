@@ -64,6 +64,11 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
 
         ItmResidence.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
         ItmResidence.setText("Residence / Month");
+        ItmResidence.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItmResidenceActionPerformed(evt);
+            }
+        });
         ItmFlight.add(ItmResidence);
 
         ItmFood.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.ALT_MASK));
@@ -115,8 +120,14 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void ItmFoodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmFoodActionPerformed
-        // TODO add your handling code here:
+        FrmFoodCosts frmFoodCosts = new FrmFoodCosts();
+        frmFoodCosts.setVisible(true);
     }//GEN-LAST:event_ItmFoodActionPerformed
+
+    private void ItmResidenceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmResidenceActionPerformed
+        FrmResidenceCosts frmResidenceCosts = new FrmResidenceCosts();
+        frmResidenceCosts.setVisible(true);
+    }//GEN-LAST:event_ItmResidenceActionPerformed
 
     /**
      * @param args the command line arguments

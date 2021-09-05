@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/SystemTouristGuest.java</file>
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/Country.java</file>
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/model/City.java</file>
@@ -18,6 +19,15 @@
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/controller/CountryController.java</file>
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/Ticket_Tourist_Guest.java</file>
             <file>file:/C:/Users/usuario/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/InfoOfConuntry.java</file>
+=======
+            <file>file:/C:/Users/xxxx/Desktop/PROJECT%203/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/FrmFoodCosts.java</file>
+            <file>file:/C:/Users/xxxx/Desktop/PROJECT%203/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/controller/CountryController.java</file>
+            <file>file:/C:/Users/xxxx/Desktop/PROJECT%203/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/FrmFlightCost.java</file>
+            <file>file:/C:/Users/xxxx/Desktop/PROJECT%203/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/InfoOfConuntry.java</file>
+            <file>file:/C:/Users/xxxx/Desktop/PROJECT%203/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/FrmResidenceCosts.java</file>
+            <file>file:/C:/Users/xxxx/Desktop/PROJECT%203/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/controller/RegisterController.java</file>
+            <file>file:/C:/Users/xxxx/Desktop/PROJECT%203/TOURIST-GUESTS/6.Code/PROYECT-TOURIST-GUEST/src/ec/edu/espe/TouristGuest/view/SystemTouristGuest.java</file>
+>>>>>>> becbc50484018b7f7534200fedcf07e1057ab445
         </group>
     </open-files>
 </project-private>
