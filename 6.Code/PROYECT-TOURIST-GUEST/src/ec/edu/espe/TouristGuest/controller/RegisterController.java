@@ -15,25 +15,24 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Marlon Ortiz Codec ESPE-DCCO
+ * @author Bryan Maisincho Codes ESPE-DCCO
  */
-public class CountryController {
-        DB DataBase;
-    DBCollection collection;
+public class RegisterController {
+    DB db;
+ 
+    DBCollection Table_Register;
     BasicDBObject document = new BasicDBObject();
     
-    public CountryController(){
+    
+    public RegisterController(){
         
         try{
             Mongo mongo = new Mongo("localhost", 27017);
-            DataBase = mongo.getDB("InfoCountry");
-            collection = DataBase.getCollection("Country");
-            System.out.println("successful connection");
+            db=mongo.getDB("Register");
+            Table_Register = db.getCollection("Table_Register");
+            System.out.println("successfull connection");
            }catch(UnknownHostException ex){
             Logger.getLogger(CountryController.class.getName()).log(Level.SEVERE, null, ex);            
         }
     }
-    
-    
-    
 }
