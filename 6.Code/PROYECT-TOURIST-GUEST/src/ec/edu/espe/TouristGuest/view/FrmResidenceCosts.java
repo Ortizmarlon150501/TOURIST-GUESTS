@@ -18,6 +18,7 @@ public class FrmResidenceCosts extends javax.swing.JFrame {
      */
     public FrmResidenceCosts() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

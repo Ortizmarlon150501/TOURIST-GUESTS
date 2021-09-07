@@ -18,6 +18,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
      */
     public FrmFlightCost() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

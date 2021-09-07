@@ -173,11 +173,11 @@ public class Ticket_Tourist_Guest extends javax.swing.JFrame {
            if (choose == 0){
            txtprice.setText("0.0");
            }else if (choose == 1){
-           txtprice.setText("500.0");
-           }else if (choose == 2){
-           txtprice.setText("200.0");
-           }else if (choose == 3){
            txtprice.setText("100.0");
+           }else if (choose == 2){
+           txtprice.setText("50.0");
+           }else if (choose == 3){
+           txtprice.setText("25.0");
            }
         
         

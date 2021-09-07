@@ -18,6 +18,7 @@ public class FrmFoodCosts extends javax.swing.JFrame {
      */
     public FrmFoodCosts() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

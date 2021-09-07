@@ -20,6 +20,7 @@ public class InfoOfConuntry extends javax.swing.JFrame {
 
     public InfoOfConuntry() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
