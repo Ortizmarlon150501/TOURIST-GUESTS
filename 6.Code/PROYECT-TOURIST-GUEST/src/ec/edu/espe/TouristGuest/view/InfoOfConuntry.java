@@ -53,26 +53,26 @@ public class InfoOfConuntry extends javax.swing.JFrame {
 
         jTableCity.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Country", "Title 2", "Title 3", "Title 4", "Title 5"
             }
         ));
         jScrollPane1.setViewportView(jTableCity);
 
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("Country:");
 
-        jLabel4.setText("jLabel4");
+        jLabel4.setText("Name:");
 
-        jLabel5.setText("jLabel5");
+        jLabel5.setText("Number Of Museum: ");
 
-        jLabel6.setText("jLabel6");
+        jLabel6.setText("Number Of University:");
 
-        jLabel7.setText("jLabel7");
+        jLabel7.setText("Idiom:");
 
         BtnRegister.setText("add");
         BtnRegister.addActionListener(new java.awt.event.ActionListener() {
@@ -178,6 +178,7 @@ public class InfoOfConuntry extends javax.swing.JFrame {
             new String [] {
                 "Country", "Name", "Number Of Museum", "Number Of University", "Idiom"
             }
+                       
         ));
         
      
@@ -249,7 +250,7 @@ public class InfoOfConuntry extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTableCity;
+    public javax.swing.JTable jTableCity;
     private javax.swing.JTextField txtCountry;
     private javax.swing.JTextField txtIdiom;
     private javax.swing.JTextField txtMuseum;
