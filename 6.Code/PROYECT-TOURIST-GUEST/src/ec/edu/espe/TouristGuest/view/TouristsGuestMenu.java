@@ -42,9 +42,9 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         ItmTablewithalltheinformation = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuTravel = new javax.swing.JMenu();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenuItem10 = new javax.swing.JMenuItem();
-        jMenuItem11 = new javax.swing.JMenuItem();
+        ItmAdd = new javax.swing.JMenuItem();
+        ItmDelete = new javax.swing.JMenuItem();
+        ItmPrintf = new javax.swing.JMenuItem();
         jMenuHelp = new javax.swing.JMenu();
         jMenuItem12 = new javax.swing.JMenuItem();
         jMenuItem13 = new javax.swing.JMenuItem();
@@ -151,17 +151,17 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
 
         jMenuTravel.setText("Travel");
 
-        jMenuItem9.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem9.setText("Add");
-        jMenuTravel.add(jMenuItem9);
+        ItmAdd.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
+        ItmAdd.setText("Add");
+        jMenuTravel.add(ItmAdd);
 
-        jMenuItem10.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem10.setText("Delete");
-        jMenuTravel.add(jMenuItem10);
+        ItmDelete.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.ALT_MASK));
+        ItmDelete.setText("Delete");
+        jMenuTravel.add(ItmDelete);
 
-        jMenuItem11.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem11.setText("Printf");
-        jMenuTravel.add(jMenuItem11);
+        ItmPrintf.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.ALT_MASK));
+        ItmPrintf.setText("Printf");
+        jMenuTravel.add(ItmPrintf);
 
         jMenuBar1.add(jMenuTravel);
 
@@ -269,9 +269,12 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem ItmAdd;
+    private javax.swing.JMenuItem ItmDelete;
     private javax.swing.JMenu ItmFlight;
     private javax.swing.JMenuItem ItmFood;
     private javax.swing.JMenuItem ItmLogin;
+    private javax.swing.JMenuItem ItmPrintf;
     private javax.swing.JMenuItem ItmResidence;
     private javax.swing.JMenu ItmTablewithalltheinformation;
     private javax.swing.JMenu MnuExit;
@@ -280,12 +283,9 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuHelp;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
     private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JMenu jMenuTravel;
     private javax.swing.JMenu jMenuUser;
     private javax.swing.JPanel jPanel1;
