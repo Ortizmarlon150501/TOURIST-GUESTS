@@ -39,13 +39,8 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         ItmFood = new javax.swing.JMenuItem();
         jMenuUser = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
         jMenuView = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
         jMenuTravel = new javax.swing.JMenu();
         jMenuItem9 = new javax.swing.JMenuItem();
         jMenuItem10 = new javax.swing.JMenuItem();
@@ -139,43 +134,13 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         });
         jMenuUser.add(jMenuItem3);
 
-        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem2.setText("Create User");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
-            }
-        });
-        jMenuUser.add(jMenuItem2);
-
-        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem4.setText("Change Pasword");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
-            }
-        });
-        jMenuUser.add(jMenuItem4);
-
         jMenuBar1.add(jMenuUser);
 
         jMenuView.setText("View");
 
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_W, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem5.setText("List of Countrys");
+        jMenuItem5.setText("Table with all the Information ");
         jMenuView.add(jMenuItem5);
-
-        jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem6.setText("List of Cities");
-        jMenuView.add(jMenuItem6);
-
-        jMenuItem7.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem7.setText("Number of Inhabitant");
-        jMenuView.add(jMenuItem7);
-
-        jMenuItem8.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem8.setText("Number Universities");
-        jMenuView.add(jMenuItem8);
 
         jMenuBar1.add(jMenuView);
 
@@ -202,7 +167,7 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         jMenuHelp.add(jMenuItem12);
 
         jMenuItem13.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem13.setText("Leave a Review");
+        jMenuItem13.setText("Ticket Calculation");
         jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem13ActionPerformed(evt);
@@ -249,23 +214,8 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
-        Register_Form register_Form = new Register_Form();
-        register_Form.setVisible(true);
-        
-       
+   
     }//GEN-LAST:event_jMenuItem3ActionPerformed
-
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-        Register_Form register_Form = new Register_Form();
-        register_Form.setVisible(true);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-        Register_Form register_Form = new Register_Form();
-        register_Form.setVisible(true);
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
         // TODO add your handling code here:
@@ -322,13 +272,8 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JMenu jMenuTravel;
     private javax.swing.JMenu jMenuUser;
