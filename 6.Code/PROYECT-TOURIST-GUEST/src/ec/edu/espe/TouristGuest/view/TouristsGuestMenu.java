@@ -38,8 +38,8 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         ItmResidence = new javax.swing.JMenuItem();
         ItmFood = new javax.swing.JMenuItem();
         jMenuUser = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuView = new javax.swing.JMenu();
+        ItmLogin = new javax.swing.JMenuItem();
+        ItmTablewithalltheinformation = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuTravel = new javax.swing.JMenu();
         jMenuItem9 = new javax.swing.JMenuItem();
@@ -125,24 +125,29 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
 
         jMenuUser.setText("User");
 
-        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem3.setText("Login");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        ItmLogin.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.ALT_MASK));
+        ItmLogin.setText("Login");
+        ItmLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                ItmLoginActionPerformed(evt);
             }
         });
-        jMenuUser.add(jMenuItem3);
+        jMenuUser.add(ItmLogin);
 
         jMenuBar1.add(jMenuUser);
 
-        jMenuView.setText("View");
+        ItmTablewithalltheinformation.setText("View");
 
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_W, java.awt.event.InputEvent.ALT_MASK));
         jMenuItem5.setText("Table with all the Information ");
-        jMenuView.add(jMenuItem5);
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        ItmTablewithalltheinformation.add(jMenuItem5);
 
-        jMenuBar1.add(jMenuView);
+        jMenuBar1.add(ItmTablewithalltheinformation);
 
         jMenuTravel.setText("Travel");
 
@@ -212,16 +217,21 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_MnuExitMouseClicked
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void ItmLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmLoginActionPerformed
         // TODO add your handling code here:
    
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_ItmLoginActionPerformed
 
     private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
         // TODO add your handling code here:
         Ticket_Tourist_Guest ticket_Tourist_Guest = new Ticket_Tourist_Guest();
         ticket_Tourist_Guest.setVisible(true);
     }//GEN-LAST:event_jMenuItem13ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -261,7 +271,9 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu ItmFlight;
     private javax.swing.JMenuItem ItmFood;
+    private javax.swing.JMenuItem ItmLogin;
     private javax.swing.JMenuItem ItmResidence;
+    private javax.swing.JMenu ItmTablewithalltheinformation;
     private javax.swing.JMenu MnuExit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -272,12 +284,10 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JMenu jMenuTravel;
     private javax.swing.JMenu jMenuUser;
-    private javax.swing.JMenu jMenuView;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
