@@ -228,7 +228,7 @@ public class FrmFoodCosts extends javax.swing.JFrame {
             txtMaketBasket.setText(""+TotalCost);
             
         }
-        if(option.equals("Peru")){
+        if(option.equals("Perú")){
             TotalCost=NumbersOfPeople*285;;
             txtMaketBasket.setText(""+TotalCost);
             

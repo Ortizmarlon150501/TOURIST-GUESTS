@@ -7,12 +7,12 @@ package ec.edu.espe.TouristGuest.model;
 
 import com.mongodb.BasicDBObject;
 
-
 /**
  *
  * @author Marlon Ortiz Codec ESPE-DCCO
  */
 public class City {
+
     private String country;
     private String name;
     private String numberOfUniversity;
@@ -27,35 +27,31 @@ public class City {
         this.idiom = idiom;
     }
 
-   
-  
-      public City(BasicDBObject dBInfoCity) {
-        this.country=dBInfoCity.getString("Country");
+    public City(BasicDBObject dBInfoCity) {
+        this.country = dBInfoCity.getString("Country");
         this.name = dBInfoCity.getString("Principal City");
-        this.numberOfMuseum =dBInfoCity.getString("Number Of Museum");
+        this.numberOfMuseum = dBInfoCity.getString("Number Of Museum");
         this.numberOfUniversity = dBInfoCity.getString("RegistrationNumber");
         this.idiom = dBInfoCity.getString("Idiom");
-        
+
     }
 
     public City(String maracaibo_, int i, int i0) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
-    public BasicDBObject dbCitiesInfo(){
-        
+
+    public BasicDBObject dbCitiesInfo() {
+
         BasicDBObject dbCities = new BasicDBObject();
-        
+
         dbCities.append("ID", this.getCountry());
         dbCities.append("Name", this.getName());
         dbCities.append("Number Of Museum", this.getNumberOfMuseum());
         dbCities.append("Number Of University", this.getNumberOfUniversity());
         dbCities.append("Idiom", this.getIdiom());
-      
-        
+
         return dbCities;
-        
+
     }
 
     /**
@@ -132,5 +128,4 @@ public class City {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
- 
 }

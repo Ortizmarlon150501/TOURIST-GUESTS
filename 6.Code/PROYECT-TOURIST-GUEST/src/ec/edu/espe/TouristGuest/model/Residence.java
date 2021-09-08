@@ -10,16 +10,16 @@ package ec.edu.espe.TouristGuest.model;
  * @author JARAMILLO JEAN CODEC OPP-ESPE
  */
 public class Residence {
-    
-      private float costOfAcommodation;
-      private float feedingCost;
-      private float tourismCost;
-      
-      public static float costOfResidence(float costOfAcommodation, float feedingCost, float tourismCost){
-          float costTotalResicence;
-          costTotalResicence = costOfAcommodation + feedingCost + tourismCost;
-          return costTotalResicence;
-      }
+
+    private float costOfAcommodation;
+    private float feedingCost;
+    private float tourismCost;
+
+    public static float costOfResidence(float costOfAcommodation, float feedingCost, float tourismCost) {
+        float costTotalResicence;
+        costTotalResicence = costOfAcommodation + feedingCost + tourismCost;
+        return costTotalResicence;
+    }
 
     public Residence(float costOfAcommodation, float feedingCost, float tourismCost) {
         this.costOfAcommodation = costOfAcommodation;
@@ -68,10 +68,5 @@ public class Residence {
     public void setTourismCost(float tourismCost) {
         this.tourismCost = tourismCost;
     }
-      
-      
-      
-      }
-      
-    
 
+}

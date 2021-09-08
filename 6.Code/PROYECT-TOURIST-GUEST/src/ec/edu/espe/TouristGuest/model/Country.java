@@ -12,41 +12,40 @@ import java.util.ArrayList;
  * @author Marlon Ortiz Codec ESPE-DCCO
  */
 public class Country {
+
     private String name;
     private double numberOfInHabitants;
-     private String idiom;
-     private String continent;
-     private ArrayList<City> listCitys;
+    private String idiom;
+    private String continent;
+    private ArrayList<City> listCitys;
 
     public Country(String name, double numberofinhabitants, String idiom, String continent) {
         this.name = name;
         this.numberOfInHabitants = numberofinhabitants;
         this.idiom = idiom;
         this.continent = continent;
-        this.listCitys= new ArrayList<>();
+        this.listCitys = new ArrayList<>();
     }
-    
-   
-    public String getinfo(){
+
+    public String getinfo() {
         String date = "";
-        date += "\n Info of "+ this.getName() + ":";
-        date +="\n Number of inhabitants: " +this.getNumberOfInHabitants();
-        date +="\n idiom: "+ this.getIdiom();
-        date +="\n continet: "+ this.getContinent();
-      
- 
-       for(City citys : this.getListCitys()) {
-            
-            date +="\n\t"+citys.getName();
+        date += "\n Info of " + this.getName() + ":";
+        date += "\n Number of inhabitants: " + this.getNumberOfInHabitants();
+        date += "\n idiom: " + this.getIdiom();
+        date += "\n continet: " + this.getContinent();
+
+        for (City citys : this.getListCitys()) {
+
+            date += "\n\t" + citys.getName();
         }
         return date;
-    
+
     }
-    
-    public void addCitys(City citys){
+
+    public void addCitys(City citys) {
         this.getListCitys().add(citys);
     }
-    
+
     /**
      * @return the name
      */
@@ -92,7 +91,6 @@ public class Country {
     /**
      * @return the country
      */
- 
     /**
      * @return the listCitys
      */
@@ -120,4 +118,4 @@ public class Country {
     public void setContinent(String continent) {
         this.continent = continent;
     }
-            }
+}

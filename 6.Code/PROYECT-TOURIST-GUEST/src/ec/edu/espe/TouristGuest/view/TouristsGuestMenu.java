@@ -39,8 +39,8 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         ItmFood = new javax.swing.JMenuItem();
         jMenuUser = new javax.swing.JMenu();
         ItmLogin = new javax.swing.JMenuItem();
-        ItmTablewithalltheinformation = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuView = new javax.swing.JMenu();
+        ItmTablewithalltheinfo = new javax.swing.JMenuItem();
         jMenuTravel = new javax.swing.JMenu();
         ItmAdd = new javax.swing.JMenuItem();
         ItmDelete = new javax.swing.JMenuItem();
@@ -136,18 +136,18 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuUser);
 
-        ItmTablewithalltheinformation.setText("View");
+        jMenuView.setText("View");
 
-        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_W, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem5.setText("Table with all the Information ");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+        ItmTablewithalltheinfo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_W, java.awt.event.InputEvent.ALT_MASK));
+        ItmTablewithalltheinfo.setText("Table with all the Information ");
+        ItmTablewithalltheinfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
+                ItmTablewithalltheinfoActionPerformed(evt);
             }
         });
-        ItmTablewithalltheinformation.add(jMenuItem5);
+        jMenuView.add(ItmTablewithalltheinfo);
 
-        jMenuBar1.add(ItmTablewithalltheinformation);
+        jMenuBar1.add(jMenuView);
 
         jMenuTravel.setText("Travel");
 
@@ -228,10 +228,12 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         ticket_Tourist_Guest.setVisible(true);
     }//GEN-LAST:event_ItmTicketCalculationActionPerformed
 
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-        // TODO add your handling code here:
+    private void ItmTablewithalltheinfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmTablewithalltheinfoActionPerformed
+        FrmInfoCountry    frmInfoCountry = new FrmInfoCountry();  
+        frmInfoCountry.setVisible(true);
+
         
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
+    }//GEN-LAST:event_ItmTablewithalltheinfoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -278,16 +280,16 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     private javax.swing.JMenu ItmReportProblem;
     private javax.swing.JMenuItem ItmReportaProblem;
     private javax.swing.JMenuItem ItmResidence;
-    private javax.swing.JMenu ItmTablewithalltheinformation;
+    private javax.swing.JMenuItem ItmTablewithalltheinfo;
     private javax.swing.JMenuItem ItmTicketCalculation;
     private javax.swing.JMenu MnuExit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenu jMenuTravel;
     private javax.swing.JMenu jMenuUser;
+    private javax.swing.JMenu jMenuView;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

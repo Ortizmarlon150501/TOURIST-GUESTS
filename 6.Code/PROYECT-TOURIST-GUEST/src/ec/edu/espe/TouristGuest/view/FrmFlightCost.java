@@ -258,99 +258,89 @@ public class FrmFlightCost extends javax.swing.JFrame {
         int NumberChildren;
         float TotalCost;
 
-        NumberOfPeople=Integer.parseInt(txtNumberOfPeople.getText());
-        NumberChildren=Integer.parseInt(txtNumberChildren.getText());
-        String option=(String)CBCity.getSelectedItem();
-        String option1=(String)CBChildren.getSelectedItem();
+        NumberOfPeople = Integer.parseInt(txtNumberOfPeople.getText());
+        NumberChildren = Integer.parseInt(txtNumberChildren.getText());
+        String option = (String) CBCity.getSelectedItem();
+        String option1 = (String) CBChildren.getSelectedItem();
 
-        if(option.equals("Argentina") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*500+NumberChildren*100;;
-            TotalTravelCost.setText(""+TotalCost);
+        if (option.equals("Argentina") && option1.equals("Yes")) {
+            TotalCost = NumberOfPeople * 500 + NumberChildren * 100;;
+            TotalTravelCost.setText("" + TotalCost);
 
-        }
-        else{
-            TotalCost=NumberOfPeople*500;
-        }
-
-        if(option.equals("Brazil") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*250+NumberChildren*110;;
-            TotalTravelCost.setText(""+TotalCost);
-
-        }
-        else{
-            TotalCost=NumberOfPeople*250;
+        } else {
+            TotalCost = NumberOfPeople * 500;
         }
 
-        if(option.equals("Bolivia") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*300+NumberChildren*140;;
-            TotalTravelCost.setText(""+TotalCost);
+        if (option.equals("Brazil") && option1.equals("Yes")) {
+            TotalCost = NumberOfPeople * 250 + NumberChildren * 110;;
+            TotalTravelCost.setText("" + TotalCost);
 
-        }
-        else{
-            TotalCost=NumberOfPeople*300;
-        }
-
-        if(option.equals("Chile") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*150+NumberChildren*150;;
-            TotalTravelCost.setText(""+TotalCost);
-
-        }
-        else{
-            TotalCost=NumberOfPeople*150;
+        } else {
+            TotalCost = NumberOfPeople * 250;
         }
 
-        if(option.equals("Colombia") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*400+NumberChildren*120;;
-            TotalTravelCost.setText(""+TotalCost);
+        if (option.equals("Bolivia") && option1.equals("Yes")) {
+            TotalCost = NumberOfPeople * 300 + NumberChildren * 140;;
+            TotalTravelCost.setText("" + TotalCost);
 
-        }
-        else{
-            TotalCost=NumberOfPeople*400;
-        }
-
-        if(option.equals("Ecuador") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*0+NumberChildren*0;;
-            TotalTravelCost.setText(""+TotalCost);
-
-        }
-        else{
-            TotalCost=NumberOfPeople*250;
+        } else {
+            TotalCost = NumberOfPeople * 300;
         }
 
-        if(option.equals("Paraguay") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*360+NumberChildren*100;;
-            TotalTravelCost.setText(""+TotalCost);
+        if (option.equals("Chile") && option1.equals("Yes")) {
+            TotalCost = NumberOfPeople * 150 + NumberChildren * 150;;
+            TotalTravelCost.setText("" + TotalCost);
 
-        }
-        else{
-            TotalCost=NumberOfPeople*360;
-        }
-
-        if(option.equals("Peru") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*700+NumberChildren*130;;
-            TotalTravelCost.setText(""+TotalCost);
-
-        }
-        else{
-            TotalCost=NumberOfPeople*700;
+        } else {
+            TotalCost = NumberOfPeople * 150;
         }
 
-        if(option.equals("Uruguay") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*150+NumberChildren*140;;
-            TotalTravelCost.setText(""+TotalCost);
+        if (option.equals("Colombia") && option1.equals("Yes")) {
+            TotalCost = NumberOfPeople * 400 + NumberChildren * 120;;
+            TotalTravelCost.setText("" + TotalCost);
 
-        }
-        else{
-            TotalCost=NumberOfPeople*150;
+        } else {
+            TotalCost = NumberOfPeople * 400;
         }
 
-        if(option.equals("Venezuela") && option1.equals("Yes")){
-            TotalCost=NumberOfPeople*326+NumberChildren*150;;
-            TotalTravelCost.setText(""+TotalCost);
+        if (option.equals("Ecuador") && option1.equals("Yes")) {
+            TotalCost = NumberOfPeople * 0 + NumberChildren * 0;;
+            TotalTravelCost.setText("" + TotalCost);
 
+        } else {
+            TotalCost = NumberOfPeople * 250;
         }
-        else{
-            TotalCost=NumberOfPeople*326;
+
+        if (option.equals("Paraguay") && option1.equals("Yes")) {
+            TotalCost = NumberOfPeople * 360 + NumberChildren * 100;;
+            TotalTravelCost.setText("" + TotalCost);
+
+        } else {
+            TotalCost = NumberOfPeople * 360;
+        }
+
+        if (option.equals("Peru") && option1.equals("Yes")) {
+            TotalCost = NumberOfPeople * 700 + NumberChildren * 130;;
+            TotalTravelCost.setText("" + TotalCost);
+
+        } else {
+            TotalCost = NumberOfPeople * 700;
+        }
+
+        if (option.equals("Uruguay") && option1.equals("Yes")) {
+            TotalCost = NumberOfPeople * 150 + NumberChildren * 140;;
+            TotalTravelCost.setText("" + TotalCost);
+
+        } else {
+            TotalCost = NumberOfPeople * 150;
+        }
+
+        if (option.equals("Venezuela") && option1.equals("Yes")) {
+            TotalCost = NumberOfPeople * 326 + NumberChildren * 150;;
+            TotalTravelCost.setText("" + TotalCost);
+
+        } else {
+            TotalCost = NumberOfPeople * 326;
         }
 
         // TODO add your handling code here:
@@ -361,15 +351,14 @@ public class FrmFlightCost extends javax.swing.JFrame {
     }//GEN-LAST:event_TotalTravelCostActionPerformed
 
     private void txtNumberOfPeopleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumberOfPeopleActionPerformed
-        
-        
-        
+
+
     }//GEN-LAST:event_txtNumberOfPeopleActionPerformed
 
     private void txtNumberOfPeopleKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNumberOfPeopleKeyTyped
         // TODO add your handling code here:
-        char validar=evt.getKeyChar();
-        if(Character.isLetter(validar)){
+        char validar = evt.getKeyChar();
+        if (Character.isLetter(validar)) {
             getToolkit().beep();
             evt.consume();
             JOptionPane.showMessageDialog(rootPane, "Enter only numbers");
@@ -377,15 +366,15 @@ public class FrmFlightCost extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNumberOfPeopleKeyTyped
 
     private void txtNumberChildrenKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNumberChildrenKeyTyped
-        char validar=evt.getKeyChar();
-        if(Character.isLetter(validar)){
+        char validar = evt.getKeyChar();
+        if (Character.isLetter(validar)) {
             getToolkit().beep();
             evt.consume();
             JOptionPane.showMessageDialog(rootPane, "Enter only numbers");
-            
+
         }
-        
-        
+
+
     }//GEN-LAST:event_txtNumberChildrenKeyTyped
 
     private void txtNumberChildrenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumberChildrenActionPerformed
@@ -399,8 +388,8 @@ public class FrmFlightCost extends javax.swing.JFrame {
 
     private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOKActionPerformed
         this.setVisible(false);
-        new TouristsGuestMenu().setVisible(true);                                     
-        
+        new TouristsGuestMenu().setVisible(true);
+
     }//GEN-LAST:event_btnOKActionPerformed
 
     /**
