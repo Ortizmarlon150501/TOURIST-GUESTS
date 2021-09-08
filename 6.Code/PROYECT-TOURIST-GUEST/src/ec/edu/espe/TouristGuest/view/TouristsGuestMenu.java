@@ -45,9 +45,9 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
         ItmAdd = new javax.swing.JMenuItem();
         ItmDelete = new javax.swing.JMenuItem();
         ItmPrintf = new javax.swing.JMenuItem();
-        jMenuHelp = new javax.swing.JMenu();
-        jMenuItem12 = new javax.swing.JMenuItem();
-        jMenuItem13 = new javax.swing.JMenuItem();
+        ItmReportProblem = new javax.swing.JMenu();
+        ItmReportaProblem = new javax.swing.JMenuItem();
+        ItmTicketCalculation = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("MAIN MENU");
@@ -165,22 +165,22 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuTravel);
 
-        jMenuHelp.setText("Help");
+        ItmReportProblem.setText("Help");
 
-        jMenuItem12.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem12.setText("Report a Problem");
-        jMenuHelp.add(jMenuItem12);
+        ItmReportaProblem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.ALT_MASK));
+        ItmReportaProblem.setText("Report a Problem");
+        ItmReportProblem.add(ItmReportaProblem);
 
-        jMenuItem13.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_MASK));
-        jMenuItem13.setText("Ticket Calculation");
-        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
+        ItmTicketCalculation.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_MASK));
+        ItmTicketCalculation.setText("Ticket Calculation");
+        ItmTicketCalculation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem13ActionPerformed(evt);
+                ItmTicketCalculationActionPerformed(evt);
             }
         });
-        jMenuHelp.add(jMenuItem13);
+        ItmReportProblem.add(ItmTicketCalculation);
 
-        jMenuBar1.add(jMenuHelp);
+        jMenuBar1.add(ItmReportProblem);
 
         setJMenuBar(jMenuBar1);
 
@@ -222,11 +222,11 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
    
     }//GEN-LAST:event_ItmLoginActionPerformed
 
-    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+    private void ItmTicketCalculationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmTicketCalculationActionPerformed
         // TODO add your handling code here:
         Ticket_Tourist_Guest ticket_Tourist_Guest = new Ticket_Tourist_Guest();
         ticket_Tourist_Guest.setVisible(true);
-    }//GEN-LAST:event_jMenuItem13ActionPerformed
+    }//GEN-LAST:event_ItmTicketCalculationActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
@@ -275,16 +275,16 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     private javax.swing.JMenuItem ItmFood;
     private javax.swing.JMenuItem ItmLogin;
     private javax.swing.JMenuItem ItmPrintf;
+    private javax.swing.JMenu ItmReportProblem;
+    private javax.swing.JMenuItem ItmReportaProblem;
     private javax.swing.JMenuItem ItmResidence;
     private javax.swing.JMenu ItmTablewithalltheinformation;
+    private javax.swing.JMenuItem ItmTicketCalculation;
     private javax.swing.JMenu MnuExit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenu jMenuHelp;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem13;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenu jMenuTravel;
     private javax.swing.JMenu jMenuUser;

@@ -119,12 +119,12 @@
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenuHelp">
+        <Menu class="javax.swing.JMenu" name="ItmReportProblem">
           <Properties>
             <Property name="text" type="java.lang.String" value="Help"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem12">
+            <MenuItem class="javax.swing.JMenuItem" name="ItmReportaProblem">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Alt+F"/>
@@ -132,7 +132,7 @@
                 <Property name="text" type="java.lang.String" value="Report a Problem"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem13">
+            <MenuItem class="javax.swing.JMenuItem" name="ItmTicketCalculation">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Alt+V"/>
@@ -140,7 +140,7 @@
                 <Property name="text" type="java.lang.String" value="Ticket Calculation"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem13ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ItmTicketCalculationActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
