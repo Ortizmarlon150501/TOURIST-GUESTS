@@ -218,7 +218,8 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_MnuExitMouseClicked
 
     private void ItmLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmLoginActionPerformed
-        // TODO add your handling code here:
+        Register_Form register_Form = new Register_Form();
+        register_Form.setVisible(true);
    
     }//GEN-LAST:event_ItmLoginActionPerformed
 
@@ -229,7 +230,7 @@ public class TouristsGuestMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_ItmTicketCalculationActionPerformed
 
     private void ItmTablewithalltheinfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmTablewithalltheinfoActionPerformed
-        FrmInfoCountry    frmInfoCountry = new FrmInfoCountry();  
+        FrmInfoCountry  frmInfoCountry = new FrmInfoCountry();  
         frmInfoCountry.setVisible(true);
 
         

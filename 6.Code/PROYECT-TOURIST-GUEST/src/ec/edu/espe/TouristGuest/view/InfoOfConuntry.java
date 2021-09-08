@@ -74,6 +74,12 @@ public class InfoOfConuntry extends javax.swing.JFrame {
 
         jLabel7.setText("Idiom:");
 
+        txtCountry.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCountryActionPerformed(evt);
+            }
+        });
+
         BtnRegister.setText("add");
         BtnRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,6 +211,10 @@ public class InfoOfConuntry extends javax.swing.JFrame {
     txtUniversity.setText("");
     txtIdiom.setText("");
     }//GEN-LAST:event_BtnRegisterActionPerformed
+
+    private void txtCountryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCountryActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCountryActionPerformed
 
     /**
      * @param args the command line arguments
