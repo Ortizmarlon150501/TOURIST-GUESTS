@@ -28,7 +28,6 @@ public class RegisterController {
     DB Register;
 
     DBCollection Table_Register;
-  
 
     public RegisterController() {
 
@@ -40,28 +39,26 @@ public class RegisterController {
         } catch (UnknownHostException ex) {
             Logger.getLogger(CountryController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
     }
-  
-  
-        public void addRegister(JTextField txtFistName, JTextField txtLastName, JTextField txtUsername, JTextField pxtPassword,
-            JTextField pxtRetypePass, JTextArea txa_Address, JTextField txtCI,JComboBox cmb_Gender, JRootPane rootPane) {
+
+    public void addRegister(JTextField txtFistName, JTextField txtLastName, JTextField txtUsername, JTextField pxtPassword,
+            JTextField pxtRetypePass, JTextArea txa_Address, JTextField txtCI, JComboBox cmb_Gender, JRootPane rootPane) {
         if ("".equals(txtFistName.getText()) || "".equals(txtLastName.getText()) || "".equals(txtUsername.getText()) || "".equals(pxtPassword.getText()) || "".equals(pxtRetypePass.getText())
-                || "" .equals(txa_Address.getText()) || ""  .equals(txtCI.getText()) || ""  .equals(cmb_Gender.getSelectedItem())  ) {
+                || "".equals(txa_Address.getText()) || "".equals(txtCI.getText()) || "".equals(cmb_Gender.getSelectedItem())) {
             JOptionPane.showMessageDialog(rootPane, "There are empty fields!");
         } else {
-        
-        BasicDBObject document = new BasicDBObject();
-        document.put("Fist_Name","'"+txtFistName.getText()+"'");
-        document.put("Last_Name","'"+txtLastName.getText()+"'");
-        document.put("Username","'"+txtUsername.getText() +"'");
-        document.put("Password","'"+pxtPassword.getText() +"'");
-        document.put("Address","'"+txa_Address.getText()+"'");
-        document.put("CI","'"+txtCI.getText()+"'");
-        document.put("Gender","'"+cmb_Gender.getSelectedItem()+"'");
-        Table_Register.insert(document);
-        
-            
+
+            BasicDBObject document = new BasicDBObject();
+            document.put("Fist_Name", "'" + txtFistName.getText() + "'");
+            document.put("Last_Name", "'" + txtLastName.getText() + "'");
+            document.put("Username", "'" + txtUsername.getText() + "'");
+            document.put("Password", "'" + pxtPassword.getText() + "'");
+            document.put("Address", "'" + txa_Address.getText() + "'");
+            document.put("CI", "'" + txtCI.getText() + "'");
+            document.put("Gender", "'" + cmb_Gender.getSelectedItem() + "'");
+            Table_Register.insert(document);
+
             int saveOption = JOptionPane.showConfirmDialog(rootPane, "Are you sure to save this information?");
             if (saveOption == 0) {
                 JOptionPane.showMessageDialog(rootPane, "Saved!");
@@ -70,27 +67,17 @@ public class RegisterController {
             }
         }
     }
-    
-   
-    public void table_RegisterMouse (JTextField txtFistName, JTextField txtLastName, JTextField txtUsername, JTextField pxtPassword,
-            JTextField pxtRetypePass, JTextArea txa_Address, JTextField txtCI,JComboBox cmb_Gender, JRootPane rootPane){
-       if ("".equals(txtFistName.getText()) || "".equals(txtLastName.getText()) || "".equals(txtUsername.getText()) || "".equals(pxtPassword.getText()) || "".equals(pxtRetypePass.getText())
-                || "" .equals(txa_Address.getText()) || ""  .equals(txtCI.getText()) || ""  .equals(cmb_Gender.getSelectedItem())  ) {
-      
-       } else {
-           
-           DBCursor curso=Table_Register.find();
-           
-           
-       }
+
+    public void table_RegisterMouse(JTextField txtFistName, JTextField txtLastName, JTextField txtUsername, JTextField pxtPassword,
+            JTextField pxtRetypePass, JTextArea txa_Address, JTextField txtCI, JComboBox cmb_Gender, JRootPane rootPane) {
+        if ("".equals(txtFistName.getText()) || "".equals(txtLastName.getText()) || "".equals(txtUsername.getText()) || "".equals(pxtPassword.getText()) || "".equals(pxtRetypePass.getText())
+                || "".equals(txa_Address.getText()) || "".equals(txtCI.getText()) || "".equals(cmb_Gender.getSelectedItem())) {
+
+        } else {
+
+            DBCursor curso = Table_Register.find();
+
+        }
     }
 
-
 }
-        
-        
-        
-        
-        
-    
-
