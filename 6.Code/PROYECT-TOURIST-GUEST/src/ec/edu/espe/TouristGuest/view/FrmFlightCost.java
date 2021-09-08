@@ -31,7 +31,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
+        Btntotal = new javax.swing.JButton();
         TotalTravelCost = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -48,10 +48,10 @@ public class FrmFlightCost extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton3.setText("Total Flight Cost:");
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        Btntotal.setText("Total Flight Cost:");
+        Btntotal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton3MouseClicked(evt);
+                BtntotalMouseClicked(evt);
             }
         });
 
@@ -68,7 +68,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(60, 60, 60)
-                .addComponent(jButton3)
+                .addComponent(Btntotal)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(TotalTravelCost, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -78,7 +78,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
+                    .addComponent(Btntotal)
                     .addComponent(TotalTravelCost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(34, Short.MAX_VALUE))
         );
@@ -252,7 +252,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CBChildrenActionPerformed
 
-    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+    private void BtntotalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtntotalMouseClicked
 
         int NumberOfPeople;
         int NumberChildren;
@@ -344,7 +344,7 @@ public class FrmFlightCost extends javax.swing.JFrame {
         }
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3MouseClicked
+    }//GEN-LAST:event_BtntotalMouseClicked
 
     private void TotalTravelCostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalTravelCostActionPerformed
         // TODO add your handling code here:
@@ -428,12 +428,12 @@ public class FrmFlightCost extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Btntotal;
     private javax.swing.JComboBox<String> CBChildren;
     private javax.swing.JComboBox<String> CBCity;
     private javax.swing.JTextField TotalTravelCost;
     private javax.swing.JButton btnCancelFlightCost;
     private javax.swing.JButton btnOK;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel16;

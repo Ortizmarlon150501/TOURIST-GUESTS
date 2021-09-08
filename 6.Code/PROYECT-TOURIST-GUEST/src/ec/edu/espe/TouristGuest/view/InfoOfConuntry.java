@@ -45,7 +45,7 @@ public class InfoOfConuntry extends javax.swing.JFrame {
         txtMuseum = new javax.swing.JTextField();
         txtUniversity = new javax.swing.JTextField();
         txtIdiom = new javax.swing.JTextField();
-        BtnRegister = new javax.swing.JButton();
+        BtnAdd = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -80,10 +80,10 @@ public class InfoOfConuntry extends javax.swing.JFrame {
             }
         });
 
-        BtnRegister.setText("add");
-        BtnRegister.addActionListener(new java.awt.event.ActionListener() {
+        BtnAdd.setText("add");
+        BtnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnRegisterActionPerformed(evt);
+                BtnAddActionPerformed(evt);
             }
         });
 
@@ -116,7 +116,7 @@ public class InfoOfConuntry extends javax.swing.JFrame {
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BtnRegister))))
+                            .addComponent(BtnAdd))))
                 .addContainerGap(164, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -147,14 +147,14 @@ public class InfoOfConuntry extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(BtnRegister)
+                .addComponent(BtnAdd)
                 .addGap(27, 27, 27))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BtnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRegisterActionPerformed
+    private void BtnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAddActionPerformed
         City city = new City(txtCountry.getText(), txtName.getText(), txtMuseum.getText(),txtUniversity.getText(),txtIdiom.getText());
         citiess.add(city);
         
@@ -194,9 +194,9 @@ public class InfoOfConuntry extends javax.swing.JFrame {
             txtMuseum.getText().length() == 0 || txtUniversity.getText().length() == 0 || txtIdiom.getText().length() == 0  ){
         
        JOptionPane.showConfirmDialog(null, "Enter Information" , "OK", JOptionPane.DEFAULT_OPTION);
-       BtnRegister.enable(false);
+       BtnAdd.enable(false);
     } else{
-        BtnRegister.enable(true);
+        BtnAdd.enable(true);
         Country = this.txtCountry.getText();
         Name = this.txtName.getText();
         NumberOfMuseum = this.txtMuseum.getText();
@@ -210,7 +210,7 @@ public class InfoOfConuntry extends javax.swing.JFrame {
     txtMuseum.setText("");
     txtUniversity.setText("");
     txtIdiom.setText("");
-    }//GEN-LAST:event_BtnRegisterActionPerformed
+    }//GEN-LAST:event_BtnAddActionPerformed
 
     private void txtCountryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCountryActionPerformed
         // TODO add your handling code here:
@@ -252,7 +252,7 @@ public class InfoOfConuntry extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BtnRegister;
+    private javax.swing.JButton BtnAdd;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
